@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Racing+Sans+One&display=swap');
+
+#entire-page {
+    max-width: 1100px;
+    margin: auto auto auto auto;
+    background-color: rgb(187, 205, 255);
+    width: 900px
+  }
+
+/* Text Styles */
+h1 {
+    color: white;
+    text-align: left;
+    font-family: 'Racing Sans One', cursive;
+}
+
+h2, h3, h4, h5, h6 {
+    color:#000;
+    text-align: left;
+    font-family: 'Racing Sans One', cursive;
+  }
+
+ul {
+    color:#000;
+    font-family: 'Crete Round', serif;
+    text-align: left;
+}
+  
+/* Header and footer */
+#my-name {
+    background-color: #272727;
+    padding: 1em;
+    padding-left: 75px auto;
+    border-radius: 5px 5px 5px 5px;
+}
+
+footer {
+    background-color: #272727;
+    color: white;
+    padding: 1em;
+    padding-left: auto;
+    text-align: center;
+}
+
+/* image */
+#img {
+    float: right;
+    border: 10px solid #272727;
+    margin-top: -30px;
+}
