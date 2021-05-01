@@ -11,18 +11,18 @@
 h1 {
     color: white;
     text-align: left;
-    font-family: 'Racing Sans One', cursive;
+    font-family: 'Racing Sans One', sans-serif;
 }
 
 h2, h3, h4, h5, h6 {
     color:#000;
     text-align: left;
-    font-family: 'Racing Sans One', cursive;
+    font-family: 'Racing Sans One', sans-serif;
   }
 
 ul {
     color:#000;
-    font-family: 'Crete Round', serif;
+    font-family: 'Crete Round', sans-serif;
     text-align: left;
 }
   
@@ -34,7 +34,7 @@ ul {
     border-radius: 5px 5px 5px 5px;
 }
 
-footer {
+header, footer {
     background-color: #272727;
     color: white;
     padding: 1em;
@@ -43,7 +43,6 @@ footer {
 
 /* image */
 #img {
-    float: right;
     border: 10px solid #272727;
     margin-top: -30px;
 }
