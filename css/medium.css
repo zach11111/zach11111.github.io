@@ -11,7 +11,8 @@
         border-radius: 10px;
     }
     img{
-        float: right;
+        position: absolute;
+        right: 0%;
         border: 10px solid #272727;
     }
 }
