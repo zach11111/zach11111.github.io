@@ -53,4 +53,5 @@ header, footer {
     height: auto;
     border: 10px solid #272727;
     margin-top: -30px;
+    float: right;
 }
