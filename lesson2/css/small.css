@@ -6,7 +6,11 @@
     margin: auto auto auto auto;
     background-color: rgb(187, 205, 255);
   }
-  
+
+  body {
+    background-color: rgb(187, 205, 255);
+ }
+ 
 h1 {
   font-size: 2rem;
   font-family: 'Racing Sans One', sans-serif;
