@@ -13,5 +13,6 @@
     img{
         float: right;
         border: 10px solid #272727;
+        margin: -10px;
     }
 }
