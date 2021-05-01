@@ -5,16 +5,20 @@ h1 {
   font-size: 2rem;
   font-family: 'Racing Sans One', sans-serif;
 }
+
 h3 {
   font-family: 'Racing Sans One', sans-serif;
 }
-
 h2, h4, h5, h6 {
-    color:#000;
+    background-color: #808080;
+    color: #000;
     text-align: left;
     font-family: 'Racing Sans One', sans-serif;
+    border-radius: .5em;
+    padding: .5em;
+    text-align: center;
   }
-  
+
 /* Header and footer */
 header, footer {
     background-color: #272727;
@@ -35,6 +39,24 @@ p {
   background-color: white;
   border-radius: 1em;
   padding: 1em;
-  border: 3px solid #272727;
+  border: 5px solid #272727;
   max-width: 375px;
+}
+
+img {
+  max-width: 100%;
+  border-radius: .5em;
+  border: 1px solid #12263A;
+  margin: auto;
+}
+
+.business {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
 }
