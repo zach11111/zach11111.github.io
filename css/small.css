@@ -18,6 +18,7 @@ h1 {
 
 h2 {
     font-size: 1rem;
+    margin: 20px;
 }
 
 h3, h4, h5, h6 {
@@ -34,7 +35,7 @@ ul {
   
 /* Header and footer */
 #my-name {
-    background-color: #272727;
+    background-color: #525252;
     padding: 1em;
     padding-left: 75px;
 }
@@ -49,4 +50,5 @@ header, footer {
 /* image */
 #img {
     height: auto;
+    border: 10px solid #272727;
 }
