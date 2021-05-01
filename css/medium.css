@@ -10,9 +10,8 @@
     header, footer {
         border-radius: 10px;
     }
-    #img{
+    img{
         float: right;
-        margin: 10px;
         border: 10px solid #272727;
     }
 }
