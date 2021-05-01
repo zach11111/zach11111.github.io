@@ -49,9 +49,10 @@ header, footer {
 
 /* image */
 #img {
+    float: right;
     width: 200px;
     height: auto;
     border: 10px solid #272727;
     margin-top: -30px;
-    float: right;
+    
 }
