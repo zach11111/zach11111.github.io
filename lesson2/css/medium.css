@@ -9,10 +9,10 @@
     #principle1 {
       grid-column: 1 / 2;
     }
-    #nuprinciple2 {
+    #principle2 {
       grid-column: 2 / 3;
     }
-    #numprinciple3 {
+    #principle3 {
       grid-column: 1 / 2;
     }
   }
