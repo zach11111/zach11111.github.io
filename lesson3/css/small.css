@@ -60,6 +60,9 @@ h1,h2, h3, h4, h5, h6 {
     color: #102E4A;
 }
 
+ol {
+    font-family: 'Crete round', cursive;
+}
 .type-heading{
     text-align:center;
 }
