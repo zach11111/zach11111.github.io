@@ -71,7 +71,7 @@ h1,h2, h3, h4, h5, h6 {
     font-family: 'Racing Sans One', sans-serif;
     color: #102E4A;
 }
-div img{width:80%;}
+
 .typoHeading{text-align:center;}
 .typoNav{background-color: #102E4A;
 	text-align: center;
@@ -80,3 +80,24 @@ div img{width:80%;}
     padding: 0.75rem;
     font-weight: bolder;
 }
+
+#principle1, #principle2, #principle3 {
+    background-color: white;
+    border-radius: 1em;
+    padding: 1em;
+    border: 5px solid #272727;
+    max-width: 375px;
+  }
+  
+  img {
+    max-width: 100%;
+    border-radius: .5em;
+    border: 1px solid #12263A;
+    margin: auto;
+  }
+  
+  #container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+  }
