@@ -1,8 +1,11 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Racing+Sans+One&display=swap');
+
 body {
     background-color: #3E7CB1;
     font-size: 16px;}
-header,
-footer {
+
+header, footer {
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-flow: column;
@@ -38,27 +41,34 @@ nav ul li a {
 	padding: 0.75rem;
 	text-decoration: none;
 	font-size: 0.95rem;
-    font-family: 'Short Stack', cursive;
+    font-family: 'Crete Round', cursive;
     font-weight: bolder;}
+
 nav a:hover {
 	background-color: #F17300;
 	color: #102E4A;
 }
+
 .active {
 	color: #F17300;}
+
 main{
     background-color:#DBE4EE;
     padding-bottom:2rem;
 }
+
 img{ background-color: white;
     width:80%;
     border-style:double;
     padding:1rem;}
+
 p{ text-align: center;
-    font-family: 'Short Stack', cursive;}
+    font-family: 'Crete round', cursive;
+}
+
 h1,h2, h3, h4, h5, h6 {
     text-indent: 1rem;
-    font-family: 'Esteban', serif;
+    font-family: 'Racing Sans One', sans-serif;
     color: #102E4A;
 }
 div img{width:80%;}
