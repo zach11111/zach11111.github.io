@@ -72,13 +72,21 @@ h1,h2, h3, h4, h5, h6 {
     color: #102E4A;
 }
 
-.typoHeading{text-align:center;}
-.typoNav{background-color: #102E4A;
+#type-heading{
+    text-align:center;
+}
+
+#nav-type{
+    background-color: #102E4A;
 	text-align: center;
 	box-shadow: 0 2px 15px gray;
     color: #DBE4EE;
     padding: 0.75rem;
     font-weight: bolder;
+}
+
+#p-type{
+    font-family: 'Crete Round', cursive;
 }
 
 #principle1, #principle2, #principle3 {
