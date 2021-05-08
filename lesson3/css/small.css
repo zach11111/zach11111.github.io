@@ -88,6 +88,7 @@ h1,h2, h3, h4, h5, h6 {
 
 .p-type{
     font-family: 'Crete Round', cursive;
+    text-align: center;
 }
 
 #principle1, #principle2, #principle3 {
