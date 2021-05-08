@@ -72,11 +72,11 @@ h1,h2, h3, h4, h5, h6 {
     color: #102E4A;
 }
 
-#type-heading{
+.type-heading{
     text-align:center;
 }
 
-#nav-type{
+.nav-type{
     background-color: #102E4A;
 	text-align: center;
 	box-shadow: 0 2px 15px gray;
@@ -85,7 +85,7 @@ h1,h2, h3, h4, h5, h6 {
     font-weight: bolder;
 }
 
-#p-type{
+.p-type{
     font-family: 'Crete Round', cursive;
 }
 
