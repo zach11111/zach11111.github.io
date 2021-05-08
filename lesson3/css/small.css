@@ -14,15 +14,8 @@ header, footer {
     padding: 10px;
     }
 header, nav, main, footer {
-	max-width: 767px;
+	max-width: 1000px;
 	margin: 0 auto;}
-h1 {
-	font-size: 1.5rem; 
-}
-
-h2 {
-	color: #DBE4EE;
-}
 
 nav {
 	background-color: #102E4A;
@@ -56,11 +49,6 @@ main{
     background-color:#DBE4EE;
     padding-bottom:2rem;
 }
-
-img{ background-color: white;
-    width:80%;
-    border-style:double;
-    padding:1rem;}
 
 p{ text-align: center;
     font-family: 'Crete round', cursive;
