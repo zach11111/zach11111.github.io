@@ -1,13 +1,12 @@
 @media only screen and (min-width: 60em) {
-    nav a {
-	    font-size: 1.1rem;
-    }
-    img{ width:40%;}
-    
-    h1 {
-    	font-size: 3em;
-    }
-      #container {
-    	grid-template-columns: 1fr 1fr 1fr;
-    }
+
+  img{ 
+  width:50%;
+  margin: 0 0 0 -175px
+  }
+  
+  h1 {
+    font-size: 3em;
+    margin: 0 -10px 10px -90px;
+  }
 }
