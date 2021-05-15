@@ -8,7 +8,6 @@ body {
 header, footer {
     background-color: rgb(255, 255, 255);
     display: flex;
-    flex-flow: column;
     align-items: center;
     justify-content: center;
     padding: 10px;
