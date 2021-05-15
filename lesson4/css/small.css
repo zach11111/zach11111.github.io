@@ -25,6 +25,14 @@ nav {
 	text-align: center;
 }
 
+.navigation li:first-child {
+    display:block;
+}
+
+.navigation li{
+    display:none;
+}
+
 nav ul {
 	list-style-type: none;
 	margin: 0;
