@@ -9,4 +9,8 @@
     font-size: 3em;
     margin: 0 0 10px 0;
   }
+  header, nav, main, footer {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
 }
