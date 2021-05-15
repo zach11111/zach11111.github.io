@@ -28,9 +28,14 @@ nav {
 .navigation li:first-child {
     display:block;
 }
-
+/* Menu drop bar */
 .navigation li{
     display:none;
+    flex: 1 1 100%;
+}
+
+.responsive li {
+    display: block;
 }
 
 nav ul {
