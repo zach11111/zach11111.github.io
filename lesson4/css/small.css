@@ -13,6 +13,7 @@ header, footer {
     justify-content: center;
     padding: 10px;
     }
+
 header, nav, main, footer {
 	max-width: 1000px;
 	margin: 0 auto;}
@@ -21,12 +22,14 @@ nav {
 	background-color: #102E4A;
 	text-align: center;
 }
+
 nav ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
 }
+
 nav ul li a {
 	display: block;
 	color: #DBE4EE;
@@ -41,9 +44,6 @@ nav a:hover {
 	background-color: #F17300;
 	color: #102E4A;
 }
-
-.active {
-	color: #F17300;}
 
 main{
     background-color:#DBE4EE;
@@ -60,30 +60,12 @@ h1,h2, h3, h4, h5, h6 {
     color: #102E4A;
 }
 
-ol {
+.content-box {
     font-family: 'Crete round', cursive;
+    background-color:gray;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #4D98D1;
 }
-.type-heading{
-    text-align:center;
-}
-
-.nav-type{
-    background-color: #102E4A;
-	text-align: center;
-	box-shadow: 0 2px 15px gray;
-    color: #DBE4EE;
-    padding: 0.75rem;
-    font-weight: bolder;
-    font-family: 'Crete round', cursive;
-}
-
-.p-type{
-    font-family: 'Crete Round', cursive;
-    text-align: center;
-}
-
-  #container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1em;
-  }
