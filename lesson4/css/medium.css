@@ -32,4 +32,14 @@
   position: absolute;
 }
 
-}
+    .bottom-of-page {
+        display: flex;
+    }
+
+    .content-info{
+        padding-top: 20px;
+        flex: 1 1 auto;
+        display: block;
+    }
+} 
+
