@@ -1,0 +1,22 @@
+@media only screen and (min-width: 37.5em) {
+    nav ul { display: flex; }
+    nav ul li { flex: 1 1 100%; }
+    img{ width: 30%;}
+  
+    h1 {
+        font-size: 3em;
+        margin: 0 -10px 10px -40px;
+      }
+  
+    .navigation{
+        display:flex;
+    }
+  
+    .navigation li:first-child{
+      display:none
+    }
+    .navigation li{
+        display:block;
+        flex: 1 1 100%;
+    }
+  }

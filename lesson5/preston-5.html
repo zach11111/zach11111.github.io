@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Zach Rochette">
+    <meta name="description" content="Weather website for the local area.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet"  href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+  </head>
+
+<body>
+    
+  <header>
+  
+      <img class="logo" src="images/logo.png" alt="logo for AccuWeather" width="500">
+      
+    <div id="header">
+      <h1 class="title">AccuWeather</h1>
+      <div class="motto">100% accurte 100% of the time</div>
+    </div>
+
+  </header>
+
+  <main>
+    <nav>  
+        <ul class="navigation">
+          <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Preston</a></li>
+          <li><a href="#">Soda Springs</a></li>
+          <li><a href="#">Fish Haven</a></li>
+          <li><a href="#">Storm Center</a></li>
+          <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+
+      <div id="preston-idaho">
+        <h2>Preston Idaho</h2>
+      </div>
+
+        <div class="content-box">Weather Summary</div>
+        <div class="content-box">Five Day Forcast</div>
+        <div class="content-box">Article</div>
+        <div class="content-box">Contact Information</div>
+
+    </main>
+
+<footer>
+    &copy;AccuWeather | <span id="year"></span> 
+</footer>
+
+<script src="js/myscripts.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+@media only screen and (min-width: 60em) {
+
+    img{ 
+    width:40%;
+    margin: 0 0 0 -450px
+    }
+    
+    h1 {
+      font-size: 3em;
+      margin: 0 0 10px 0;
+    }
+    header, nav, main, footer {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+  }
