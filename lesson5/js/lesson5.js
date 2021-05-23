@@ -24,6 +24,8 @@ function toggleMenu()
 }
 
 //Friday Pop up
+let date = new Date();
+
 if (date.getDay()==5)
 {
     document.getElementById("pancake").style.display= "block" ;
