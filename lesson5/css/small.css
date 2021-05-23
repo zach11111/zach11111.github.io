@@ -17,6 +17,17 @@ footer {
     font-family: 'Crete Round', cursive;
   }    
 
+.bottom-of-page {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: lightslategray;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
 img {
 	width: 0%;
 }
@@ -93,16 +104,27 @@ h1,h2, h3, h4, h5, h6 {
     color: #102E4A;
 }
 
-.content-box {
-    font-family: 'Crete round', cursive;
-    background-color:gray;
-    margin: 15px;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 7px 0 rgba(0, 0, 0, 0.19);
-    background-color: #3E7CB1;
+  .weather-summary {
+  background-color: rgba(80, 130, 260, 0.8);
+  top: 18rem;
+  text-align: center;
+  position: absolute;
+}
+
+  .weather-summary {
+  background-color: rgba(80, 130, 260, 0.8);
+  top: 18rem;
+  text-align: center;
+  position: absolute;
 }
 
 .logo {
 	max-width: 210px;
+}
+.main-image{
+	width: 100%;
+}
+
+.forcast, .five-day-forcast {
+    display: none;
 }
