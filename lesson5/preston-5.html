@@ -24,73 +24,71 @@
   </div>
 
   <header>
-  
     <img class="logo" src="images/logo.png" alt="logo for AccuWeather" width="500">
-      
     <div id="header">
       <h1 class="title">AccuWeather</h1>
       <div class="motto">100% accurte 100% of the time</div>
     </div>
-
   </header>
 
-  <main>
     <nav>  
-        <ul class="navigation">
-          <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-          <li><a href="#">Home</a></li>
-          <li class"current"><a href="preston-5.html">Preston</a></li>
-          <li><a href="#">Soda Springs</a></li>
-          <li><a href="#">Fish Haven</a></li>
-          <li><a href="#">Storm Center</a></li>
-          <li><a href="#">Gallery</a></li>
-        </ul>
+      <ul class="navigation">
+        <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <li><a href="#">Home</a></li>
+        <li class"current"><a href="preston-5.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li><a href="#">Gallery</a></li>
+      </ul>
     </nav>
+
+  <main>
 <!--           new stuff                         -->
-      <div id="preston-idaho">
-        <h2>Preston Idaho</h2>
+    <section class="top-of-page">
+      <img class="main-image" src="images\preston-main-img.jpg" alt="Some mountains">
+      <div class="weather-summary">
+        <h3>Weather Summary</h3>
+        <p>Currently: Cloudy <br> High: 73F <br> Low: 42F <br> Humidity: 29.97% <br> Wind Speed: 12mph</p>
       </div>
+    </section>
 
-      <section class="">
-          <img class="main-image" src="images\preston-main-img.jpg" alt="Some mountains">
-        <section class="weather-summary">
-          <h3>Weather Summary</h3>
-          <p>Currently: Cloudy <br> High: 72 F <br> Humidity: 29.97% <br> Wind Speed: 12mph </p>
-        </section>
-      </section>
-
-    <h3 class="fiveday"> Five Day Forecast</h3>
+    <div class="five-day-forecast">
+      <h3>Five Day Forcast</h3>
+    </div>
         
-        <section class="forcast">
-    
-          <div class="forcast-day" id="monday">
-            <h4> Mon</h4>
-            <p> High: 60<br>Low: 49</p>
-          </div>
-          <div class="forcast-day" id="tuesday">
-            <h4> Tues</h4>
-            <p> High: 75<br>Low: 63</p>
-          </div>
-          <div class="forcast-day" id="wednesday">
-            <h4> Wed</h4>
-            <p> High: 89<br>Low: 78</p>
-          </div>
-          <div class="forcast-day" id="thursday">
-            <h4> Thurs</h4>
-            <p> High: 69<br>Low: 57</p>
-          </div>
-          <div class="forcast-day" id="friday">
-            <h4> Fri</h4>
-            <p> High: 74<br>Low: 65</p>
-          </div>
-        </section>
-    
+    <section class="forcast">
+      <div class="forcast-day" id="monday">
+        <h4> Mon</h4>
+        <p> High: 75<br>Low: 38F</p>
+      </div>
+      <div class="forcast-day" id="tuesday">
+        <h4> Tues</h4>
+        <p> High: 70<br>Low: 43</p>
+      </div>
+      <div class="forcast-day" id="wednesday">
+        <h4> Wed</h4>
+        <p> High: 78<br>Low: 48</p>
+      </div>
+      <div class="forcast-day" id="thursday">
+        <h4> Thurs</h4>
+        <p> High: 69<br>Low: 42</p>
+      </div>
+      <div class="forcast-day" id="friday">
+        <h4> Fri</h4>
+        <p> High: 780<br>Low: 62</p>
+      </div>
+    </section>
+
+    <div class="article">
+    <h3>Article<h3>
+    </div>
+
         <!--          End of new stuff              -->
 
-        <div class="content-box">Weather Summary</div>
-        <div class="content-box">Five Day Forcast</div>
-        <div class="content-box">Article</div>
-        <div class="content-box">Contact Information</div>
+        
+        <div class="content-info">Contact Information</div>
+          <img class="map" src="images/map.png" alt="map of yourweatherplace in Preston Idaho" width="200" height="200">
 
     </main>
 
