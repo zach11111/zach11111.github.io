@@ -32,6 +32,9 @@
   position: absolute;
 }
 
+.five-day-forcast, .article-image {
+  display: initial;
+}
     .bottom-of-page {
         display: flex;
     }
