@@ -71,6 +71,12 @@
           text-align: center;
           margin-bottom: 30px;
       }
-  
+    
+      .map {
+        display: flex;
+        width: 70%;
+        margin-left: 8rem;
+        border-style: solid;
+      }
   
   } 
