@@ -24,10 +24,9 @@ function toggleMenu()
 }
 
 //Friday Pop up
-let date = new Date();
-
-if (date.getDay()==5)
-{
-    document.getElementById("pancake").style.display= "block" ;
-
-}
+if (daylist[day] == 'Friday') {  
+    document.getElementById("pancake").style.display = "initials";
+  }
+  else {
+    document.getElementById("pancake").style.display = "none";
+  }
