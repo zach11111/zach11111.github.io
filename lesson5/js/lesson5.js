@@ -1,21 +1,36 @@
-//Date
-var today = new Date();
-
-var dd = String(today.getDate()).padStart(2, '0');
-
-var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-var dayName = days[today.getDay()];
-
-var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-var mm = String(today.getMonth() + 1).padStart(2, '0'); 
-var monthName = months[today.getMonth()];
-
-var yyyy = today.getFullYear();
-
-today = dayName + ', ' + dd + ' ' + monthName + ' ' + yyyy;
-
-const currentDate = new Date();
-document.querySelector('#year').textContent = today;
+const daylist = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  const monthlist = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+  var d = new Date();
+  var day = d.getDay();
+  var date = d.getDate();
+  var month = d.getMonth();
+  var year = d.getFullYear();
+  
+  var dateStr = daylist[day] + ", " + date + " " + monthlist[month] + " " + year;
+  document.getElementById("dates").innerHTML = dateStr;
+  document.getElementById("copyright").innerHTML = year;
+  
 
 //Hamburger Menu
 function toggleMenu() 
@@ -25,8 +40,8 @@ function toggleMenu()
 
 //Friday Pop up
 if (daylist[day] == 'Friday') {  
-    document.getElementById("pancake").style.display = "initials";
+    document.getElementById("advertising").style.display = "initials";
   }
   else {
-    document.getElementById("pancake").style.display = "none";
+    document.getElementById("advertising").style.display = "none";
   }
