@@ -77,6 +77,10 @@ nav a:hover {
 	color: #102E4A;
 }
 
+.navigation .current {
+	background-color: aliceblue;
+    color: black;
+}
 
     /* Main styling */
 main{
