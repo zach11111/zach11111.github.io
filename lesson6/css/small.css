@@ -111,9 +111,8 @@ h1,h2, h3, h4, h5, h6 {
 .logo {
 	max-width: 210px;
 }
-.main-image{
-	width: 100%;
-}
+
+img{ width: 100%;}
 
 .forcast, .five-day-forcast, .article-image {
     display: none;
