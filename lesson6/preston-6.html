@@ -47,7 +47,12 @@
 
     <section class="top-of-page">
     <h2 class="preston-idaho">Preston Idaho</h2>
-      <img class="main-image" src="images/preston-main-img.jpg" alt="Some mountains">
+      <!-- <img class="main-image" src="images/preston-main-img.jpg" alt="Some mountains"> -->
+      <picture>
+        <source media="(max-width: 500px)" srcset="images/hero-s.jpg" />
+        <source media="(max-width: 800px)" srcset="images/hero-m.jpg" />
+        <img src="images/lesson6-hero-img.jpg" alt="Hero Image" />
+      </picture>
       <section class="weather-summary">
         <h3>Weather Summary</h3>
         <p>Currently: Cloudy <br> High: 73F <br> Low: 42F <br> Humidity: 29.97% <br> Wind Speed: 12mph</p>
