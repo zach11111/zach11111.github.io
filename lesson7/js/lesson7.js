@@ -56,6 +56,7 @@ if(localStorage.getItem('timeInput') !== null) {
     var dayDifference = Math.floor((newTime - pastTime) / (1000*3600 *24));
     document.getElementById('daysSinceVisit').innerHTML = "Days Since Last Visit: " + dayDifference + " ";
 }
+
 else {
     localStorage.setItem('timeInput', newTime.toString());
     document.getElementById('daysSinceVisit').innerHTML = "Days Since Last Visit: 0 ";
