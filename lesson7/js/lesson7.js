@@ -45,3 +45,46 @@ if (daylist[day] == 'Friday') {
   else {
     document.getElementById("advertising").style.display = "none";
   }
+
+// Lazy Loader
+const imagesToLoad = document.querySelectorAll('img[data-src]');
+const loadImages = (image) => {
+  image.setAttribute('src', image.getAttribute('data-src'));
+  image.onload = () => {
+    image.removeAttribute('data-src');
+  };
+};
+if ('IntersectionObserver' in window) {
+  const observer = new IntersectionObserver((items) => {
+    items.forEach((item) => {
+      if (item.isIntersecting) {
+        loadImages(item.target);
+        observer.unobserve(item.target);
+      }
+    });
+  });
+  imagesToLoad.forEach((img) => {
+    observer.observe(img);
+  });
+} else {
+  imagesToLoad.forEach((img) => {
+    loadImages(img);
+  });
+}
+
+
+
+// Days since last visit
+let d = new Date();
+var newTime = d.getTime();
+
+if(localStorage.getItem('timeInput') !== null) {
+    var pastTime = localStorage.getItem('timeInput');
+    localStorage.setItem('timeInput', newTime.toString());
+    var dayDifference = Math.floor((newTime - pastTime) / (1000*3600 *24));
+    document.getElementById('daysSinceVisit').innerHTML = "Days Since Last Visit: " + dayDifference + " ";
+}
+else {
+    localStorage.setItem('timeInput', newTime.toString());
+    document.getElementById('daysSinceVisit').innerHTML = "Days Since Last Visit: 0 ";
+}
