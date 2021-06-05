@@ -27,15 +27,26 @@
     </div>
   </header>
 
-  <nav>
+  {% comment %} <nav>  
     <ul class="navigation">
       <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-      <li><a href="lesson7/preston-7.html" class="nav">Home</a></li>
-      <li><a href="preston-5.html" >Preston</a></li>
-      <li><a href="#" class="nav">Soda Springs</a></li>
-      <li><a href="#" class="nav">Fish Haven</a></li>
-      <li><a href="#" class="nav">Storm Center</a></li>
-      <li class="current"><a href="gallery-7.html" class="nav">Gallery</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a class="current" href="preston-5.html">Preston</a></li>
+      <li><a href="#">Soda Springs</a></li>
+      <li><a href="#">Fish Haven</a></li>
+      <li><a href="#">Storm Center</a></li>
+      <li><a href="#">Gallery</a></li>
+    </ul>
+  </nav> {% endcomment %}
+    <nav>
+    <button onclick="toggleMenu()">&#9776; Menu</button>
+    <ul id="navigation" class="hide">
+      <li><a href="#">Home</a></li>
+      <li><a href="../lesson6/preston-6.html">Preston</a></li>
+      <li><a href="#">Soda Springs</a></li>
+      <li><a href="#">Fish Haven</a></li>
+      <li><a href="#">Storm Center</a></li>
+      <li class="active"><a href="gallery-7.html">Gallery</a></li>
     </ul>
   </nav>
 
