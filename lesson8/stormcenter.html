@@ -40,7 +40,7 @@
     <form method="get" action="thanks.html">
       <fieldset>
 
-        <legend>User Information</legend>
+        <h2>User Information</h2>
         <label class="info">Full Name*: <input type="text" name="fname" pattern="[A-Za-z ]{5,}" required></label>
         <label class="info">Email: <input type="text" name="email" placeholder="person@example.com"></label>
         <label class="info">Phone Number*:<input type="tel" name="phone" required></label>
@@ -48,7 +48,7 @@
 
         <legend>Storm Information</legend>
         <label class="info">Storm Date:<input type="date" name="date"></label>
-        <label class="info">Storm Type:<input list="stormtypes" name="stormtype" type="stormtype"></label>
+        <label class="info">Storm Type:<input list="stormtypes"></label>
             <datalist id="stormtypes">
                 <option value="Flash Flood">
                 <option value="Hail">
