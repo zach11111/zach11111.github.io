@@ -137,10 +137,18 @@ img{ width: 100%;}
   }
 
   /*---- Storm Center form ----*/
-  #title {
+#title {
     font-size: 30px;
     text-align: center;
     padding-top: 30px;
+}
+
+label.info input:required {
+    border-left: rgba(255, 0, 0, 0.6) solid 6px;
+}
+
+label.info input:required:valid {
+    border-left: rgba(0, 128, 0, 0.6) solid 6px;
 }
 
 input[type=text], input[type=tel], textarea, input[type=number], input[type=stormtype], input[type=date], #regions {
