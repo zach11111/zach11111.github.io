@@ -146,6 +146,7 @@ img{ width: 100%;}
 p {
 	font-family: racing sans one;
 	font-size: 25px;
+	text-align: left;
 }
 
 label.info input:required {
