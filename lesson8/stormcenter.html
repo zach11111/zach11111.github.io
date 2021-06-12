@@ -2,7 +2,7 @@
 <html lang="en-us">
 
   <head>
-    <title>Storm Center</title>
+    <title>AccuWeather</title>
     <meta charset="utf-8">
     <meta name="author" content="Zach Rochette">
     <meta name="description" content="Weather website for the local area.">
@@ -13,20 +13,31 @@
     <link rel="stylesheet" href="css/large.css">
   </head>
 
+<body>
   <header>
-  <img class="logo" src="images/logo.png" alt="logo for AccuWeather" width="500">
-  <div id="header">
-    <h1 class="title">AccuWeather</h1>
-    <div class="motto">100% accurte 100% of the time</div>
-  </div>
+    <img class="logo" src="images/logo.png" alt="logo for AccuWeather" width="500">
+    <div id="header">
+      <h1 class="title">AccuWeather</h1>
+      <div class="motto">100% accurte 100% of the time</div>
+    </div>
   </header>
-  
-  <main>
-    <h2 id="title">Storm Center Form</h2>
 
+  <nav>  
+    <ul class="navigation">
+      <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="preston-6.html">Preston</a></li>
+      <li><a href="#">Soda Springs</a></li>
+      <li><a href="#">Fish Haven</a></li>
+      <li><a href="#">Storm Center</a></li>
+      <li><a class="current" href="gallery-7.html">Gallery</a></li>
+    </ul>
+  </nav>
+
+ <main>
+    <h2 id="title">Storm Center Form</h2>
     <form method="get" action="thankyou.html">
       <br>
-
       <fieldset>
         <legend>User Information</legend>
         <label id="fullname">Full Name*:
@@ -48,9 +59,7 @@
       <br>
       <br>
       <fieldset>
-
         <legend>Storm Information</legend>
-
         <label> Storm Date:
           <input type="date" id="date" name="date">
         </label>
@@ -64,8 +73,6 @@
           <option value="Thunderstorm">
           <option value="Tornado">
         </datalist>
-
-
         <br>
         <div class="range-wrap">
         <p id="severity">Storm Severity:
@@ -74,8 +81,7 @@
             oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
             <output class="bubble"></output>
           </div>
-        
-
+    
         <datalist id="tickmarks">
           <option value="0">
           <option value="1">
@@ -114,7 +120,8 @@
         <input type="submit" value="Send Report">
       </fieldset>
     </form>
-  </main>
+</main>
+
 
 <footer>
     AccuWeather &copy;<span id="copyright"></span> | <span id="dates"></span> | Zacharie Rochette | 
@@ -131,3 +138,6 @@
     }
   });
 </script>
+
+</body>
+</html>
