@@ -3,7 +3,7 @@
 table {
   text-align: center;
   margin: auto;
-  box-shadow: 10px 10px 15px #628ca6;
+  box-shadow: 10px 10px 15px #627ca6;
 }
 
 table, th, td{
@@ -14,7 +14,7 @@ table, th, td{
 
 }
 
-thead tr th{
+thead th{
     background-color: #7fb9c2;
     font-size: 2em;
     font-weight: bold;
