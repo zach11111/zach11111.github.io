@@ -137,10 +137,15 @@ img{ width: 100%;}
   }
 
   /*---- Storm Center form ----*/
-#title {
+  #title {
     font-size: 30px;
     text-align: center;
     padding-top: 30px;
+}
+
+p {
+	font-family: racing sans one;
+	font-size: 25px;
 }
 
 label.info input:required {
@@ -154,6 +159,7 @@ label.info input:required:valid {
 input[type=text], input[type=tel], textarea, input[type=number], input[type=stormtype], input[type=date], #regions {
     width: 100%;
     padding: 12px 20px;
+    font-family: none;
     margin: 8px 0;
     box-sizing: border-box;
     border: 3px solid #ccc;
@@ -168,24 +174,39 @@ input[type=text], input[type=tel], textarea, input[type=number], input[type=stor
 
  legend {
      margin-bottom: 20px;
+     font-family: racing sans one;
  }
 
   legend {
       font-size: 20px;
+      font-family: racing sans one;
   }
 
-  input[type=radio] {
+ input[type=radio] {
       margin: 5px;
   }
-  
-  #ratingvalue {
-      font-size: 30px;
+
+.side{
+  	font-size: 18px;
+  }
+
+#ratingvalue {
+      font-size: 25px;
+      font-family: racing sans one;
   }
 
   form {
       max-width: 80%;
       padding-left: 10%;
+      font-family: racing sans one;
   }
+
+  fieldset {
+    border: 1px solid rgba(16, 29, 66, 1);
+    border-radius: 15px;
+    font-family: 'crete round', sans-serif;
+    color: #102E4A;
+}
 
   /* Thank you */
 
