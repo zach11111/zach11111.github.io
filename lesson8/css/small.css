@@ -196,6 +196,10 @@ input[type=text], input[type=tel], textarea, input[type=number], input[type=stor
       font-family: racing sans one;
   }
 
+.slider {
+width: 100%
+}
+
   form {
       max-width: 80%;
       padding-left: 10%;
@@ -204,7 +208,6 @@ input[type=text], input[type=tel], textarea, input[type=number], input[type=stor
 
   fieldset {
     border: 1px solid rgba(16, 29, 66, 1);
-    border-radius: 15px;
     font-family: 'crete round', sans-serif;
     color: #102E4A;
 }
