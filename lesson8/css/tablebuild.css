@@ -1,13 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap');
 
-main {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-table{
-    box-shadow: 5px 5px 15px #555;
+table {
+  text-align: center;
+  margin: auto;
+  box-shadow: 10px 10px 15px #628ca6;
 }
 
 table, th, td{
@@ -15,6 +11,7 @@ table, th, td{
     border: 1px solid #888;
     border-collapse: collapse;
     padding: .5em 1em;
+
 }
 
 thead tr th{
@@ -24,33 +21,26 @@ thead tr th{
     color: black;
 }
 
-tr:nth-child(6) td:nth-child(1){
-    font-style: italic;
+tr:nth-child(odd) {
+  background: #e7ffed;
 }
 
-th{
-    background-color: #628ca6;
-    color: white;
-    font-weight:bold;
-    font-size: 1.2em;
+tr:nth-child(even) {
+  background: #e7f0ed;
 }
 
-td{
-    background-color: #e7ffed;
+tr:nth-child(1) {
+  background: #628ca6;
+ color: white;
+ font-weight: bold;
 }
 
-tfoot td{
-    background-color: #7fb9c2;
-    font-size: .8em;
+.goal {
+  background: #628cab;
+  color: white;
 }
 
-.accent{
-    background-color:  #e7f0ed;
-    
-}
-
-.accent2{
-    background-color: #628ca6;
-    color: white;
-    font-weight: bold;
-}
+ tfoot tr td{
+  background: #7fb9c2;
+   color: black;
+ }
