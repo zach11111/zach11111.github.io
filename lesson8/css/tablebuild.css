@@ -1,52 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap');
 
-body {
-    font-family: 'Ubuntu', sans-serif;
-  }
-  table {
-    font-size: 20px;
+main {
+    display: flex;
+    justify-content: center;
     text-align: center;
-    margin: auto;
-    box-shadow: 10px 10px 15px #628ca6;
-  }
-  
-  th {
-    background: #7fb9c2;
-    color: black;
-    font-size: 2em;
-    padding: .5em;
-  }
-  
-  table,
-  th,
-  td {
-    border: 1px solid grey;
+}
+
+table{
+    box-shadow: 5px 5px 15px #555;
+}
+
+table, th, td{
+    font-family: Ubuntu, sans-serif;
+    border: 1px solid #888;
     border-collapse: collapse;
-    padding: .5rem;
-  }
-  
-  
-  tr:nth-child(odd) {
-    background: #e7ffed;
-  }
-  
-  tr:nth-child(even) {
-    background: #e7f0ed;
-  }
-  
-  tr:nth-child(1) {
-    background: #628ca6;
-   color: white;
-   font-weight: bold;
-  }
-  
-  
-  .goalmet {
-    background: #628cab;
+    padding: .5em 1em;
+}
+
+thead tr th{
+    background-color: #7fb9c2;
+    font-size: 2em;
+    font-weight: bold;
+    color: black;
+}
+
+tr:nth-child(6) td:nth-child(1){
+    font-style: italic;
+}
+
+th{
+    background-color: #628ca6;
     color: white;
-  }
-  
-   tfoot tr td{
-    background: #7fb9c2;
-     color: black;
-   }
+    font-weight:bold;
+    font-size: 1.2em;
+}
+
+td{
+    background-color: #e7ffed;
+}
+
+tfoot td{
+    background-color: #7fb9c2;
+    font-size: .8em;
+}
+
+.accent{
+    background-color:  #e7f0ed;
+    
+}
+
+.accent2{
+    background-color: #628ca6;
+    color: white;
+    font-weight: bold;
+}
