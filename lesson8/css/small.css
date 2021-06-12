@@ -214,17 +214,8 @@ width: 100%
 
   /* Thank you */
 
-#thanks {
-    max-width: 50%;
-    margin-left: 25%;
-    margin-right: auto;
+  #thanks {
+    background-color: rgba(80, 130, 260, 0.8);
+    padding: 1em;
     text-align: center;
-    border: 3px solid black;
-    background-color: #4D98D1;
-    padding-top: 50px;
-    padding-bottom: 70px;
-    margin-top: 80px;
-    margin-bottom: 80px;
-    border-radius: 10px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
