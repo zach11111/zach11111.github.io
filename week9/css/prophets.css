@@ -9,6 +9,7 @@ body {
 
 h1 {
 font-size: 3.2rem;
+text-decoration: underline;
 }
 
 h2 {
@@ -24,6 +25,7 @@ margin-top: -.5rem;
   display: grid;
   grid-template-columns: 1fr;    
   background-color: #921127;
+  border: 1px solid black;
 }
 
 .cards section {
@@ -42,6 +44,7 @@ margin-top: -.5rem;
 footer {
   margin-top: 20px;
   font-size: 1.5rem;
+  text-decoration: underline;
 }
 
 @media only screen and (min-width: 38em) {      
