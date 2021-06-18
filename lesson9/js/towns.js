@@ -26,9 +26,9 @@ fetch(townListURL)
       datadiv.setAttribute("class", "data");
 
       let image = document.createElement("img");
-      image.setAttribute("src", "images/floristshop.jpg");
-      image.setAttribute("alt", "picture of a florist shop by Krisztina Papp");
-      image.setAttribute("title", "Photo by Krisztina Papp on Unsplash");
+      image.setAttribute("src", "images/soda-springs.jpg");
+      image.setAttribute("alt", "picture of a geyser in soda springs");
+      image.setAttribute("title", "Photo from Visit Idaho");
 
       townInfo.append(datadiv, image);
       townInfo.setAttribute("class", "towngrid");
@@ -55,9 +55,9 @@ fetch(townListURL)
       datadiv.setAttribute("class", "data");
 
       image = document.createElement("img");
-      image.setAttribute("src", "images/housebylake.jpg");
-      image.setAttribute("alt", "picture of a house by a lake by Kristina Tamašauskaitė");
-      image.setAttribute("title", "Photo by Kristina Tamašauskaitė on Unsplash");
+      image.setAttribute("src", "images/fish-haven.jpg");
+      image.setAttribute("alt", "Photo of fish haven");
+      image.setAttribute("title", "Photo by kaqurei");
 
       townInfo.append(datadiv, image);
       townInfo.setAttribute("class", "middlegrid");
@@ -84,7 +84,7 @@ fetch(townListURL)
       datadiv.setAttribute("class", "data");
 
       image = document.createElement("img");
-      image.setAttribute("src", "images/cityroad.jpg");
+      image.setAttribute("src", "images/preston.jpg");
       image.setAttribute("alt", "picture of a road going through a small town by Louise Tollisen");
       image.setAttribute("title", "Photo by Louise Tollisen on Unsplash");
 
