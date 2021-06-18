@@ -259,3 +259,11 @@ section {
     align-items: center;
     justify-content: center;
 }
+
+.article{
+	padding: 10px;
+}
+
+.contact{
+	padding: 10px;
+}
