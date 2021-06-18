@@ -219,3 +219,43 @@ width: 100%
     padding: 1em;
     text-align: center;
 }
+
+main div {
+  background-color: white;
+  border: 1px solid black;
+}
+
+
+.towns {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.towns img {
+  border: black 2px solid;
+}
+
+section {
+  background-color: white;
+  padding: 1rem;
+  border: 5px solid black;
+}
+
+.data {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.towngrid h2, .middlegrid h2 {
+  background-color: transparent;
+  color: #4f5d73;
+}
+
+#advertising{
+	background-color: #4169e1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
