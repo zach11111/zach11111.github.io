@@ -38,14 +38,6 @@ function toggleMenu()
     document.getElementsByClassName("navigation")[0].classList.toggle("responsive")
 }
 
-//Friday Pop up
-if (daylist[day] == 'Friday') {  
-    document.getElementById("advertising").style.display = "initials";
-  }
-  else {
-    document.getElementById("advertising").style.display = "none";
-  }
-
 //The following code is for the days since last visit to the site
 var currentTime = d.getTime();
 
