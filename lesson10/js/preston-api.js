@@ -1,68 +1,35 @@
-
 const apiURL="https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=8e352917079519d2ec55d70cab208751=imperial";
 
-/* Summary Weather */
-fetch(apiSummaryURL)
-  .then((response) => response.json())
-  .then((jsObject) => {
-            
-    document.getElementById('currently').textContent = jsObject.weather[0].description;;
-    document.getElementById('high').textContent = Math.round(jsObject.main.temp_max);
-    document.getElementById('humidity').textContent = jsObject.main.humidity;
-    document.getElementById('wind_speed').textContent = Math.round(jsObject.wind.speed);
-});
-
-/* 5 Days Forecast*/
-fetch(apiForecastURL)
-    .then(response => response.json())
+fetch(apiURL)
+    .then((response) => response.json())
     .then((jsObject) => {
-               
-        // Credits:
-        // How to filter data from JSon source:
-        // https://stackoverflow.com/questions/23720988/how-to-filter-json-data-in-javascript-or-jquery
-        const timeFilter = "18:00:00";
-        const forecast = jsObject.list.filter((specificTime) => specificTime.dt_txt.includes(timeFilter));
-  	    
-        let day = 1;
-	      
-        forecast.forEach(forecast => {	  
-          document.getElementById('temp' + (day)).textContent = Math.round(forecast.main.temp) + " °F";
-          document.getElementById('img' + (day)).src = "https://openweathermap.org/img/wn/" + forecast.weather[0].icon + "@2x.png";
-          document.getElementById('img' + (day)).alt = forecast.weather[0].description;	 
+        console.log(jsObject);
+        ftemp = Math.round((jsObject.main.temp - 273.15) * (9/5) + 32)
+        document.getElementById('currently').textContent = ftemp;
+        fhigh = Math.round((jsObject.main.temp_max - 273.15) * (9/5) + 32)
+        document.getElementById('high').textContent = fhigh;
+        document.getElementById('humidity').textContent = jsObject.main.humidity;
+        document.getElementById('wind_speed').textContent = jsObject.wind.speed;
+    });
 
-          // Credits:
-          // How to extract day of the week source:
-          // https://stackoverflow.com/questions/17964170/get-the-weekday-from-a-date-object-or-date-string-using-javascript/17964373
-          // https://www.w3schools.com/js/js_switch.asp 
-          let dayOfWeek = "";
-          switch(new Date(forecast.dt_txt).getDay()){
-            case 0:
-              dayOfWeek = "Sun";
-              break;
-            case 1:
-              dayOfWeek = "Mon";
-              break;
-            case 2:
-              dayOfWeek = "Tue";
-              break;
-            case 3:
-              dayOfWeek = "Wed";
-              break;
-            case 4:
-              dayOfWeek = "Thu";
-              break;
-            case 5:
-              dayOfWeek = "Fri";
-              break;
-            case 6:
-              dayOfWeek = "Sat";
-              break; 
-            default:
-              dayOfWeek = "Error";
-              break;     
-          }
+const days = ["1", "2", "3", "4", "5"];
+const dayNames = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"];
+const apiURL="https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=8e352917079519d2ec55d70cab208751=imperial";
 
-          document.getElementById('day' + (day)).textContent = dayOfWeek;
-	        day++;	  
-	});
-});
+fetch(forecast)
+    .then((response) => response.json())
+    .then((jsObject) => {
+        console.log(jsObject);
+        const nextfive = jsObject.list.filter(dt => dt.dt_txt.includes('18:00:00'));
+        let img = 'https://openweathermap.org/img/w/';
+        i = 0
+        nextfive.forEach(day => {
+            
+            let forcast = new Date(day.dt_txt);
+            dayOfWeek = days[i];
+            document.getElementById(dayOfWeek).textContent = dayNames[forcast.getDay()];
+            ftemp = Math.round((day.main.temp - 273.15) * (9/5) + 32);
+            document.getElementById("temp" + days[i]).textContent = ftemp;
+            i++
+        })
+    })
