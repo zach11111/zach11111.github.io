@@ -40,7 +40,7 @@
           flex: 1 1 auto;
           display: block;
       }
-      .five-day-forcast, .forcast, .article-image {
+      .five-day-forcast, #forcast, .article-image {
     display: initial;
   }
   
@@ -51,7 +51,7 @@
     border-style: solid; 
   }
   
-  .forcast-day {
+  #forcast-day {
       margin-left: 5px;
       flex: 1 1 auto;
       text-align: center;
@@ -60,11 +60,11 @@
       margin: 10px;
       }
   
-      .forcast-day h4 {
+      #forcast-day h4 {
           margin-top: 20px;
           
       }
-      .forcast {
+      #forcast {
   
           display: flex;
           text-align: center;
