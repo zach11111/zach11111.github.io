@@ -41,16 +41,10 @@ function toggleMenu()
     document.getElementsByClassName("navigation")[0].classList.toggle("responsive")
 }
 
-// //Friday Pop up
-// if (daylist[day] == 'Friday') {  
-//     document.getElementById("advertising").style.display = "initials";
-//   }
-//   else {
-//     document.getElementById("advertising").style.display = "none";
-//   }
-
-if (daylist[day]=="Friday")
-{
-    document.getElementById("advertising").style.display= "block" ;
-
-}
+//Friday Pop up
+if (daylist[day] == 'Friday') {  
+    document.getElementById("advertising").style.display = "initials";
+  }
+  else {
+    document.getElementById("advertising").style.display = "none";
+  }
