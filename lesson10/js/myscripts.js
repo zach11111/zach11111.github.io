@@ -49,7 +49,8 @@ function toggleMenu()
 //     document.getElementById("advertising").style.display = "none";
 //   }
 
-if (daylist[day]==5){
+if (daylist[day]=="Friday")
+{
     document.getElementById("advertising").style.display= "block" ;
 
 }
