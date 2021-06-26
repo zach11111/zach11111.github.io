@@ -53,17 +53,18 @@
         <source media="(max-width: 800px)" srcset="images/hero-m.jpg" />
         <img src="images/lesson6-hero-img.jpg" alt="Hero Image" />
       </picture>
-      <section class="weather-summary">
-        <h3>Weather Summary</h3>
-        <p>Currently: <span id="currently"></span> <br>
-        High: <span id="high"></span>&deg;F <br>
-        Humidity: <span id="humidity"></span> % <br>
-        Wind Speed: <span id="wind_speed"></span> mph <br>
-        Wind Chill: <span id="wind_chill"></span>&deg;F</p>
+
+      <section class="weatherSummary">
+          <h3>Weather Summary</h3>
+              <p>Currently: <span id="currently"></span>&#8457</p>
+              <p>High: <span id="high"></span>&#8457;</p>
+              <p>Wind Chill: <span id="windChill"></span>&#8457;</p>
+              <p>Humidity: <span id="humidity"></span>%</p>
+              <p>Wind Speed: <span id="WindSpeed"></span> mph</p>
       </section>
     </section>
 
-    <section class="five-day-forcast">
+    {% comment %} <section class="five-day-forcast">
       <h3>Five Day Forcast</h3>
     </section>
         
@@ -88,7 +89,24 @@
         <h4> Fri</h4>
         <p> High: 78F<br>Low: 62F</p>
       </div>
-    </section>
+    </section> {% endcomment %}
+    <div id="forecast">
+    <table>
+        <tr>
+            <th><span id="1"></span></th>
+            <th><span id="2"></span></th>
+            <th><span id="3"></span></th>
+            <th><span id="4"></span></th>
+            <th><span id="5"></span></th>
+        </tr>
+        <tr>
+            <td><img src="../lesson8/Sunnyicon.png" alt="sunshine icon"><span id="temp1"></span>&#8457;</td>
+            <td><img src="../lesson8/Sunnyicon.png" alt="sunshine icon"><span id="temp2"></span>&#8457;</td>                 <td><img src="../lesson8/Sunnyicon.png" alt="sunshine icon"><span id="temp3"></span>&#8457;</td>
+            <td><img src="../lesson8/Sunnyicon.png" alt="sunshine icon"><span id="temp4"></span>&#8457;</td>
+            <td><img src="../lesson8/Sunnyicon.png" alt="sunshine icon"><span id="temp5"></span>&#8457;</td>
+        </tr>
+    </table>
+    </div>
 
     <div class="article">
     <h3>The magic of a Hot Air Balloon (Article example)</h3>
