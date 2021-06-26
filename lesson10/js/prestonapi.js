@@ -9,17 +9,17 @@ fetch(apiURL)
     document.getElementById('humidity').textContent = jsObject.main.humidity;
     document.getElementById('wind_speed').textContent = jsObject.wind.speed;
 
-const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';  // note the concatenation
-const desc = jsObject.weather[0].description;  // note how we reference the weather array
-document.getElementById('imagesrc').textContent = imagesrc;  // informational specification only
-document.getElementById('icon').setAttribute('src', imagesrc);  // focus on the setAttribute() method
-document.getElementById('icon').setAttribute('alt', desc);
+// const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';  // note the concatenation
+// const desc = jsObject.weather[0].description;  // note how we reference the weather array
+// document.getElementById('imagesrc').textContent = imagesrc;  // informational specification only
+// document.getElementById('icon').setAttribute('src', imagesrc);  // focus on the setAttribute() method
+// document.getElementById('icon').setAttribute('alt', desc);
 
     /* Five Day Forecast */
 
 const fivedayforecast = jsObject.list.filter((forecast) =>
-  forecast.dt_txt.includes("18:00:00")
-);
+  forecast.dt_txt.includes("18:00:00"));
+  
 for (let i = 0; i < fivedayforecast.length; i++) {
   var forecast = fivedayforecast[i];
   var tempElement = "temp" + i;
