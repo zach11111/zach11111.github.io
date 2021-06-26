@@ -15,27 +15,6 @@ document.getElementById('imagesrc').textContent = imagesrc;  // informational sp
 document.getElementById('icon').setAttribute('src', imagesrc);  // focus on the setAttribute() method
 document.getElementById('icon').setAttribute('alt', desc);
 });
-
-const apiURL="https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=8e352917079519d2ec55d70cab208751&units=imperial";
-
-fetch(weatherURL)
-  .then((response) => response.json())
-
-  .then((jsObject) => {
-    // console.log(jsObject);
-    // console.log(jsObject.list[0].main);
-
-    document.getElementById("temperature").textContent =
-      jsObject.list[0].main.temp;
-    document.getElementById("conditions").textContent =
-      jsObject.list[0].weather[0].description;
-    document.getElementById("high").textContent =
-      jsObject.list[0].main.temp_max;
-    document.getElementById("humidity").textContent =
-      jsObject.list[0].main.humidity;
-    document.getElementById("windspeed").textContent =
-      jsObject.list[0].wind.speed;
-
     /* Five Day Forecast */
 
     const fivedayforecast = jsObject.list.filter((forecast) =>
