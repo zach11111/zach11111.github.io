@@ -56,17 +56,14 @@
     border-style: solid;
     margin: 15px;
     max-width: 700px;
+    font-weight: 800;
+    display: flex;
+    text-align: center;
+    margin-bottom: 30px
     }
 
     .forecast h4 {
-        margin-top: 20px;
-        
-    }
-    .forecast {
-
-        display: flex;
-        text-align: center;
-        margin-bottom: 30px;
+        margin-top: 20px;    
     }
   
     .map {
