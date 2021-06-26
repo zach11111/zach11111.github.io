@@ -54,11 +54,11 @@ if(localStorage.getItem('time') !=="") {
   var past = localStorage.getItem('time');
   localStorage.setItem('time', String(newTime));
   var difference = Math.floor((newTime - past)/(86400000));
-  document.getElementById('days-since-visit').innerHTML = "Days since your last visit: " + difference;
+  document.getElementById('sinceVisit').innerHTML = "Days since your last visit: " + difference;
 }
 else {
   localStorage.setItem('time', String(newTime));
-  document.getElementById("days-since-visit").innerHTML = "Days since your last Visit: 0 ";
+  document.getElementById("sinceVisit").innerHTML = "Days since your last Visit: 0 ";
 }
 
 //Lazy load
