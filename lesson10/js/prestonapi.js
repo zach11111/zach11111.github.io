@@ -16,5 +16,3 @@ document.getElementById('icon').setAttribute('src', imagesrc);  // focus on the 
 document.getElementById('icon').setAttribute('alt', desc);
 });
 
-
-
