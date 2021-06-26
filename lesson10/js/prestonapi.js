@@ -15,26 +15,52 @@ fetch(apiURL)
 // document.getElementById('icon').setAttribute('src', imagesrc);  // focus on the setAttribute() method
 // document.getElementById('icon').setAttribute('alt', desc);
 
+});
+
 /* 5 Days Forecast*/
+fetch(apiForecastURL)
+    .then(response => response.json())
+    .then((jsObject) => {
 
-const fivedayforecast = jsObject.list.filter((forecast) =>
-      forecast.dt_txt.includes("18:00:00")
-    );
+        const timeFilter = "18:00:00";
+        const forecast = jsObject.list.filter((specificTime) => specificTime.dt_txt.includes(timeFilter));
+  	    
+        let day = 1;
+	      
+        forecast.forEach(forecast => {	  
+          document.getElementById('temp' + (day)).textContent = Math.round(forecast.main.temp) + " °F";
+          document.getElementById('img' + (day)).src = "https://openweathermap.org/img/wn/" + forecast.weather[0].icon + "@2x.png";
+          document.getElementById('img' + (day)).alt = forecast.weather[0].description;	 
+          
+          let dayOfWeek = "";
+          switch(new Date(forecast.dt_txt).getDay()){
+            case 0:
+              dayOfWeek = "Sun";
+              break;
+            case 1:
+              dayOfWeek = "Mon";
+              break;
+            case 2:
+              dayOfWeek = "Tue";
+              break;
+            case 3:
+              dayOfWeek = "Wed";
+              break;
+            case 4:
+              dayOfWeek = "Thu";
+              break;
+            case 5:
+              dayOfWeek = "Fri";
+              break;
+            case 6:
+              dayOfWeek = "Sat";
+              break; 
+            default:
+              dayOfWeek = "Error";
+              break;     
+          }
 
-    for (let i = 0; i < fivedayforecast.length; i++) {
-      var forecast = fivedayforecast[i];
-      var tempElement = "temp" + i;
-      var iconElement = "icon" + i;
-      var dayElement = "day" + i;
-      var forecastDate = new Date(forecast.dt_txt);
-      var forecastDay = days[forecastDate.getDay()];
-
-      const desc = forecast.weather[0].description;
-      const iconsrc = 
-      "https://openweathermap.org/img/w/" + forecast.weather[0].icon + ".png";
-
-      document.getElementById(dayElement).textContent = forecastDay;
-      document.getElementById(iconElement).setAttribute("src", iconsrc);
-      document.getElementById(iconElement).setAttribute("alt", desc);
-      document.getElementById(tempElement).textContent = forecast.main.temp;
-    }});
+          document.getElementById('day' + (day)).textContent = dayOfWeek;
+	        day++;	  
+	});
+});
