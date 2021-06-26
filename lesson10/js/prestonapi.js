@@ -20,7 +20,7 @@ fetch(apiURL)
 /* 5 Days Forecast*/
 const days = ["1", "2", "3", "4", "5"];
 const dayNames = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"];
-const forecast = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=8e352917079519d2ec55d70cab208751&units=imperial';
+const forecast = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=8e352917079519d2ec55d70cab208751';
 fetch(forecast)
     .then((response) => response.json())
     .then((jsObject) => {
