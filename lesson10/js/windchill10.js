@@ -1,12 +1,11 @@
-let t = document.getElementById("currently").innerHTML;
-let s = document.getElementById("wind_speed").innerHTML;
-var result;
+const high = document.getElementById('high').innerHTML;
+const windspeed = document.getElementById('wind_speed').innerHTML;
 
-if(t <= 45 && s >= 12){
-    result = Math.round(35.74 + (0.6215 * t) - (35.75 * (s ** 0.16)) + (0.4275 * t * (s ** 0.16)));
-    
-document.getElementById("windchill").innerHTML = result;
-}
-else{
-    document.getElementById("windchill").innerHTML = "N/A";
-}
+let windchill = 35.74 + (0.6215 * high) - (35.75 * Math.pow(windspeed, 0.16)) + ((0.4275 * high) * Math.pow(windspeed, 0.16));
+  if (high <= 50 && windspeed > 3.0) {
+     windchill = Math.round(windchill) + " °F";
+  } else {
+     windchill = "N/A";
+  }
+
+  document.getElementById('windchill').innerHTML = windchill;
