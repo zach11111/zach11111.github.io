@@ -48,7 +48,7 @@ fetch(weatherURL)
     // console.log(jsObject);
     // console.log(jsObject.list[0].main);
 
-    document.getElementById("temperature").textContent =
+    document.getElementById("current_temp").textContent =
       jsObject.list[0].main.temp;
     document.getElementById("conditions").textContent =
       jsObject.list[0].weather[0].description;
@@ -56,7 +56,7 @@ fetch(weatherURL)
       jsObject.list[0].main.temp_max;
     document.getElementById("humidity").textContent =
       jsObject.list[0].main.humidity;
-    document.getElementById("windspeed").textContent =
+    document.getElementById("wind_speed").textContent =
       jsObject.list[0].wind.speed;
 
     /* Five Day Forecast */
