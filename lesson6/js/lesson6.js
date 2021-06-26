@@ -47,42 +47,4 @@ if (daylist[day] == 'Friday') {
   }
 
 //last visited
-
-let newTime=new Date().getTime();
-
-if(localStorage.getItem('time') !=="") {
-  var past = localStorage.getItem('time');
-  localStorage.setItem('time', String(newTime));
-  var difference = Math.floor((newTime - past)/(86400000));
-  document.getElementById('sinceVisit').innerHTML = "Days since your last visit: " + difference;
-}
-else {
-  localStorage.setItem('time', String(newTime));
-  document.getElementById("sinceVisit").innerHTML = "Days since your last Visit: 0 ";
-}
-
-//Lazy load
-let images = document.querySelectorAll("img[data-src]");
-function preloadImage (img){
-    let src=img.getAttribute("data-src");
-    if (!src){
-        return
-    }
-    img.src=src;
-    img.removeAttribute("data-src");
-}
-    let imgOptions= {
-        threshold:1,
-        rootMargin:"0px 0px 60px 0px"};
-
-let imgObserver= new IntersectionObserver((entries,imgObserver) =>{
-    entries.forEach(entry =>{
-        if(!entry.isIntersecting){
-            return;
-        }
-        else{
-            preloadImage(entry.target);
-            imgObserver.unobserve(entry.target);
-        }
-    })
-},imgOptions);
+document.querySelector("#last_update").textContent =document.lastModified;
