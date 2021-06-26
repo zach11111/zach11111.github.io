@@ -51,31 +51,31 @@
     border-style: solid; 
   }
   
-  .forecast-day {
-      margin-left: 5px;
-      flex: 1 1 auto;
-      text-align: center;
-      background-color: rgba(80, 130, 260, 0.8);
-      border-style: solid;
-      margin: 10px;
-      }
-  
-      .forecast-day h4 {
-          margin-top: 20px;
-          
-      }
-      .forecast {
-  
-          display: flex;
-          text-align: center;
-          margin-bottom: 30px;
-      }
-    
-      .map {
+  .forecast {
+    margin-left: 5px;
+    flex: 1 1 auto;
+    text-align: center;
+    background-color: rgba(80, 130, 260, 0.8);
+    border-style: solid;
+    margin: 15px;
+    }
+
+    .forecast h4 {
+        margin-top: 20px;
+        
+    }
+    .forecast {
+
         display: flex;
-        width: 70%;
-        margin-left: 8rem;
-        border-style: solid;
-      }
+        text-align: center;
+        margin-bottom: 30px;
+    }
+  
+    .map {
+      display: flex;
+      width: 70%;
+      margin-left: 8rem;
+      border-style: solid;
+    }
   
   } 
