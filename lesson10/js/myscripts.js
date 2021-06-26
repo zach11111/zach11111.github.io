@@ -42,7 +42,7 @@ function toggleMenu()
 }
 
 //Friday Pop up
-if (daylist[day] == 'Friday') {  
+if (daylist[day] == 'Saturday') {  
     document.getElementById("advertising").style.display = "initials";
   }
   else {
