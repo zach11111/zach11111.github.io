@@ -39,4 +39,4 @@ document.getElementById('icon').setAttribute('alt', desc);
       document.getElementById(tempElement).textContent = forecast.main.temp;
 
           
-    }});
+    };
