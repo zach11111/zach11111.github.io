@@ -18,23 +18,49 @@ fetch(apiURL)
 });
 
 /* 5 Days Forecast*/
-fetch(apiForecast)   
-.then((response) => response.json())
-.then((jsObject) => { 
-    console.log(jsObject);
-    const dayOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
-    const weatherList = jsObject.list.filter(dt => dt.dt_txt.includes('18:00:00'));
+fetch(apiForecastURL)
+    .then(response => response.json())
+    .then((jsObject) => {
 
-     
-    for (let day = 0; day <= 4; day++) {
-        let d = new Date(weatherList[day].dt_txt);
-        document.getElementById(`day${day+1}`).textContent = dayOfWeek[d.getDay()];
-        document.getElementById(`forecast${day+1}`).textContent = Math.round(weatherList[day].main.temp);
+        const timeFilter = "18:00:00";
+        const forecast = jsObject.list.filter((specificTime) => specificTime.dt_txt.includes(timeFilter));
+  	    
+        let day = 1;
+	      
+        forecast.forEach(forecast => {	  
+          document.getElementById('temp' + (day)).textContent = Math.round(forecast.main.temp) + " °F";
+          document.getElementById('img' + (day)).src = "https://openweathermap.org/img/wn/" + forecast.weather[0].icon + "@2x.png";
+          document.getElementById('img' + (day)).alt = forecast.weather[0].description;	 
+          
+          let dayOfWeek = "";
+          switch(new Date(forecast.dt_txt).getDay()){
+            case 0:
+              dayOfWeek = "Sun";
+              break;
+            case 1:
+              dayOfWeek = "Mon";
+              break;
+            case 2:
+              dayOfWeek = "Tue";
+              break;
+            case 3:
+              dayOfWeek = "Wed";
+              break;
+            case 4:
+              dayOfWeek = "Thu";
+              break;
+            case 5:
+              dayOfWeek = "Fri";
+              break;
+            case 6:
+              dayOfWeek = "Sat";
+              break; 
+            default:
+              dayOfWeek = "Error";
+              break;     
+          }
 
-        const imgalt = weatherList[day].weather[0].description;
-        const imagesrc = 'https://openweathermap.org/img/wn/' + weatherList[day].weather[0].icon + "@2x.png";
-        document.getElementById(`icon${day+1}`).setAttribute("src", imagesrc);
-        document.getElementById(`icon${day+1}`).setAttribute("alt", imgalt);
-    }
+          document.getElementById('day' + (day)).textContent = dayOfWeek;
+	        day++;	  
+	});
 });
-
