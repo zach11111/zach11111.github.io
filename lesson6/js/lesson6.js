@@ -46,5 +46,3 @@ if (daylist[day] == 'Friday') {
     document.getElementById("advertising").style.display = "none";
   }
 
-//last visited
-document.querySelector("#last_update").textContent =document.lastModified;
