@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+    <title>AccuWeather</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Zach Rochette">
+    <meta name="description" content="Weather website for the local area.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet"  href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+  </head>
+
+<body>
+
+  <div id="advertising">
+    <p>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p>
+  </div>
+
+  <header>
+    <img class="logo" src="images/logo.png" alt="logo for AccuWeather" width="500">
+    <div id="header">
+      <h1 class="title">AccuWeather</h1>
+      <div class="motto">100% accurte 100% of the time</div>
+    </div>
+  </header>
+
+  <nav>  
+    <ul class="navigation">
+      <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="preston.html">Preston</a></li>
+      <li><a href="soda-springs.html">Soda Springs</a></li>
+      <li><a href="fish-haven.html">Fish Haven</a></li>
+      <li><a href="stormcenter.html">Storm Center</a></li>
+      <li><a class="current" href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Weather Gallery</h2>
+    <div class="gallery">
+      <div><picture><img src="images/placeholder.jpg" data-src="images/sunny.jpg" alt="Sun shining through some trees"></picture>
+        <p class="descriptions">Sun shining through some trees</p>
+      </div>
+      <div><picture><img src="images/placeholder.jpg" data-src="images/partly-cloudy.jpg" alt="Some clouds over a lake"></picture>
+        <p class="descriptions">Some clouds over a lake</p>
+      </div>
+      <div><picture><img src="images/placeholder.jpg" data-src="images/cloudy.jpg" alt="Clouds over a highway"></picture>
+        <p class="descriptions">Clouds over a highway</p>
+      </div>
+      <div><picture><img src="images/placeholder.jpg" data-src="images/foggy-mountain.jpg" alt="Fog on a mountainside"></picture>
+        <p class="descriptions">Fog on a mountainside</p>
+      </div>
+      <div><picture><img src="images/placeholder.jpg" data-src="images/rainy.jpg" alt="Rain in a forest"></picture>
+        <p class="descriptions">Rain in a forest</p>
+      </div>
+      <div><picture><img src="images/placeholder.jpg" data-src="images/lightening.jpg" alt="Lightening over a pathway"></picture>
+        <p class="descriptions">Lightening over a pathway</p>
+      </div>
+      <div><picture><img src="images/placeholder.jpg" data-src="images/autumn.jpg" alt="The beginning of Autumn"></picture>
+        <p class="descriptions">The beginning of Autumn</p>
+      </div>
+      <div><picture><img src="images/placeholder.jpg" data-src="images/snowy.jpg" alt="Snow covering a little church"></picture>
+        <p class="descriptions">Snow covering a little church</p>
+      </div>
+      <div><picture><img src="images/placeholder.jpg" data-src="images/nice-day.jpg" alt="A nice day"></picture>
+        <p class="descriptions">A nice day</p>
+      </div>
+   </div>
+  </main>
+
+<footer>
+    AccuWeather &copy;<span id="copyright"></span> | <span id="dates"></span> | Zacharie Rochette | 
+    <p><span id="days-since-visit"></span></p>
+</footer>
+
+<script src="js/lazyload.js"></script>
+<script src="js/lesson7.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+    WebFont.load({
+      google: {
+      families: ['Racing Sans One']
+    }
+  });
+</script>
+
+</body>
+</html>
