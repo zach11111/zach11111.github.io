@@ -1,4 +1,5 @@
 const apiURL="https://api.openweathermap.org/data/2.5/weather?id=5585010&appid=8e352917079519d2ec55d70cab208751&units=imperial";
+const townName = "Fish Haven";
 
 fetch(apiURL)
   .then((response) => response.json())
@@ -38,27 +39,27 @@ fetch(forecast)
             i++
         })
     })
-
-    /* Upcoming Events */
+    
+/* Upcoming Events */
 fetch(townURL)
-.then(function (response) {
-  return response.json();
-})
-.then(function (jsObject) {    
-  
-  const town = jsObject.towns.filter((specificTown) => specificTown.name.includes("Fish Haven"));
-  let events = town[0].events;
-  
-  let upcomingEvents = document.createElement("section");
-  let info = document.createElement("div");
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsObject) {    
+    
+    const town = jsObject.towns.filter((specificTown) => specificTown.name.includes(townName));
+    let events = town[0].events;
+    
+    let upcomingEvents = document.createElement("section");
+    let info = document.createElement("div");
 
-  events.forEach(event => {
-    let upcomingEvent = document.createElement("p");
-    upcomingEvent.textContent = event;
-    info.appendChild(upcomingEvent);
-    upcomingEvents.appendChild(info);
+    events.forEach(event => {
+      let upcomingEvent = document.createElement("p");
+      upcomingEvent.textContent = event;
+      info.appendChild(upcomingEvent);
+      upcomingEvents.appendChild(info);
+    });
+
+    document.querySelector("div.upcomingEvents").appendChild(upcomingEvents);
+
   });
-
-  document.querySelector("div.upcomingEvents").appendChild(upcomingEvents);
-
-});
