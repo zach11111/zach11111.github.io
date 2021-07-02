@@ -15,29 +15,31 @@ fetch(apiURL)
 // document.getElementById('icon').setAttribute('src', imagesrc);  // focus on the setAttribute() method
 // document.getElementById('icon').setAttribute('alt', desc);
 
-});
+
 
 /* 5 Days Forecast*/
-const days = ["1", "2", "3", "4", "5"];
-const dayNames = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"];
-const forecast = 'https://api.openweathermap.org/data/2.5/forecast?id=5607916&appid=8e352917079519d2ec55d70cab208751';
-fetch(forecast)
-    .then((response) => response.json())
-    .then((jsObject) => {
-        console.log(jsObject);
-        const nextfive = jsObject.list.filter(dt => dt.dt_txt.includes('18:00:00'));
-        let img = 'https://openweathermap.org/img/w/';
-        i = 0
-        nextfive.forEach(day => {
-            
-            let forcast = new Date(day.dt_txt);
-            dayOfWeek = days[i];
-            document.getElementById(dayOfWeek).textContent = dayNames[forcast.getDay()];
-            ftemp = Math.round((day.main.temp - 273.15) * (9/5) + 32);
-            document.getElementById("temp" + days[i]).textContent = ftemp;
-            i++
-        })
-    })
+const fivedayforecast = jsObject.list.filter((forecast) =>
+forecast.dt_txt.includes("18:00:00")
+);
+
+for (let i = 0; i < fivedayforecast.length; i++) {
+var forecast = fivedayforecast[i];
+var tempElement = "temp" + i;
+var iconElement = "icon" + i;
+var dayElement = "day" + i;
+var forecastDate = new Date(forecast.dt_txt);
+var forecastDay = days[forecastDate.getDay()];
+
+const desc = forecast.weather[0].description;
+const iconsrc = 
+"https://openweathermap.org/img/w/" + forecast.weather[0].icon + ".png";
+
+document.getElementById(dayElement).textContent = forecastDay;
+document.getElementById(iconElement).setAttribute("src", iconsrc);
+document.getElementById(iconElement).setAttribute("alt", desc);
+document.getElementById(tempElement).textContent = Math.round(forecast.main.temp);
+    
+}});
 
          /* Soda Springs Town Events */
 
