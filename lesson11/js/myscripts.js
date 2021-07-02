@@ -48,3 +48,8 @@ if (daylist[day] == 'Friday') {
   else {
     document.getElementById("advertising").style.display = "none";
   }
+
+  //severity rating
+function changeRating(rating) {
+  document.getElementById("ratingvalue").innerHTML = rating;
+}
