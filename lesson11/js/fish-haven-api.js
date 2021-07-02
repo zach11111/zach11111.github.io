@@ -1,4 +1,5 @@
-const apiURL="https://api.openweathermap.org/data/2.5/weather?id=5585010&appid=8e352917079519d2ec55d70cab208751&units=imperial";
+const apiURL = 
+'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=4dc63840c593a4c37e15eb58b499f77f';
 
 fetch(apiURL)
   .then((response) => response.json())
@@ -19,8 +20,8 @@ const apiURLforecast =
         const forecast = jsObject['list'];
 
         for (let i = 3; i < forecast.length; i += 8) {
-        document.getElementById(`icon${i}`).setAttribute('src', "https://openweathermap.org/img/w/" + forecast[i].weather[0].icon + ".png");
-        document.getElementById(`temp${i}`).innerText = forecast[i].main.temp;
+        document.getElementById(`imgForecast${i}`).setAttribute('src', "https://openweathermap.org/img/w/" + forecast[i].weather[0].icon + ".png");
+        document.getElementById(`tempForecast${i}`).innerText = forecast[i].main.temp;
         }
 
 });
