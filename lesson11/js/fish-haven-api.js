@@ -4,10 +4,10 @@ fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
     console.log(jsObject);
-    document.getElementById('current_temp').textContent = jsObject.main.temp;
-    document.getElementById('high').textContent = Math.round(jsObject.main.temp_max);
-    document.getElementById('humidity').textContent = jsObject.main.humidity;
-    document.getElementById('wind_speed').textContent = jsObject.wind.speed;
+    document.getElementById('current_temp').innerText = jsObject.weather[0].description;
+    document.getElementById('high').innerText = jsObject.main.temp_max;
+    document.getElementById('humidity').innerText = jsObject.main.humidity;
+    document.getElementById('wind_speed').innerText = jsObject.wind.speed;
 
 // const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';  // note the concatenation
 // const desc = jsObject.weather[0].description;  // note how we reference the weather array
