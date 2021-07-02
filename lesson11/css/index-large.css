@@ -1,0 +1,44 @@
+@media only screen and (min-width: 60em) {
+    
+    h1 {
+      font-size: 3em;
+      margin: 0 0 10px 0;
+    }
+    header, nav, main, footer {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+  
+    @media only screen and (min-width: 60em) {
+    
+      h1 {
+        font-size: 3em;
+        margin: 0 0 10px 0;
+      }
+      header, nav, main, footer {
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+    .weather-summary {
+      position: absolute;
+      top: 4rem;
+      left: 40rem;
+    }
+  
+    .gallery {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  
+    .gallery div:hover {
+      box-shadow: 0 0 1.5rem lightgrey;
+    }
+  
+    .towns {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  
+    .towngrid, .middlegrid {
+      display: block;
+    }
+    }
+  }
