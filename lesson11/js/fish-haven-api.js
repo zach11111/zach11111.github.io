@@ -38,3 +38,27 @@ fetch(forecast)
             i++
         })
     })
+
+    /* Upcoming Events */
+fetch(townURL)
+.then(function (response) {
+  return response.json();
+})
+.then(function (jsObject) {    
+  
+  const town = jsObject.towns.filter((specificTown) => specificTown.name.includes("Fish Haven"));
+  let events = town[0].events;
+  
+  let upcomingEvents = document.createElement("section");
+  let info = document.createElement("div");
+
+  events.forEach(event => {
+    let upcomingEvent = document.createElement("p");
+    upcomingEvent.textContent = event;
+    info.appendChild(upcomingEvent);
+    upcomingEvents.appendChild(info);
+  });
+
+  document.querySelector("div.upcomingEvents").appendChild(upcomingEvents);
+
+});
