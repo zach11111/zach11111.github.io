@@ -33,11 +33,6 @@ var forecastDay = days[forecastDate.getDay()];
 const desc = forecast.weather[0].description;
 const iconsrc = 
 "https://openweathermap.org/img/w/" + forecast.weather[0].icon + ".png";
-
-document.getElementById(dayElement).textContent = forecastDay;
-document.getElementById(iconElement).setAttribute("src", iconsrc);
-document.getElementById(iconElement).setAttribute("alt", desc);
-document.getElementById(tempElement).textContent = Math.round(forecast.main.temp);
     
 }});
 
