@@ -4,12 +4,10 @@ fetch(apiURL)
     .then((jsObject) => {
         console.log(jsObject);
         document.getElementById('current-temp').textContent = jsObject.current.temp;
-        document.getElementById('current-temp').textContent = jsObject.current.humidity;
-        document.getElementById('current-temp').textContent = jsObject.current.weather.description;
 
-        const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.current.weather.icon + '.png';  // note the concatenation
-        const desc = jsObject.weather[0].description;  // note how we reference the weather array
-        document.getElementById('imagesrc').textContent = imagesrc;  // informational specification only
-        document.getElementById('icon').setAttribute('src', imagesrc);  // focus on the setAttribute() method
-        document.getElementById('icon').setAttribute('alt', desc);
+        // const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';  // note the concatenation
+        // const desc = jsObject.weather[0].description;  // note how we reference the weather array
+        // document.getElementById('imagesrc').textContent = imagesrc;  // informational specification only
+        // document.getElementById('icon').setAttribute('src', imagesrc);  // focus on the setAttribute() method
+        // document.getElementById('icon').setAttribute('alt', desc);
 });
