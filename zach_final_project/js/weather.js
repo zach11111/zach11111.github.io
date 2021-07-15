@@ -10,7 +10,7 @@ fetch(apiURL)
         // document.getElementById('alert').textContent = jsObject.alerts[0].event;
         
 
-        const imagesrc = 'http://openweathermap.org/img/wn/' + jsObject.current.weather[0].icon + '.png';  // note the concatenation
+        const imagesrc = 'http://openweathermap.org/img/wn/' + jsObject.current.weather.icon[0] + '.png';  // note the concatenation
         const desc = jsObject.weather[0].description;  // note how we reference the weather array
         document.getElementById('imagesrc').textContent = imagesrc;  // informational specification only
         document.getElementById('icon').setAttribute('src', imagesrc);  // focus on the setAttribute() method
