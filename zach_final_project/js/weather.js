@@ -7,6 +7,7 @@ fetch(apiURL)
         document.getElementById('humidity').textContent = jsObject.current.humidity;
         document.getElementById('condition').textContent = jsObject.current.weather.main;
         document.getElementById('wind_speed').textContent = jsObject.current.wind_speed;
+        document.getElementById('alert').textContent = jsObject.alerts.event;
         
 
         // const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';  // note the concatenation
