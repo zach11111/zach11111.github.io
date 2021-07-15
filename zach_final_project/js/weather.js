@@ -11,7 +11,7 @@ fetch(apiURL)
         
 
         const imagesrc = 'http://openweathermap.org/img/wn/' + jsObject.current.weather[0].icon + '.png';  
-        const desc = jsObject.weather[0].description;  
+        const desc = jsObject.current.weather[0].description;  
         document.getElementById('imagesrc').textContent = imagesrc;  
         document.getElementById('icon').setAttribute('src', imagesrc);  
         document.getElementById('icon').setAttribute('alt', desc);
