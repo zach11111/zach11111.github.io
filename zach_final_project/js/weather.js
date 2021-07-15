@@ -7,12 +7,12 @@ fetch(apiURL)
         document.getElementById('humidity').textContent = jsObject.current.humidity;
         document.getElementById('condition').textContent = jsObject.current.weather[0].main;
         document.getElementById('wind_speed').textContent = jsObject.current.wind_speed;
-        document.getElementById('alert').textContent = jsObject.alerts[0].event;
+        // document.getElementById('alert').textContent = jsObject.alerts[0].event;
         
 
-        // const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';  // note the concatenation
-        // const desc = jsObject.weather[0].description;  // note how we reference the weather array
-        // document.getElementById('imagesrc').textContent = imagesrc;  // informational specification only
-        // document.getElementById('icon').setAttribute('src', imagesrc);  // focus on the setAttribute() method
-        // document.getElementById('icon').setAttribute('alt', desc);
+        const imagesrc = 'http://openweathermap.org/img/wn/10d@2x.png' + jsObject.weather[0].icon + '.png';  // note the concatenation
+        const desc = jsObject.weather[0].description;  // note how we reference the weather array
+        document.getElementById('imagesrc').textContent = imagesrc;  // informational specification only
+        document.getElementById('icon').setAttribute('src', imagesrc);  // focus on the setAttribute() method
+        document.getElementById('icon').setAttribute('alt', desc);
 });
