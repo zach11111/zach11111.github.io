@@ -10,7 +10,7 @@ fetch(apiURL)
         // document.getElementById('alert').textContent = jsObject.alerts[0].event;
         
 
-        const imagesrc = 'http://openweathermap.org/img/w/' + jsObject.current.weather[0].icon + '.png';  
+        const imagesrc = 'http://openweathermap.org/img/wn/' + jsObject.current.weather[0].icon + '.png';  
         const desc = jsObject.weather[0].description;  
         document.getElementById('imagesrc').textContent = imagesrc;  
         document.getElementById('icon').setAttribute('src', imagesrc);  
