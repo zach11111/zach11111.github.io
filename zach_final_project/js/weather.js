@@ -5,7 +5,9 @@ fetch(apiURL)
         console.log(jsObject);
         document.getElementById('current-temp').textContent = jsObject.current.temp;
         document.getElementById('humidity').textContent = jsObject.current.humidity;
-        document.getElementById('condition').textContent = jsObject.hourly.weather;
+        document.getElementById('condition').textContent = jsObject.current.weather;
+        document.getElementById('wind_speed').textContent = jsObject.current.wind_speed;
+        
 
         // const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';  // note the concatenation
         // const desc = jsObject.weather[0].description;  // note how we reference the weather array
