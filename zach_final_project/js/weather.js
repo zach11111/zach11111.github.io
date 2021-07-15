@@ -5,10 +5,8 @@ fetch(apiURL)
         console.log(jsObject);
         document.getElementById('current-temp').textContent = jsObject.current.temp;
         document.getElementById('humidity').textContent = jsObject.current.humidity;
+        document.getElementById('condition').textContent = jsObject.current.weather.main;
         document.getElementById('wind_speed').textContent = jsObject.current.wind_speed;
-
-        const desc = jsObject.current.weather.description;
-        document.getElementById('condition').setAttribute('alt', desc);
         
 
         // const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';  // note the concatenation
