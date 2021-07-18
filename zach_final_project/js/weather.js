@@ -18,24 +18,23 @@ fetch(apiURL)
 
 
         /*    Three Day Forecast   */
-        const fivedayforecast = jsObject.list.filter((forecast) =>
-            forecast.dt_txt.includes("18:00:00")
-      );
-  
-      for (let i = 0; i < fivedayforecast.length; i++) {
-        var forecast = fivedayforecast[i];
-        var tempElement = "temp" + i;
-        var iconElement = "icon" + i;
-        var dayElement = "day" + i;
-        var forecastDate = new Date(forecast.dt_txt);
-        var forecastDay = days[forecastDate.getDay()];
-  
-        const desc = jsObject.current.weather[0].description; 
-        const iconsrc = 'http://openweathermap.org/img/wn/' + jsObject.current.weather[0].icon + '@2x.png'; 
-  
-        document.getElementById(dayElement).textContent = forecastDay;
-        document.getElementById(iconElement).setAttribute("src", iconsrc);
-        document.getElementById(iconElement).setAttribute("alt", desc);
-        document.getElementById(tempElement).textContent = forecast.main.temp;
-            
-}});
+
+});
+
+fetch(apiURL)
+  .then((response) => response.json())
+  .then ((forecast) => {
+    const dayofweek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    const days = forecast.list.filter(item => item.dt_txt.includes("18:00:00"));
+    let num = 1;
+    let imagesrc = "https://openweathermap.org/img/wn/" + jsObject.current.weather[0].icon + '@2x.png';
+    days.forEach(day => {
+      let forecastday = new Date(day.dt_txt);
+      document.getElementById("day" + num).textContent = dayofweek[forecastday.getDay()];
+      document.getElementById("temp" + num).textContent = Math.round(day.main.temp);
+      let icon = document.getElementById("icon" + num);
+      icon.setAttribute("src", imagesrc + day.weather[0].icon + "@2x.png");
+      icon.setAttribute("alt", day.weather[0].description);
+      num ++;
+    })
+  })
