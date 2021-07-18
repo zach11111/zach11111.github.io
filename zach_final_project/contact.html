@@ -1,3 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <title>Final Project: Chamber of Commerce</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Zach Rochette">
+    <meta name="description" content="Practice website for WDD-230.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet"  href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+
+</head>
+
+<body>
+
+    <header id="header">
+        <img class="logo" src="images/final_logo.jpg" alt="logo for rigby commerce" width="500">
+    </header>
+
+    <nav>
+        <ul class="nav">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Rigby</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>        
+
+<main>
+        
         <form>
             <label for="fname">First name:</label><br>
             <input type="text" id="fname" name="fname" value="" placeholder="first name"><br><br>
@@ -9,3 +45,24 @@
             <textarea name="message" rows="10" cols="100"></textarea><br><br>
             <button type="button" onclick="alert('We have recieved your question and will get back to you as soon as possible. Thank you!')">Ask Question</button>
         </form> 
+
+</main>
+
+<footer>
+    <div class="footer">
+        Rigby Chamber &copy;<span id="copyright"></span> | <span id="dates"></span> | Zacharie Rochette
+        <p>Weather information provided and licenced by <a href="https://www.openweathermap.com" target="_blank">OpenWeatherMap</a></p>
+        <p>Last Update: <span id="last_update"></span> </p>
+        <p><a href="https://zach11111.github.io">WDD 230 Portal</a></p>
+    </div>
+
+    <a class="social-meida" target="_blank" href="https://www.facebook.com"> <img class="icon" src="images/facebook.png" alt="Facebook"> </a>
+    <a class="social-meida" target="_blank" href="https://www.instagram.com"> <img class="icon" src="images/instagram.png" alt="instagram"> </a>
+    <a class="social-meida" target="_blank" href="https://www.pinterest.com"> <img class="icon" src="images/pinterest.png" alt="pinterest"> </a>
+    <a class="social-meida" target="_blank" href="https://www.youtube.com"> <img class="icon" src="images/youtube.png" alt="youtube"> </a>
+</footer>
+
+    <script src="js/weather.js"></script>
+    <script src="js/myscripts.js"></script>
+
+</body>
