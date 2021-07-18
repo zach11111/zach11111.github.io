@@ -16,3 +16,50 @@ fetch(apiURL)
         document.getElementById('icon').setAttribute('src', imagesrc);  
         document.getElementById('icon').setAttribute('alt', desc);
 });
+
+fetch(apiForecastURL)
+    .then(response => response.json())
+    .then((jsObject) => {
+               
+        const timeFilter = "18:00:00";
+        const forecast = jsObject.list.filter((specificTime) => specificTime.dt_txt.includes(timeFilter));
+  	    
+        let day = 1;
+	      
+        forecast.forEach(forecast => {	  
+          document.getElementById('temp' + (day)).textContent = Math.round(forecast.current.temp) + " °F";
+          document.getElementById('img' + (day)).src = "https://openweathermap.org/img/wn/" + forecast.current.weather[0].icon + "@2x.png";
+          document.getElementById('img' + (day)).alt = forecast.current.weather[0].description;	 
+
+          let dayOfWeek = "";
+          switch(new Date(forecast.dt_txt).getDay()){
+            case 0:
+              dayOfWeek = "Sun";
+              break;
+            case 1:
+              dayOfWeek = "Mon";
+              break;
+            case 2:
+              dayOfWeek = "Tue";
+              break;
+            case 3:
+              dayOfWeek = "Wed";
+              break;
+            case 4:
+              dayOfWeek = "Thu";
+              break;
+            case 5:
+              dayOfWeek = "Fri";
+              break;
+            case 6:
+              dayOfWeek = "Sat";
+              break; 
+            default:
+              dayOfWeek = "Error";
+              break;     
+          }
+
+          document.getElementById('day' + (day)).textContent = dayOfWeek;
+	        day++;	  
+	});
+});
