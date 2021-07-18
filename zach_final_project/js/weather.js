@@ -17,6 +17,8 @@ fetch(apiURL)
         document.getElementById('icon').setAttribute('alt', desc);
 });
 
+    /*    Three Day Forecast   */
+    
 fetch(apiURL)
     .then(response => response.json())
     .then((jsObject) => {
