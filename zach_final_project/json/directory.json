@@ -1,9 +1,53 @@
-{"broulims": [
-    {
-        "phone": "208-745-7771",
-        "email": "broulims@goodfoods.com",
-        "website" : "https://broulims.com/online-shopping",
-        "img": "images/business1.jpg"
-    }
-] 
+{
+    "businesses": [
+        {
+            "business" : "Broulims",
+            "phone": "208-745-7771",
+            "email": "broulims@goodfoods.com",
+            "website" : "https://broulims.com/online-shopping",
+            "img": "images/business1.jpg"
+        },
+        {
+            "business" : "Pick me up",
+            "phone": "208-745-7771",
+            "email": "broulims@goodfoods.com",
+            "website" : "https://broulims.com/online-shopping",
+            "img": "images/business1.jpg"
+        },
+        {
+            "business" : "Pro Lube",
+            "phone": "208-745-7771",
+            "email": "broulims@goodfoods.com",
+            "website" : "https://broulims.com/online-shopping",
+            "img": "images/business1.jpg"
+        },
+        {
+            "business" : "Zions bank",
+            "phone": "208-745-7771",
+            "email": "broulims@goodfoods.com",
+            "website" : "https://broulims.com/online-shopping",
+            "img": "images/business1.jpg"
+        },
+        {
+            "business" : "Beehive Credit Union",
+            "phone": "208-745-7771",
+            "email": "broulims@goodfoods.com",
+            "website" : "https://broulims.com/online-shopping",
+            "img": "images/business1.jpg"
+        },
+        {
+            "business" : "Wendys",
+            "phone": "208-745-7771",
+            "email": "broulims@goodfoods.com",
+            "website" : "https://broulims.com/online-shopping",
+            "img": "images/business1.jpg"
+        },
+        {
+            "business" : "Dollar Tree",
+            "phone": "208-745-7771",
+            "email": "broulims@goodfoods.com",
+            "website" : "https://broulims.com/online-shopping",
+            "img": "images/business1.jpg"
+        }
+    ] 
 }

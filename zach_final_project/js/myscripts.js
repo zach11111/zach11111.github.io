@@ -54,3 +54,10 @@ function visitDirectory(){
 function visitContact(){
     window.location="contact.html";
 }
+
+//Business json
+fetch("./directory.json")
+.then(response => {
+    return response.json();
+})
+.then(data => console.log(data));
