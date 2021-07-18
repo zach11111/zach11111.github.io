@@ -9,12 +9,11 @@ fetch(apiURL)
         document.getElementById('wind_speed').textContent = jsObject.current.wind_speed;
         document.getElementById('alert').textContent = jsObject.alerts;
         
-
-        const imagesrc = 'http://openweathermap.org/img/wn/' + jsObject.current.weather[0].icon + '@2x.png';  
-        const desc = jsObject.current.weather[0].description;  
-        document.getElementById('imagesrc').textContent = imagesrc;  
-        document.getElementById('icon').setAttribute('src', imagesrc);  
-        document.getElementById('icon').setAttribute('alt', desc);
+        // const imagesrc = 'http://openweathermap.org/img/wn/' + jsObject.current.weather[0].icon + '@2x.png';  
+        // const desc = jsObject.current.weather[0].description;  
+        // document.getElementById('imagesrc').textContent = imagesrc;  
+        // document.getElementById('icon').setAttribute('src', imagesrc);  
+        // document.getElementById('icon').setAttribute('alt', desc);
         
 });
 
