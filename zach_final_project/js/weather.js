@@ -15,7 +15,7 @@ fetch(apiURL)
         document.getElementById('imagesrc').textContent = imagesrc;  
         document.getElementById('icon').setAttribute('src', imagesrc);  
         document.getElementById('icon').setAttribute('alt', desc);
-
+        
 });
 
 const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=10fc032484daf74e68e4eb98c9bc0ad7&units=imperial";
@@ -34,5 +34,5 @@ fetch(forecastURL)
       icon.setAttribute("src", imgurl + day.weather[0].icon + "@2x.png");
       icon.setAttribute("alt", day.weather[0].description);
       num ++;
-    })
-  })
+    });
+  });
