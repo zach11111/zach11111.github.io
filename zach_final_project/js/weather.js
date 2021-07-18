@@ -16,23 +16,23 @@ fetch(apiURL)
         document.getElementById('icon').setAttribute('src', imagesrc);  
         document.getElementById('icon').setAttribute('alt', desc);
 
-
-        /*    Three Day Forecast   */
-        fetch(apiURL)
-        .then((response) => response.json())
-        .then ((forecast) => {
-          const dayofweek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-          const days = forecast.list.filter(item => item.dt_txt.includes("18:00:00"));
-          let num = 1;
-          let imagesrc = "https://openweathermap.org/img/wn/" + jsObject.current.weather[0].icon + '@2x.png';
-          days.forEach(day => {
-            let forecastday = new Date(day.dt_txt);
-            document.getElementById("day" + num).textContent = dayofweek[forecastday.getDay()];
-            document.getElementById("temp" + num).textContent = Math.round(day.main.temp);
-            let icon = document.getElementById("icon" + num);
-            icon.setAttribute("src", imagesrc + day.weather[0].icon + "@2x.png");
-            icon.setAttribute("alt", day.weather[0].description);
-            num ++;
-          });
-        });
 });
+
+const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=10fc032484daf74e68e4eb98c9bc0ad7&units=imperial";
+fetch(forecastURL)
+  .then((response) => response.json())
+  .then ((prestonForecast) => {
+    const dayofweek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    const fivedays = prestonForecast.list.filter(item => item.dt_txt.includes("18:00:00"));
+    let num = 1;
+    let imgurl = "https://openweathermap.org/img/wn/";
+    fivedays.forEach(day => {
+      let forecastday = new Date(day.dt_txt);
+      document.getElementById("day" + num).textContent = dayofweek[forecastday.getDay()];
+      document.getElementById("day" + num + "temp").textContent = Math.round(day.main.temp);
+      let icon = document.getElementById("icon" + num);
+      icon.setAttribute("src", imgurl + day.weather[0].icon + "@2x.png");
+      icon.setAttribute("alt", day.weather[0].description);
+      num ++;
+    })
+  })
