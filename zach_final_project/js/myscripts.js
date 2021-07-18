@@ -41,30 +41,8 @@ function toggleMenu()
     document.getElementsByClassName("nav")[0].classList.toggle("responsive")
 }
 
-function ajaxpost () {
-    var data = new FormData();
-    data.append("name", document.getElementById("user-name").value);
-    data.append("email", document.getElementById("user-email").value);
-
-    var xhr = new XMLHttpRequest();
-    xhr.open('POST', "1c-server.html");
-    xhr.onload = function () {
-      console.log(this.response);
-      console.log(this.status);
-   
-      if (xhr.status != 200) {
-        alert("SERVER ERROR");
-      }
-
-      else {
-        if (xhr.response == "OK") {
-          alert("SUCCESSFUL!");
-        } else {
-          alert("FAILURE!");
-        }
-      }
-    };
-    xhr.send(data);
-
-    return false;
-  }
+function clearForm($form)
+{
+    $form.find(':input').not(':button, :submit, :reset, :hidden, :checkbox, :radio').val('');
+    $form.find(':checkbox, :radio').prop('checked', false);
+}
