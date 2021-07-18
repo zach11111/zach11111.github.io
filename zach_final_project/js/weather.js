@@ -23,10 +23,10 @@ fetch(forecastURL)
   .then((response) => response.json())
   .then ((prestonForecast) => {
     const dayofweek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    const fivedays = prestonForecast.list.filter(item => item.dt_txt.includes("18:00:00"));
+    const threedays = prestonForecast.list.filter(item => item.dt_txt.includes("18:00:00"));
     let num = 1;
     let imgurl = "https://openweathermap.org/img/wn/";
-    fivedays.forEach(day => {
+    threedays.forEach(day => {
       let forecastday = new Date(day.dt_txt);
       document.getElementById("day" + num).textContent = dayofweek[forecastday.getDay()];
       document.getElementById("day" + num + "temp").textContent = Math.round(day.main.temp);
