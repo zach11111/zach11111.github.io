@@ -18,15 +18,15 @@ fetch(apiURL)
 
 });
 
-const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=8e352917079519d2ec55d70cab208751&units=imperial";
+const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=10fc032484daf74e68e4eb98c9bc0ad7&units=imperial";
 fetch(forecastURL)
   .then((response) => response.json())
   .then ((prestonForecast) => {
     const dayofweek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    const threedays = prestonForecast.list.filter(item => item.dt_txt.includes("18:00:00"));
+    const fivedays = prestonForecast.list.filter(item => item.dt_txt.includes("18:00:00"));
     let num = 1;
     let imgsrc = "https://openweathermap.org/img/wn/";
-    threedays.forEach(day => {
+    fivedays.forEach(day => {
       let forecastday = new Date(day.dt_txt);
       document.getElementById("day" + num).textContent = dayofweek[forecastday.getDay()];
       document.getElementById("day" + num + "temp").textContent = Math.round(day.main.temp);
