@@ -25,13 +25,13 @@ fetch(forecastURL)
     const dayofweek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     const fivedays = prestonForecast.list.filter(item => item.dt_txt.includes("18:00:00"));
     let num = 1;
-    let imgsrc = "https://openweathermap.org/img/wn/";
+    let imgurl = "https://openweathermap.org/img/wn/";
     fivedays.forEach(day => {
       let forecastday = new Date(day.dt_txt);
       document.getElementById("day" + num).textContent = dayofweek[forecastday.getDay()];
       document.getElementById("day" + num + "temp").textContent = Math.round(day.main.temp);
       let icon = document.getElementById("icon" + num);
-      icon.setAttribute("src", imgsrc + day.weather[0].icon + "@2x.png");
+      icon.setAttribute("src", imgurl + day.weather[0].icon + "@2x.png");
       icon.setAttribute("alt", day.weather[0].description);
       num ++;
     })
