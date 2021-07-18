@@ -46,3 +46,11 @@ function toggleMenu()
 function visitJoin(){
     window.location="join.html";
 }
+
+function visitDirectory(){
+    window.location="join.html";
+}
+
+function visitContact(){
+    window.location="join.html";
+}
