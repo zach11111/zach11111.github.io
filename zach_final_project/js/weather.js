@@ -17,7 +17,7 @@ fetch(apiURL)
         document.getElementById('icon').setAttribute('alt', desc);
 });
 
-fetch(apiForecastURL)
+fetch(apiURL)
     .then(response => response.json())
     .then((jsObject) => {
                
