@@ -48,9 +48,9 @@ function visitJoin(){
 }
 
 function visitDirectory(){
-    window.location="join.html";
+    window.location="directory.html";
 }
 
 function visitContact(){
-    window.location="join.html";
+    window.location="contact.html";
 }
