@@ -56,8 +56,19 @@ function visitContact(){
 }
 
 //Business json
+// fetch("./directory.json")
+// .then(response => {
+// response.json();
+// })
+// .then(data => console.log(data));
+
 fetch("./directory.json")
-.then(response => {
-    return response.json();
-})
-.then(data => console.log(data));
+.then((response) => response.json())
+    .then((jsObject) => {
+        console.log(jsObject);
+        document.getElementById('business').textContent = jsObject.businesses.business;
+        document.getElementById('phone').textContent = jsObject.businesses.phone;
+        document.getElementById('email').textContent = jsObject.businesses.email;
+        document.getElementById('website').textContent = jsObject.businesses.website;
+        // document.getElementById('img').textContent = jsObject.alerts;
+    });
