@@ -66,9 +66,9 @@ fetch("./json/directory.json")
 .then((response) => response.json())
     .then((jsObject) => {
         console.log(jsObject);
-        document.getElementById('business').textContent = jsObject.businesses.business;
-        document.getElementById('phone').textContent = jsObject.businesses.phone;
-        document.getElementById('email').textContent = jsObject.businesses.email;
-        document.getElementById('website').textContent = jsObject.businesses.website;
+        document.getElementById('business').textContent = jsObject.company.name;
+        document.getElementById('phone').textContent = jsObject.company.phone;
+        document.getElementById('email').textContent = jsObject.company.email;
+        document.getElementById('website').textContent = jsObject.company.website;
         // document.getElementById('img').textContent = jsObject.alerts;
     });
