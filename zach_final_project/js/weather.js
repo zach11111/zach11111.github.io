@@ -21,7 +21,8 @@ fetch(apiURL)
 
 });
 
-fetch(apiURL)
+const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=8e352917079519d2ec55d70cab208751&units=imperial";
+fetch(forecastURL)
   .then((response) => response.json())
   .then ((forecast) => {
     const dayofweek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
@@ -36,5 +37,5 @@ fetch(apiURL)
       icon.setAttribute("src", imagesrc + day.weather[0].icon + "@2x.png");
       icon.setAttribute("alt", day.weather[0].description);
       num ++;
-    })
-  })
+    });
+  });
