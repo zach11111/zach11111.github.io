@@ -1,7 +1,7 @@
 {
-    "Businesses": [
+    "company": [
         {
-            "business" : "Broulims",
+            "name" : "Broulims",
             "phone": "208-745-7771",
             "email": "broulims@goodfoods.com",
             "website" : "https://broulims.com/online-shopping",
@@ -9,42 +9,42 @@
             
         },
         {
-            "business" : "Pick me up",
+            "name" : "Pick me up",
             "phone": "208-745-7771",
             "email": "broulims@goodfoods.com",
             "website" : "https://broulims.com/online-shopping",
             "img": "images/business1.jpg"
         },
         {
-            "business" : "Pro Lube",
+            "name" : "Pro Lube",
             "phone": "208-745-7771",
             "email": "broulims@goodfoods.com",
             "website" : "https://broulims.com/online-shopping",
             "img": "images/business1.jpg"
         },
         {
-            "business" : "Zions bank",
+            "name" : "Zions bank",
             "phone": "208-745-7771",
             "email": "broulims@goodfoods.com",
             "website" : "https://broulims.com/online-shopping",
             "img": "images/business1.jpg"
         },
         {
-            "business" : "Beehive Credit Union",
+            "name" : "Beehive Credit Union",
             "phone": "208-745-7771",
             "email": "broulims@goodfoods.com",
             "website" : "https://broulims.com/online-shopping",
             "img": "images/business1.jpg"
         },
         {
-            "business" : "Wendys",
+            "name" : "Wendys",
             "phone": "208-745-7771",
             "email": "broulims@goodfoods.com",
             "website" : "https://broulims.com/online-shopping",
             "img": "images/business1.jpg"
         },
         {
-            "business" : "Dollar Tree",
+            "name" : "Dollar Tree",
             "phone": "208-745-7771",
             "email": "broulims@goodfoods.com",
             "website" : "https://broulims.com/online-shopping",
