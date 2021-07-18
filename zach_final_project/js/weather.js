@@ -18,7 +18,7 @@ fetch(apiURL)
         
 });
 
-const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=10fc032484daf74e68e4eb98c9bc0ad7&units=imperial";
+const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=8e352917079519d2ec55d70cab208751&units=imperial";
 fetch(forecastURL)
   .then((response) => response.json())
   .then ((prestonForecast) => {
