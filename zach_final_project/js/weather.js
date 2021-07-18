@@ -29,7 +29,7 @@ fetch(forecastURL)
     threedays.forEach(day => {
       let forecastday = new Date(day.dt_txt);
       document.getElementById("day" + num).textContent = dayofweek[forecastday.getDay()];
-      document.getElementById("day" + num + "temp").textContent = Math.round(day.main.temp);
+      document.getElementById("temp" + num).textContent = Math.round(day.main.temp);
       let icon = document.getElementById("icon" + num);
       icon.setAttribute("src", imgurl + day.weather[0].icon + "@2x.png");
       icon.setAttribute("alt", day.weather[0].description);
