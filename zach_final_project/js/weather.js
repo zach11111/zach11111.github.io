@@ -21,9 +21,9 @@ fetch(apiURL)
 const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?lat=20.68&lon=-53.89&appid=8e352917079519d2ec55d70cab208751&units=imperial";
 fetch(forecastURL)
   .then((response) => response.json())
-  .then ((prestonForecast) => {
+  .then ((rigbyForecast) => {
     const dayofweek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    const threedays = prestonForecast.list.filter(item => item.dt_txt.includes("18:00:00"));
+    const threedays = rigbyForecast.list.filter(item => item.dt_txt.includes("18:00:00"));
     let num = 1;
     let imgurl = "https://openweathermap.org/img/wn/";
     threedays.forEach(day => {
