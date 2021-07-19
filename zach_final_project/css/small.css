@@ -23,20 +23,14 @@ body {
 }
 .top-of-page {
     background-color: #5C5B5D;
-    display: flex;
-    max-width: 1000px;
 }
 
 .middle-of-page {
     background-color: #88B5FC;
-    display: flex;
-    max-width: 1000px;
 }
 
 .bottom-of-page {
     background-color: #5C5B5D;
-    display: flex;
-    max-width: 1000px;
 }
 
 main{
