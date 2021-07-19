@@ -102,6 +102,7 @@ footer {
 .weather-card {
     position: absolute;
     top: 177px;
+    left: 800px;
     margin: auto;
     background-color: rgba(0,0,0,.7);
 }
