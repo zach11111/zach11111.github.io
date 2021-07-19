@@ -32,4 +32,7 @@ body {
     background-color: #5C5B5D;
 }
 
+main{
+    max-width: 1000px;
+}
 /*   Header   */
