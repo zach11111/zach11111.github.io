@@ -84,8 +84,8 @@ li a {
     margin: 20px;
     width: auto;
     top: 111px;
-    float: left;
-    /* left: 800px; */
+    left: 800px;
+    max-width: 1000px;
 }
 
 .nav li:first-child{
