@@ -15,6 +15,9 @@ p {
     color: white;
 }
 
+body {
+    background-color: #191919;
+}
 .top-of-page {
     background-color: #5C5B5D;
 }
