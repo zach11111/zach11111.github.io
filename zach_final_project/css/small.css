@@ -19,31 +19,26 @@ p {
 
 /*   Basic background CSS   */
 body {
-    display: flex;
     background-color: #191919;
     max-width: 1000px;
     margin: auto;
     padding: 10px;
 }
 .top-of-page {
-    display: flex;
     background-color: #5C5B5D;
 }
 
 .middle-of-page {
-    display: flex;
     background-color: #88B5FC;
 }
 
 .bottom-of-page {
-    display: flex;
     background-color: #5C5B5D;
 }
 
 
 /*   Header   */
 .hero_image {
-    display: flex;
     background-image: url("images/union_pacific.jpg");
     background-color: #cccccc;
     width: 1000px;
@@ -55,7 +50,6 @@ body {
 }
 
 .logo {
-    display: flex;
     position: absolute;
     max-width: 1000px;
     top: 3%;
