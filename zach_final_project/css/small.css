@@ -103,5 +103,6 @@ footer {
     position: absolute;
     top: 28px;
     margin: auto;
+    float: right;
     background-color: rgba(0,0,0,.7);
 }
