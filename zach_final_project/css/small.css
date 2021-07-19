@@ -51,6 +51,8 @@ main{
 }
 
 .logo {
-    background-position: top -200px left 20px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
     background-color: rgba(0,0,0,.5);
 }
