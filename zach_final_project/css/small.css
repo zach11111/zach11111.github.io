@@ -101,7 +101,7 @@ footer {
 /*   Weather drop down   */
 .weather-card {
     position: absolute;
-    top: 225px;
+    top: 222px;
     margin: auto;
     background-color: rgba(0,0,0,.7);
 }
