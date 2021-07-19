@@ -79,6 +79,7 @@ function removeWeather() {
     element.classList.remove("weather-card");
   }
 
-document.getElementById("removeWeather").onclick = function() {
+  document.getElementById('button').addEventListener("click", function() {
     button.style.display = "none";
-}
+ }​);​
+    // button.style.display = "none";
