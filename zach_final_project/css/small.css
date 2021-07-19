@@ -81,9 +81,8 @@ li a {
 
 .nav{
     position: absolute;
-    top: 200px;
-    left: 600px;
-    margin: auto;
+    margin: 20px;
+    width: auto;
 }
 
 .nav li:first-child{
