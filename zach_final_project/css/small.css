@@ -106,7 +106,5 @@ footer {
     background-color: rgba(0,0,0,.7);
     padding: 1em;
     text-align: center;
-    position: absolute;
-    border: solid;
     font-size: small;
 }
