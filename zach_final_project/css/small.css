@@ -108,5 +108,5 @@ footer {
     text-align: center;
     position: absolute;
     border: solid;
-    text-size-adjust: 10;
+    font-size: small;
 }
