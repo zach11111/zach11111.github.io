@@ -73,7 +73,7 @@ function visitContact(){
 //         // document.getElementById('img').textContent = jsObject.alerts;
 //     });
 
-// Remove weather from screen 
+// Remove weather-card from screen 
 function removeWeather() {
     document.getElementById("myDIV").style.display = "none";
   }
