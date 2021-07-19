@@ -62,5 +62,3 @@ function visitContact(){
 // })
 // .then(data => console.log(data));
 
-var mydata = JSON.parse(directory);
-alert(mydata[0].name);
