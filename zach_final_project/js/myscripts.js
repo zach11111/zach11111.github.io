@@ -62,13 +62,13 @@ function visitContact(){
 // })
 // .then(data => console.log(data));
 
-fetch("./directory.js")
-.then((response) => response.json())
-    .then((data) => {
-        console.log(jsObject);
-        document.getElementById('business').textContent = data.name;
-        document.getElementById('phone').textContent = data.phone;
-        document.getElementById('email').textContent = data.email;
-        document.getElementById('website').textContent = data.website;
-        // document.getElementById('img').textContent = jsObject.alerts;
-    });
+// fetch("./directory.js")
+// .then((response) => response.json())
+//     .then((data) => {
+//         console.log(jsObject);
+//         document.getElementById('business').textContent = data.name;
+//         document.getElementById('phone').textContent = data.phone;
+//         document.getElementById('email').textContent = data.email;
+//         document.getElementById('website').textContent = data.website;
+//         // document.getElementById('img').textContent = jsObject.alerts;
+//     });
