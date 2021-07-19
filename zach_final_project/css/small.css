@@ -14,8 +14,11 @@ p {
 .top-of-page {
     background-color: #5C5B5D;
     margin: 0;
+    padding: 0;
 }
 
 .middle-of-page {
     background-color: #88B5FC;
+    margin: 0;
+    padding: 0;
 }
