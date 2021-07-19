@@ -109,7 +109,7 @@ footer {
     font-size: small;
 }
 
-.button1 {
+.button-container {
     position: absolute;
     top: 223px;
     margin: auto;
