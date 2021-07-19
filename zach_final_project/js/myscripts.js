@@ -56,22 +56,22 @@ function visitContact(){
 }
 
 //Business json
-fetch("../json/directory.json")
-.then(response => {
-response.json();
-})
-.then(data => console.log(data));
-
 // fetch("../json/directory.json")
-// .then((response) => response.json())
-//     .then((data) => {
-//         console.log(jsObject);
-//         document.getElementById('business').textContent = data.name;
-//         document.getElementById('phone').textContent = data.phone;
-//         document.getElementById('email').textContent = data.email;
-//         document.getElementById('website').textContent = data.website;
-//         // document.getElementById('img').textContent = jsObject.alerts;
-//     });
+// .then(response => {
+// response.json();
+// })
+// .then(data => console.log(data));
+
+fetch("../json/directory.json")
+    .then((response) => response.json())
+    .then((jsObject) => {
+        console.log(jsObject);
+        document.getElementById('name').textContent = jsObject.name;
+        document.getElementById('phone').textContent = jsObject.phone;
+        document.getElementById('email').textContent = jsObject.email;
+        document.getElementById('website').textContent = jsObject.website;
+
+});
 
 // Remove weather-card from screen 
 function removeWeather() {
