@@ -109,7 +109,7 @@ footer {
     font-size: small;
 }
 
-#close-weather {
+.button1 {
     position: absolute;
     top: 223px;
     margin: auto;
