@@ -84,6 +84,7 @@ li a {
     margin: auto;
     width: auto;
     top: 177px;
+    border: solid;
 }
 
 .nav li:first-child{
