@@ -92,6 +92,7 @@ li a {
 /*   On hover   */
 li a:hover {
     background-color: #C4DAFE;
+    text-decoration-color: #191919;
   }
 
 footer {
