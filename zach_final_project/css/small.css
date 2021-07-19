@@ -20,6 +20,9 @@ p {
 /*   Basic background CSS   */
 body {
     background-color: #191919;
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px;
 }
 .top-of-page {
     background-color: #5C5B5D;
@@ -33,11 +36,6 @@ body {
     background-color: #5C5B5D;
 }
 
-main{
-    max-width: 1000px;
-    margin: auto;
-    padding: 10px;
-}
 
 /*   Header   */
 
