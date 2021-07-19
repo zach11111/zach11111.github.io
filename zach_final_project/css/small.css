@@ -59,12 +59,7 @@ body {
 }
 
 /*   Nav   */
-.container {
-    position: absolute;
-    margin: 20px;
-    width: auto;
-  }
-  
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -83,6 +78,12 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+}
+
+.nav{
+    position: absolute;
+    margin: 20px;
+    width: auto;
 }
 
 .nav li:first-child{
