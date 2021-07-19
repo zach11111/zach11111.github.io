@@ -62,7 +62,7 @@ function visitContact(){
 // })
 // .then(data => console.log(data));
 
-fetch("../json/directory.json")
+fetch("./json/directory.json")
 .then((response) => response.json())
     .then((company) => {
         console.log(jsObject);
