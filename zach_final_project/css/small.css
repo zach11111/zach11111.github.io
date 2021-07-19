@@ -83,8 +83,7 @@ li a {
 .nav{
     position: absolute;
     max-width: 1000px;
-    top: 3%;
-    float:right;
+    top: 9%;
     margin: auto;
 }
 
