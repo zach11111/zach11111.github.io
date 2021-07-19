@@ -75,8 +75,6 @@ function visitContact(){
 
 // Remove weather from screen 
 function removeWeather() {
-    var element = document.getElementById("myDIV");
-    element.classList.remove("weather-card").style.display = "none";
+    var element = document.getElementById("myDIV").style.display = "none";
+    // element.classList.remove("weather-card");
   }
-
-    // button.style.display = "none";
