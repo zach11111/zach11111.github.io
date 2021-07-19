@@ -84,6 +84,7 @@ li a {
     position: absolute;
     max-width: 1000px;
     top: 3%;
+    float:right;
     margin: auto;
 }
 
