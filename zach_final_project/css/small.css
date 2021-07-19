@@ -116,4 +116,5 @@ footer {
     padding: 1em;
     text-align: center;
     font-size: small;
+    z-index: 1;
 }
