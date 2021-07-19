@@ -62,13 +62,13 @@ function visitContact(){
 // })
 // .then(data => console.log(data));
 
-fetch("json/directory.js")
+fetch("./directory.js")
 .then((response) => response.json())
-    .then((company) => {
+    .then((data) => {
         console.log(jsObject);
-        document.getElementById('business').textContent = company.name;
-        document.getElementById('phone').textContent = company.phone;
-        document.getElementById('email').textContent = company.email;
-        document.getElementById('website').textContent = company.website;
+        document.getElementById('business').textContent = data.name;
+        document.getElementById('phone').textContent = data.phone;
+        document.getElementById('email').textContent = data.email;
+        document.getElementById('website').textContent = data.website;
         // document.getElementById('img').textContent = jsObject.alerts;
     });
