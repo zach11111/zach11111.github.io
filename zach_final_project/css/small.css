@@ -97,3 +97,14 @@ li a:hover {
 footer {
     background-color: #5C5B5D;
 }
+
+/*   nav Stick   */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .sticky + .nav {
+    padding-top: 60px;
+  }
