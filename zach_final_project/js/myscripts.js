@@ -77,5 +77,5 @@ function visitContact(){
 function myFunction() {
     var element = document.getElementById("myDIV");
     element.classList.remove("weather-card");
-    button.disabled = true
+    button.style.visibility = "hidden";
   }
