@@ -38,6 +38,10 @@ main{
 
 /*   Header   */
 header {
+    background: blah;
+}
+
+.hero_image {
     background-image: url("union_pacific.jpg");
     background-color: #cccccc; 
     height: 500px; 
