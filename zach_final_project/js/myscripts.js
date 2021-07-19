@@ -66,10 +66,10 @@ fetch("https://zach11111.github.io/zach_final_project/json/directory.json")
     .then((response) => response.json())
     .then((jsObject) => {
         console.log(jsObject);
-        document.getElementById('name').textContent = jsObject.name;
-        document.getElementById('phone').textContent = jsObject.phone;
-        document.getElementById('email').textContent = jsObject.email;
-        document.getElementById('website').textContent = jsObject.website;
+        document.getElementById('name').textContent = jsObject.company.name;
+        document.getElementById('phone').textContent = jsObject.company.phone;
+        document.getElementById('email').textContent = jsObject.company.email;
+        document.getElementById('website').textContent = jsObject.company.website;
 });
 
 // Remove weather-card from screen 
