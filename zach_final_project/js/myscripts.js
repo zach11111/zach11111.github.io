@@ -81,5 +81,6 @@ function removeWeather() {
 
   document.getElementById('myDIV').addEventListener("click", function() {
     button.style.display = "none";
+    alert("You clicked me");
  }​);​
     // button.style.display = "none";
