@@ -86,14 +86,9 @@ li a {
     top: 177px;
 }
 
-.nav li:first-child {
-    display:block;
-}
-
-.nav li{
-    display:none;
-    flex: 1 1 100%;
-}
+.nav li:first-child{
+    display:none
+  }
 /*   On hover   */
 li a:hover {
     background-color: #C4DAFE;

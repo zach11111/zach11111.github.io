@@ -1,4 +1,31 @@
 @media only screen and (min-width: 37.5em) {
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #88B5FC;
+      }
+    
+    li {
+        float: right;
+      }
+    
+    li a {
+        display: flex;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+    .nav{
+        position: absolute;
+        margin: auto;
+        width: auto;
+        top: 177px;
+    }
+    
     .nav li:first-child{
         display:none
       }
