@@ -59,11 +59,6 @@ body {
 }
 
 /*   Nav   */
-.container {
-    position: absolute;
-    margin: 20px;
-    width: auto;
-  }
 
 ul {
     list-style-type: none;
