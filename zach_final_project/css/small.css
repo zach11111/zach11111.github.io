@@ -108,3 +108,13 @@ footer {
     text-align: center;
     font-size: small;
 }
+
+#close-weather {
+    position: absolute;
+    top: 223px;
+    margin: auto;
+    background-color: rgba(0,0,0,.75);
+    padding: 1em;
+    text-align: center;
+    font-size: small;
+}
