@@ -97,3 +97,11 @@ li a:hover {
 footer {
     background-color: #5C5B5D;
 }
+
+/*   Weather drop down   */
+.weather-card {
+    position: absolute;
+    margin: auto;
+    width: auto;
+    top: 177px;
+}
