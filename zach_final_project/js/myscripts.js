@@ -56,13 +56,13 @@ function visitContact(){
 }
 
 //Business json
-// fetch("./directory.json")
-// .then(response => {
-// response.json();
-// })
-// .then(data => console.log(data));
+fetch("../json/directory.json")
+.then(response => {
+response.json();
+})
+.then(data => console.log(data));
 
-// fetch("./directory.js")
+// fetch("../json/directory.json")
 // .then((response) => response.json())
 //     .then((data) => {
 //         console.log(jsObject);
