@@ -79,6 +79,9 @@ li a {
     text-decoration: none;
 }
 
+.nav li:first-child{
+    display:none
+  }
 /*   On hover   */
 li a:hover {
     background-color: #111;
