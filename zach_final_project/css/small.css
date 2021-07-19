@@ -51,8 +51,9 @@ body {
 
 .logo {
     position: absolute;
-    top: 30px;
-    left: 150px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px;
     background-color: rgba(0,0,0,.5);
     background-size: 1000px;
 }
