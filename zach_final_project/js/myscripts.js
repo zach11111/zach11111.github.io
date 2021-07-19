@@ -62,5 +62,8 @@ function visitContact(){
 // })
 // .then(data => console.log(data));
 
-const data = require('./json/directory.json');
-console.log(data);
+fetch("json/directory.json")
+.then(response => {
+   return response.json();
+})
+.then(data => console.log(data));
