@@ -28,10 +28,12 @@ body {
 
 .middle-of-page {
     background-color: #88B5FC;
+    display: flex;
 }
 
 .bottom-of-page {
     background-color: #5C5B5D;
+    display: flex;
 }
 
 main{
