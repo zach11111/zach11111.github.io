@@ -79,7 +79,7 @@ function removeWeather() {
     element.classList.remove("weather-card");
   }
 
-  document.getElementById('button').addEventListener("click", function() {
+  document.getElementById('myDIV').addEventListener("click", function() {
     button.style.display = "none";
  }​);​
     // button.style.display = "none";
