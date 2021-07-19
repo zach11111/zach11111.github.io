@@ -52,7 +52,7 @@ body {
 .logo {
     position: absolute;
     max-width: 1000px;
-    top: 3%;
+    top: 30px;
     margin: auto;
     background-color: rgba(0,0,0,.5);
 }
