@@ -62,7 +62,7 @@ function visitContact(){
 // })
 // .then(data => console.log(data));
 
-fetch("../json/directory.json")
+fetch("https://zach11111.github.io/zach_final_project/json/directory.json")
     .then((response) => response.json())
     .then((jsObject) => {
         console.log(jsObject);
@@ -70,7 +70,6 @@ fetch("../json/directory.json")
         document.getElementById('phone').textContent = jsObject.phone;
         document.getElementById('email').textContent = jsObject.email;
         document.getElementById('website').textContent = jsObject.website;
-
 });
 
 // Remove weather-card from screen 
