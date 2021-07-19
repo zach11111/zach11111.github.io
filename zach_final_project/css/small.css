@@ -53,4 +53,5 @@ main{
     padding: 25px;
     background-repeat: no-repeat;
     background-size: auto;
+    background-color: rgba(0, 0, 0, .5);
 }
