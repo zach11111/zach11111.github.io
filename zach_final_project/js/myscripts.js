@@ -77,10 +77,10 @@ function visitContact(){
 function removeWeather() {
     var element = document.getElementById("myDIV");
     element.classList.remove("weather-card");
+    var clicked = false
+    document.getElementById('button').addEventListener("click", function() {
+    clicked = true
+    }​);​
   }
 
-  document.getElementById('removeWeather').addEventListener("click", function() {
-    button.style.display = "none";
-    alert("You clicked me");
- }​);​
     // button.style.display = "none";
