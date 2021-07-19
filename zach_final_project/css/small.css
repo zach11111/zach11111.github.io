@@ -18,12 +18,6 @@ p {
 }
 
 /*   Basic background CSS   */
-.content {
-    max-width: 1000px;
-    margin: auto;
-    padding: 10px;
-  }
-
 body {
     background-color: #191919;
 }
