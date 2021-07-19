@@ -84,6 +84,7 @@ li a {
     margin: 20px;
     width: auto;
     top: 111px;
+    float: right;
     /* left: 800px; */
 }
 
