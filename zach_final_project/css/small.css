@@ -34,5 +34,6 @@ body {
 
 main{
     max-width: 1000px;
+    float: center;
 }
 /*   Header   */
