@@ -23,6 +23,7 @@ body {
 }
 .top-of-page {
     background-color: #5C5B5D;
+    display: flex;
 }
 
 .middle-of-page {
@@ -56,3 +57,5 @@ main{
     left: 30px;
     background-color: rgba(0,0,0,.5);
 }
+
+/*   Nav   */
