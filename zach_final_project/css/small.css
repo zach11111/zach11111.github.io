@@ -39,6 +39,12 @@ body {
 
 /*   Header   */
 
+#square {
+    width: 100px;
+    height: 100px;
+    background: red;
+  }
+  
 .hero_image {
     background-image: url("images/union_pacific.jpg");
     background-color: #cccccc;
