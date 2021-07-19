@@ -52,7 +52,6 @@ body {
 .logo {
     position: absolute;
     max-width: 1000px;
-    max-height: 100px;
     top: 30px;
     margin: auto;
     background-color: rgba(0,0,0,.5);
