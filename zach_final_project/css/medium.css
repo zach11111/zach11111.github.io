@@ -36,4 +36,24 @@
     .logo {
         position: absolute;
     }
+    
+    /*     Company Highlights     */
+
+    .bhcontainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .business-img {
+        display: flex;
+        width: 100%;
+        position: relative;
+        border: solid black;
+    }
+
+    .bhtitle {
+        text-align: center;
+        padding: 20px;
+    }
 }
