@@ -147,3 +147,8 @@ footer {
 .footer-info {
     color: white;
 }
+
+/* Company Highlights  */
+.business-img {
+    border: solid black;
+}
