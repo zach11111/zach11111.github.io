@@ -56,4 +56,58 @@
         text-align: center;
         padding: 20px;
     }
+
+    /* Three day Forecast */
+.forecast {
+    background-color: #88B5FC;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .forecast h3 {
+    color: white;
+    grid-column: 1 / 6;
+    grid-row: 1 / 2;
+    font-size: 2rem;
+    text-align: center
+  }
+
+  .forecast div {
+    grid-row: 2 / 3;
+  }
+
+  .forecast h4 {
+    margin-bottom: 0;
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .forecast span {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #191919;
+  }
+
+  .forecast p {
+    margin-top: 0;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #191919;
+  }
+
+  .forecast img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  }
+
+  .forecast-card {
+      border: solid black;
+      margin: 20px;
+      background-color: white;
+
+  }
+
 }
