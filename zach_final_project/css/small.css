@@ -150,5 +150,6 @@ footer {
 
 /* Company Highlights  */
 .business-img {
+    display: flex;
     border: solid black;
 }
