@@ -55,6 +55,9 @@ function visitContact(){
     window.location="contact.html";
 }
 
+function upComingEvents(){
+    window.location="https://www.eventbrite.com/d/id--rigby/events/";
+}
 //Business json
 fetch("https://zach11111.github.io/zach_final_project/json/directory.json")
     .then((response) => response.json())
