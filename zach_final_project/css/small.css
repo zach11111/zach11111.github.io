@@ -148,20 +148,10 @@ footer {
 
 
 /*     Company Highlights     */
-.bhcontainer {
-    border: 3px solid blue;
-    padding: 20px 40px 40px;
-    max-width: 640px;
-    display: flex;
-}
 .business-highlights {
     border: solid black;
     width: 250px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-}
-
-.bhtext {
-    text-align: center;
 }
