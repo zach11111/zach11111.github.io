@@ -64,18 +64,6 @@ main {
 /*   Nav   */
 
 /*   Hamburger   */
-.nav li:first-child {
-    display:block;
-}
-
-.navigation li{
-    display:none;
-    flex: 1 1 100%;
-}
-
-.responsive li {
-    display: block;
-}
 
 ul {
     list-style-type: none;
