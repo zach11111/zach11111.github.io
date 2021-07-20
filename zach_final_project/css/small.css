@@ -157,4 +157,12 @@ footer {
 }
 
 .business-img {
+    display: flex;
+    height: 500px;
+    border: solid black;
+}
+
+.bhtitle {
+    text-align: center;
+    padding: 20px;
 }
