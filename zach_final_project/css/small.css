@@ -79,10 +79,10 @@ li a {
 }
 
 .navigation{
-    position: absolute;
     margin: auto;
     width: auto;
     top: 177px;
+    max-width: 100%;
 }
 
 /*   Hamburger   */

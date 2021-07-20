@@ -8,7 +8,10 @@
       max-width: 1000px;
       margin: 0 auto;
     }
-    .navigation {
+    .navigation{
+        position: absolute;
         width: 1000px;
+        top: 177px;
+        max-width: 100%;
     }
 }
