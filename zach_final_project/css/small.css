@@ -42,7 +42,7 @@ main {
     background-color: #88B5FC;
     padding: 1em;
     border: solid #191919;
-    box-shadow: 10px 10px;
+    box-shadow: 10px 10px rgba(0,0,0,.75);
 }
 
 .bottom-of-page {
