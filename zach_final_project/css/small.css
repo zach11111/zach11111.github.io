@@ -148,18 +148,15 @@ footer {
 
 
 /*     Company Highlights     */
-.business-highlights {
-    border: solid black;
-    width: 250px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+
+.bhcontainer{
+    display: flex;
 }
 
-.bhtitle {
-    text-align: center;
+img {
+    max-width: 100%
 }
 
-.bhtext {
-    text-align: center;
+.business-img {
+    flex-basis: 40%;
 }
