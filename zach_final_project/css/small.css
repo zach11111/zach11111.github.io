@@ -138,15 +138,6 @@ li a:hover {
     font-size: small;
     z-index: 1;
 }
-/*     Footer        */
-footer {
-    background-color: #5C5B5D;
-    padding: 1em;
-}
-
-.footer-info {
-    color: white;
-}
 
 /* Company Highlights  */
 .business-img {
@@ -178,4 +169,15 @@ footer {
 /*  3 day Weather forecast   */
 .forecast {
     display: none;
+}
+
+/*     Footer        */
+footer {
+    background-color: #5C5B5D;
+    padding: 1em;
+}
+
+.footer-info {
+    color: white;
+    text-align:center;
 }
