@@ -104,6 +104,10 @@ li a:hover {
     background-color: #C4DAFE;
   }
 
+.current {
+    background-color: aliceblue;
+}
+
 /*   Weather drop down   */
 .weather-card {
     top: 223px;
