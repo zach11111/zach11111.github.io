@@ -55,7 +55,7 @@ main {
 
 .logo {
     position: absolute;
-    max-width: 1000px;
+    max-width: 100%;
     top: 28px;
     margin: auto;
     background-color: rgba(0,0,0,.7);
