@@ -78,7 +78,7 @@ li a {
     text-decoration: none;
 }
 
-.nav{
+.navigation{
     position: absolute;
     margin: auto;
     width: auto;
@@ -86,10 +86,6 @@ li a {
 }
 
 /*   Hamburger   */
-nav {
-	background-color: #102E4A;
-	text-align: center;
-}
 
 .navigation li:first-child {
     display:block;
