@@ -6,6 +6,11 @@
         font-size: 3em;
         margin: 0 -10px 10px -40px;
       }
+    
+    .navigation{
+        display:flex;
+    }
+  
     .navigation li:first-child{
       display:none
     }
