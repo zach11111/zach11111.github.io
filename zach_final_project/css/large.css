@@ -8,4 +8,7 @@
       max-width: 1000px;
       margin: 0 auto;
     }
+    .navigation {
+        width: 1000px;
+    }
 }
