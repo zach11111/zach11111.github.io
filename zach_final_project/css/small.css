@@ -151,12 +151,11 @@ footer {
 .business-highlights {
     border: solid black;
     width: 250px;
-}
-
-.htitle {
-    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
 }
 
 .bhtext {
-    float: right;
+    text-align: center;
 }
