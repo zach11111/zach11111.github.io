@@ -50,6 +50,9 @@ main {
 
 
 /*   Header   */
+img {
+    max-width: 100%
+}
 
 .hero_image {
     background-image: url("images/union_pacific.jpg");
@@ -158,7 +161,8 @@ footer {
 
 .business-img {
     display: flex;
-    height: 500px;
+    width: 100%;
+
     border: solid black;
 }
 
