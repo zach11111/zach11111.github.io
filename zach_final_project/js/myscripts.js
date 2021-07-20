@@ -56,12 +56,6 @@ function visitContact(){
 }
 
 //Business json
-// fetch("../json/directory.json")
-// .then(response => {
-// response.json();
-// })
-// .then(data => console.log(data));
-
 fetch("https://zach11111.github.io/zach_final_project/json/directory.json")
     .then((response) => response.json())
     .then((jsObject) => {
@@ -71,6 +65,9 @@ fetch("https://zach11111.github.io/zach_final_project/json/directory.json")
         document.getElementById('email').textContent = jsObject.company[0].email;
         document.getElementById('website').textContent = jsObject.company[0].website;
 });
+
+
+//Print each business card
 
 // Remove weather-card from screen 
 function removeWeather() {
