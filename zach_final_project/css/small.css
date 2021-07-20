@@ -45,7 +45,7 @@ main {
 .hero_image {
     background-image: url("images/union_pacific.jpg");
     background-color: #cccccc;
-    width: 1000px;
+    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
