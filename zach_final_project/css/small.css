@@ -130,3 +130,7 @@ li a:hover {
 footer {
     background-color: #5C5B5D;
 }
+
+.footer-info {
+    color: white;
+}
