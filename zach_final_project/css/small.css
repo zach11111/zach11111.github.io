@@ -147,6 +147,7 @@ footer {
 
 /*     Company Highlights     */
 .business-highlights {
-    border: solid black;
     padding: 1em;
+    border: solid black;
+    
 }
