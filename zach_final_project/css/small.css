@@ -40,6 +40,7 @@ main {
 
 .middle-of-page {
     background-color: #88B5FC;
+    padding: 1em;
 }
 
 .bottom-of-page {
@@ -147,7 +148,6 @@ footer {
 
 /*     Company Highlights     */
 .business-highlights {
-    padding: 1em;
     border: solid black;
     
 }
