@@ -51,9 +51,6 @@ main {
 
 /*   Header   */
 
-img {
-    max-width: 100%;
-}
 .hero_image {
     background-image: url("images/union_pacific.jpg");
     background-color: #5C5B5D;
