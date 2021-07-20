@@ -171,6 +171,11 @@ li a:hover {
     display: none;
 }
 
+/*     Upcoming events   */
+.upcoming-events {
+    text-align: center;
+}
+
 /*     Footer        */
 footer {
     background-color: #5C5B5D;
