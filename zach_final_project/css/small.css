@@ -62,16 +62,12 @@ main {
 }
 
 /*   Nav   */
-/* nav {
-	background-color: #102E4A;
-	text-align: center;
-}
 
 .nav li:first-child {
     display:block;
 }
 
-.nav li{
+.navigation li{
     display:none;
     flex: 1 1 100%;
 }
@@ -80,23 +76,6 @@ main {
     display: block;
 }
 
-nav ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-}
-
-nav ul li a {
-	display: block;
-	color: #DBE4EE;
-	text-align: center;
-	padding: 0.75rem;
-	text-decoration: none;
-	font-size: 0.95rem;
-    font-family: 'Crete Round', cursive;
-    font-weight: bolder;}
-  */
 ul {
     list-style-type: none;
     margin: 0;
