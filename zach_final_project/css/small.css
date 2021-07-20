@@ -2,12 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@300&display=swap');
 
 /*   Basic Font CSS   */
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: "Merriweather", sans-serif;
     color: white;
 }
 
-h4 {
+.welcome {
     color: #191919;
     font-family: "Merriweather", sans-serif;
 }
