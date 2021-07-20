@@ -105,17 +105,6 @@ li a:hover {
     background-color: #C4DAFE;
   }
 
-/*   Weather drop down   */
-.weather-card {
-    position: absolute;
-    top: 223px;
-    margin: auto;
-    background-color: rgba(0,0,0,.75);
-    padding: 1em;
-    text-align: center;
-    font-size: small;
-}
-
 .button-container {
     position: absolute;
     top: 223px;
