@@ -174,3 +174,8 @@ footer {
     color: #191919;
     border: solid;
 }
+
+/*  3 day Weather forecast   */
+.forecast {
+    display: none;
+}
