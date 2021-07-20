@@ -50,6 +50,10 @@ main {
 
 
 /*   Header   */
+
+img {
+    max-width: 100%;
+}
 .hero_image {
     background-image: url("images/union_pacific.jpg");
     background-color: #5C5B5D;
@@ -150,13 +154,12 @@ footer {
 /*     Company Highlights     */
 
 .bhcontainer{
-    display: flex;
-}
-
-img {
-    max-width: 100%
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
 }
 
 .business-img {
     flex-basis: 40%;
+    width: 300px;
 }
