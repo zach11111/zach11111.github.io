@@ -81,7 +81,7 @@ li a {
 .navigation{
     position: absolute;
     margin: auto;
-    width: 1000px;
+    width: auto;
     top: 177px;
 }
 
