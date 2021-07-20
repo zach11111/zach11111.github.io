@@ -13,5 +13,23 @@
         display:block;
         flex: 1 1 100%;
     }
+    .weather-card {
+        position: absolute;
+        top: 223px;
+        margin: auto;
+        background-color: rgba(0,0,0,.75);
+        padding: 1em;
+        text-align: center;
+        font-size: small;
+    }
     
+    .button-container {
+        position: absolute;
+        top: 223px;
+        margin: auto;
+        padding: 1em;
+        text-align: center;
+        font-size: small;
+        z-index: 1;
+    }
 }
