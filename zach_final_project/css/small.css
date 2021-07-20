@@ -105,10 +105,6 @@ li a:hover {
     background-color: #C4DAFE;
   }
 
-footer {
-    background-color: #5C5B5D;
-}
-
 /*   Weather drop down   */
 .weather-card {
     position: absolute;
@@ -128,4 +124,8 @@ footer {
     text-align: center;
     font-size: small;
     z-index: 1;
+}
+/*     Footer        */
+footer {
+    background-color: #5C5B5D;
 }
