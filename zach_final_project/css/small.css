@@ -54,7 +54,6 @@ main {
 }
 
 .logo {
-    position: absolute;
     max-width: 100%;
     top: 28px;
     margin: auto;
