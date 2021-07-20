@@ -160,6 +160,7 @@ footer {
 }
 
 .business-img {
+    display: flex;
     width: 100%;
     position: relative;
     border: solid black;
