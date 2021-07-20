@@ -35,18 +35,22 @@ main {
 }
 
 .top-of-page {
-    background-color: #5C5B5D;
+    background-color: #88B5FC;
+    padding: 1em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 1);
     padding: 20px;
 }
 
 .middle-of-page {
     background-color: #88B5FC;
     padding: 1em;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 1);
 }
 
 .bottom-of-page {
-    background-color: #5C5B5D;
+    background-color: #88B5FC;
+    padding: 1em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 1);
 }
 
 
