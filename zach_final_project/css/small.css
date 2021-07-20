@@ -64,6 +64,11 @@ main {
 /*   Nav   */
 
 /*   Hamburger   */
+nav {
+	background-color: #102E4A;
+	text-align: center;
+}
+
 .navigation li:first-child {
     display:block;
 }
@@ -77,7 +82,18 @@ main {
     display: block;
 }
 
-ul {
+
+
+nav a:hover {
+	background-color: #F17300;
+	color: #102E4A;
+}
+
+.navigation .current {
+	background-color: aliceblue;
+    color: black;
+}
+/* ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -106,7 +122,7 @@ li a {
 
 .nav li:first-child{
     display:none
-  }
+  } */
 /*   On hover   */
 li a:hover {
     background-color: #C4DAFE;
