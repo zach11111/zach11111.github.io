@@ -78,7 +78,7 @@ function upComingEvents(){
   .then(function (jsonObject) {
     console.table(jsonObject);
     const company = jsonObject["company"];
-    for (let i = 0; i < prophets.length; i++) {
+    for (let i = 0; i < company.length; i++) {
         let card = document.createElement("section");
         let name = document.createElement("h2");  
         let phone = document.createElement("p");
