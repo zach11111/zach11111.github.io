@@ -224,6 +224,23 @@ form {
     color: white;
 }
 
+label.info input:required {
+    border-left: rgb(255 0 0) solid 6px;
+    border-right: white;
+    border-bottom: white; 
+    border-top: white;
+}
+
+label.info input:required:valid {
+    border-left: rgb(0 91 255) solid 6px;
+}
+
+
+label.info {
+    width: 100%;
+    padding: inherit;
+}
+
 textarea {
     max-width: 100%;
 }
