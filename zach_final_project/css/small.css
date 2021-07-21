@@ -309,19 +309,19 @@ textarea {
 
   /*             Directory page             */
 
-  .cards {
+  #cards {
     border: solid white;
   background-color: #2d2d33;
   padding: inherit;
   color: white;
 }
 
-.cards {
+#cards {
     display: grid;
     grid-template-columns: 1fr;    
   }
   
-  .cards section {
+  #cards section {
     background-color: #6a83b0;
     padding: inherit;
     border: 10px solid;
@@ -330,7 +330,7 @@ textarea {
 
   }
   
-  .cards section img {
+  #cards section img {
     width: 80%;
     max-width: 100%;
     box-shadow: 1px 1px 3px 3px black;
