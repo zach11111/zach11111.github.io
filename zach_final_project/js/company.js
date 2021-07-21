@@ -12,12 +12,14 @@ fetch(requestURL)
       let card = document.createElement("section");
       let name = document.createElement("h2");  
       let phone = document.createElement("p");
-      let email = document.createElement("p");   
+      let email = document.createElement("p"); 
+      let website = document.createElement("p"); 
       let image = document.createElement("img");
 
     name.textContent = company[i].name;
     date.textContent = "Phone:" + " " + company[i].phone;
-    place.textContent = "Email:" + " " + company[i].email;
+    txt.textContent = "Email:" + " " + company[i].email;
+    txt.textContent = "Website" + " " + company[i].website;
     image.setAttribute("src", company[i].img);
     image.setAttribute("alt", company[i].name);
 
