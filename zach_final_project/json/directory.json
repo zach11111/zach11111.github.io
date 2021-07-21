@@ -27,28 +27,28 @@
             "phone": "(208) 745-3411",
             "email": "zionsbank@zbank.com",
             "website" : "https://zionsbank.com",
-            "imageurl": "images/business1.jpg"
+            "imageurl": "images/business4.jpg"
         },
         {
             "name" : "Beehive Credit Union",
             "phone": "(208) 656-1000",
             "email": "beehive@beehive.com",
             "website" : "https://beehive.com",
-            "imageurl": "images/business1.jpg"
+            "imageurl": "images/business5.jpg"
         },
         {
             "name" : "Wendys",
             "phone": "(208) 745-8161",
             "email": "customercare@wendys.com",
             "website" : "https://wendys.com",
-            "imageurl": "images/business1.jpg"
+            "imageurl": "images/business6.jpg"
         },
         {
             "name" : "Dollar Tree",
             "phone": "(208) 222-6000",
             "email": "customercare@dallartree.com",
             "website" : "https://dollartree.com",
-            "imageurl": "images/business1.jpg"
+            "imageurl": "images/business7.jpg"
         }
     ] 
 }
