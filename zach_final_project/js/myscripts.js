@@ -58,48 +58,6 @@ function visitContact(){
 function upComingEvents(){
     window.location="https://www.eventbrite.com/d/id--rigby/events/";
 }
-//Business json
-// fetch("https://zach11111.github.io/zach_final_project/json/directory.json")
-//     .then((response) => response.json())
-//     .then((jsObject) => {
-//         console.log(jsObject);
-//         document.getElementById('name').textContent = jsObject.company[0].name;
-//         document.getElementById('phone').textContent = jsObject.company[0].phone;
-//         document.getElementById('email').textContent = jsObject.company[0].email;
-//         document.getElementById('website').textContent = jsObject.company[0].website;
-// });
-  const requestURL = "https://zach11111.github.io/zach_final_project/json/directory.json";
-
-  fetch(requestURL)
-  .then(function (response) {
-    return response.json();
-  })
-  
-  .then(function (jsonObject) {
-    console.table(jsonObject);
-    const company = jsonObject["company"];
-    for (let i = 0; i < company.length; i++) {
-        let card = document.createElement("section");
-        let name = document.createElement("h2");  
-        let phone = document.createElement("p");
-        let email = document.createElement("p");   
-        let image = document.createElement("img");
-  
-      name.textContent = company[i].name;
-      date.textContent = "Phone:" + " " + company[i].phone;
-      place.textContent = "Email:" + " " + company[i].email;
-      image.setAttribute("src", company[i].img);
-      image.setAttribute("alt", company[i].name);
-  
-      card.appendChild(name);
-      card.appendChild(phone);
-      card.appendChild(email);
-      card.appendChild(image);
-  
-      document.querySelector("div.cards").appendChild(card);            
-    }
-  });
-//Print each business card
 
 // Remove weather-card from screen 
 function removeWeather() {
