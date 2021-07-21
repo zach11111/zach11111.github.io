@@ -63,8 +63,3 @@ function upComingEvents(){
 function removeWeather() {
     document.getElementById("myDIV").style.display = "none";
   }
-
-  /*    Change views for directory    */ 
-  function list(){
-    document.getElementByClass("cards").style.display = "none";
-  }
