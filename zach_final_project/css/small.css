@@ -285,6 +285,11 @@ textarea {
 }
 
 /*         Contact page             */
+
+.map {
+    padding: inherit;
+  }
+
 /*     Footer        */
 footer {
     background-color: #5C5B5D;
