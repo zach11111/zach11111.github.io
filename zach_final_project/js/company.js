@@ -20,7 +20,7 @@ fetch(requestURL)
     phone.textContent = "Phone:" + " " + company[i].phone;
     email.textContent = "Email:" + " " + company[i].email;
     website.textContent = "Website:" + " " + company[i].website;
-    image.setAttribute("src", company[i].img);
+    image.setAttribute("src", company[i].imageurl);
     image.setAttribute("alt", company[i].name);
 
     card.appendChild(name);
