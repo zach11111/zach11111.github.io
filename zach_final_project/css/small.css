@@ -183,7 +183,7 @@ li a:hover {
 }
 
 /*    Riby Page    */
-.recent-ACS {
+.ul-style {
     background-color: white;
     border: solid #191919;
     color: white;
@@ -191,7 +191,7 @@ li a:hover {
     padding: 10px;
 }
 
-.ACS-rigby {
+.list-styling {
     background-color: #191919;
     padding: inherit;
 }
