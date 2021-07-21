@@ -26,6 +26,7 @@ fetch(requestURL)
     card.appendChild(name);
     card.appendChild(phone);
     card.appendChild(email);
+    card.appendChild(website);
     card.appendChild(image);
 
     document.querySelector("div.cards").appendChild(card);            
