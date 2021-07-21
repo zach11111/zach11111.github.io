@@ -190,6 +190,25 @@ li a:hover {
     padding: inherit;
 }
 
+table {
+    border: solid white;
+    background-color: #191919;
+    color: white;
+    padding: inherit;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th {
+    font-size: 20px;
+    padding: inherit;
+}
+
+.table-title {
+    text-align: center
+}
+
 /*     Footer        */
 footer {
     background-color: #5C5B5D;
