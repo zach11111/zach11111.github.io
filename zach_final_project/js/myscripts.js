@@ -63,3 +63,12 @@ function upComingEvents(){
 function removeWeather() {
     document.getElementById("myDIV").style.display = "none";
   }
+
+  /*    Change views for directory    */ 
+  function list(){
+      let myElements = document.querySelector(".cards");
+
+      for (let i = 0; i < myElements.length; i++) {
+        myElements[i].style.opacity = 0;
+    }
+  }
