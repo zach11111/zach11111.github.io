@@ -14,13 +14,13 @@ fetch(requestURL)
       let phone = document.createElement("p");
       let email = document.createElement("p"); 
       let website = document.createElement("p"); 
-      let image = document.createElement("img");
+      let image = document.createElement("imageurl");
 
     name.textContent = company[i].name;
     phone.textContent = "Phone:" + " " + company[i].phone;
     email.textContent = "Email:" + " " + company[i].email;
     website.textContent = "Website" + " " + company[i].website;
-    image.setAttribute("src", company[i].img);
+    image.setAttribute("src", company[i].imageurl);
     image.setAttribute("alt", company[i].name);
 
     card.appendChild(name);
