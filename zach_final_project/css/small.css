@@ -309,7 +309,7 @@ textarea {
 
   /*             Directory page             */
 
-.cards {
+  .cards {
     border: solid white;
   background-color: #2d2d33;
   padding: inherit;
@@ -319,23 +319,25 @@ textarea {
 .cards {
     display: grid;
     grid-template-columns: 1fr;    
-    background-color: #921127;
-    border: 1px solid black;
   }
   
   .cards section {
-    background-color: #bfb096;
-    margin: .2rem;
-    padding: .5rem;
-    border: 2px solid #9e8262;
+    background-color: #6a83b0;
+    padding: inherit;
+    border: 10px solid;
+    margin: 10px;
+    padding: inherit;
+
   }
   
   .cards section img {
     width: 80%;
     max-width: 100%;
-    box-shadow: 1px 1px 3px 3px #9e8262;
+    box-shadow: 1px 1px 3px 3px black;
+    margin-left: auto;
+    margin-right: auto;
   }
-  
+
 /*     Footer        */
 footer {
     background-color: #5C5B5D;
