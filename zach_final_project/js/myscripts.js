@@ -81,8 +81,8 @@ function upComingEvents(){
     for (let i = 0; i < prophets.length; i++) {
         let card = document.createElement("section");
         let name = document.createElement("h2");  
-        let date = document.createElement("p");
-        let place = document.createElement("p");   
+        let phone = document.createElement("p");
+        let email = document.createElement("p");   
         let image = document.createElement("img");
   
       name.textContent = company[i].name;
