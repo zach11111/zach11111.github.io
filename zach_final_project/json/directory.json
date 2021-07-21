@@ -13,14 +13,14 @@
             "phone": "(208) 709-9857",
             "email": "pickmeup@example.com",
             "website" : "https://pickmeup.com",
-            "img": "images/business1.jpg"
+            "img": "images/business2.jpg"
         },
         {
             "name" : "Pro Lube",
             "phone": "(208) 745-8851",
             "email": "prolube@example.com",
             "website" : "https://proluberigby.com",
-            "img": "images/business1.jpg"
+            "img": "images/business3.jpg"
         },
         {
             "name" : "Zions bank",
