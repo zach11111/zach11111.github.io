@@ -17,9 +17,9 @@ fetch(requestURL)
       let image = document.createElement("img");
 
     name.textContent = company[i].name;
-    date.textContent = "Phone:" + " " + company[i].phone;
-    txt.textContent = "Email:" + " " + company[i].email;
-    txt.textContent = "Website" + " " + company[i].website;
+    phone.textContent = "Phone:" + " " + company[i].phone;
+    email.textContent = "Email:" + " " + company[i].email;
+    website.textContent = "Website" + " " + company[i].website;
     image.setAttribute("src", company[i].img);
     image.setAttribute("alt", company[i].name);
 
