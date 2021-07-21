@@ -66,5 +66,5 @@ function removeWeather() {
 
   /*    Change views for directory    */ 
   function list(){
-    document.getElementById("cards").style.display = "none";
+    document.getElementByClass("cards").style.display = "none";
   }
