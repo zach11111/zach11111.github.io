@@ -79,12 +79,10 @@ fetch(requestURL)
     for (let i = 0; i < company.length; i++ ) {
         let card = document.createElement('section');
         let h2 = document.createElement('h2');
-
         h2.textContent = company[i].name;
-
         card.appendChild(h2);
-
         document.querySelector('div.cards').appendChild(card);
+        image.setAttribute('src', prophets[i].img);
   }});
 //Print each business card
 
