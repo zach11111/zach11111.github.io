@@ -316,6 +316,26 @@ textarea {
   color: white;
 }
 
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;    
+    background-color: #921127;
+    border: 1px solid black;
+  }
+  
+  .cards section {
+    background-color: #bfb096;
+    margin: .2rem;
+    padding: .5rem;
+    border: 2px solid #9e8262;
+  }
+  
+  .cards section img {
+    width: 80%;
+    max-width: 100%;
+    box-shadow: 1px 1px 3px 3px #9e8262;
+  }
+  
 /*     Footer        */
 footer {
     background-color: #5C5B5D;
