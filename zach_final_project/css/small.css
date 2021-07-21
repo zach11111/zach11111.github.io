@@ -211,6 +211,17 @@ th {
 
 /*        Join Page          */
 
+form {
+    border: solid white;
+    background-color: #191919;
+    padding: inherit;
+    color: white;
+}
+
+textarea {
+    max-width: 50%;
+}
+
 /*     Footer        */
 footer {
     background-color: #5C5B5D;
