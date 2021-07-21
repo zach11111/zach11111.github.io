@@ -182,6 +182,7 @@ li a:hover {
     border: solid black;
     color: white;
     text-align: center;
+    padding: 10px;
 }
 
 /*     Footer        */
