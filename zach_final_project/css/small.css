@@ -11,7 +11,7 @@ h4 {
     border-bottom: solid #ccc;
     width: 100%
   }
-  
+
 p {
     font-family: "Roboto", sans-serif;
     color: white;
@@ -284,6 +284,7 @@ textarea {
   transform: rotate(45deg);
 }
 
+/*         Contact page             */
 /*     Footer        */
 footer {
     background-color: #5C5B5D;
