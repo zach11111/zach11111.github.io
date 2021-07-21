@@ -178,10 +178,16 @@ li a:hover {
 
 /*    Riby Page    */
 .recent-ACS {
+    background-color: white;
     border: solid #191919;
     color: white;
     text-align: center;
     padding: 10px;
+}
+
+.ACS-rigby {
+    background-color: #191919;
+    padding: inherit;
 }
 
 /*     Footer        */
