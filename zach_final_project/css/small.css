@@ -299,6 +299,11 @@ textarea {
     padding: inherit;
   }
 
+  .spaces {
+    margin-bottom: 15px;
+  }
+  
+
   /*             Directory page             */
 
   .cards {
