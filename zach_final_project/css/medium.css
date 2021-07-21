@@ -110,7 +110,7 @@
       background-color:  #fcfcfc62;
 
   }
-  #cards {        
+  .cards {        
     grid-template-columns: 1fr 1fr;        
 }
 
