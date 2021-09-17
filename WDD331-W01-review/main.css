@@ -24,7 +24,8 @@ main {
 
 /*------- Links ------*/
 /*Nav Links*/
-nav li a:active {
+nav li a:active,
+a:link {
   color: #faebd7;
   text-decoration: none;
 }
