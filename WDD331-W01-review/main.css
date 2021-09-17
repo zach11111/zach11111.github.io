@@ -47,7 +47,8 @@ nav ul li a:hover {
 }
 
 /* Other Page Links */
-a {
+.post-content a:link,
+a:visited {
   color: #6495ed;
   text-decoration: none;
 }
