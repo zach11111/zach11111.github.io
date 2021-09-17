@@ -47,17 +47,3 @@ nav ul li a:hover {
 }
 
 /* Other Page Links */
-.post-content a:link,
-a:visited {
-  color: #6495ed;
-  text-decoration: none;
-}
-
-a {
-  color: #deb887;
-  text-decoration: none;
-}
-
-a {
-  text-decoration: underline;
-}
