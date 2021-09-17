@@ -1,116 +1,161 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
-<head>
-
+  <head>
     <title>Final Project: Chamber of Commerce</title>
-    <meta charset="utf-8">
-    <meta name="author" content="Zach Rochette">
-    <meta name="description" content="Practice website for WDD-230.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="author" content="Zach Rochette" />
+    <meta name="description" content="Practice website for WDD-230." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet"  href="css/small.css">
-    <link rel="stylesheet" href="css/medium.css">
-    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <header>
-        <img class="logo" src="images/logo.png" alt="logo for rigby commerce">
-        <img class="hero_image" src="images/union_pacific.jpg" alt="Train car near the Rigby Rodeo grounds">
+      <img class="logo" src="images/logo.png" alt="logo for rigby commerce" />
+      <img
+        class="hero_image"
+        src="images/union_pacific.jpg"
+        alt="Train car near the Rigby Rodeo grounds"
+      />
     </header>
 
     <nav>
-        <ul class="navigation">
-            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="rigby.html">Rigby</a></li>
-            <li><a href="join.html">Join</a></li>
-            <li><a href="directory.html">Directory</a></li>
-            <li><a class="current" href="contact.html">Contact</a></li>
-        </ul>
+      <ul class="navigation">
+        <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rigby.html">Rigby</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a class="current" href="contact.html">Contact</a></li>
+      </ul>
     </nav>
 
-<main>
+    <main>
+      <section class="top-of-page">
+        <h1>Contact Us</h1>
+        <hr />
 
-<section class="top-of-page">  
-    <h1>Contact Us</h1>
-    <hr>
-
-    <h2>Board of Directors</h2>
+        <h2>Board of Directors</h2>
         <div class="ul-style">
-            <ul class="list-styling">
-                <li>Angie Robison</li>
-                <li class="spaces">Email: davieang@aol.com</li>
-                <li>Leanna Poole</li>
-                <li class="spaces">Email: leapool@aol.com</li>
-                <li>Roy Ellis</li>
-                <li class="spaces">Email: elliroy@aol.com</li>
-                <li>Michael Peterson</li>
-                <li class="spaces">Email: mpeterson@aol.com</li>
-                <li>David Grant</li>
-                <li class="spaces">Email: dgrant@aol.com</li>
-                <li>Bruce J Byram</li>
-                <li class="spaces">Email: bbyram@aol.com</li>
-                <li>Leon Clark</li>
-                <li class="spaces">Email: lclark@aol.com</li>
-            </ul>
+          <ul class="list-styling">
+            <li>Angie Robison</li>
+            <li class="spaces">Email: davieang@aol.com</li>
+            <li>Leanna Poole</li>
+            <li class="spaces">Email: leapool@aol.com</li>
+            <li>Roy Ellis</li>
+            <li class="spaces">Email: elliroy@aol.com</li>
+            <li>Michael Peterson</li>
+            <li class="spaces">Email: mpeterson@aol.com</li>
+            <li>David Grant</li>
+            <li class="spaces">Email: dgrant@aol.com</li>
+            <li>Bruce J Byram</li>
+            <li class="spaces">Email: bbyram@aol.com</li>
+            <li>Leon Clark</li>
+            <li class="spaces">Email: lclark@aol.com</li>
+          </ul>
         </div>
 
+        <h3>Contact Info:</h3>
+        <p>
+          3850 E 300 N, Rigby, ID 83442 <br />
+          Phone: 208-745-6693 <br />
+          Fax: 208-745-0848
+        </p>
+      </section>
 
-    <h3>Contact Info:</h3>
-        <p>3850 E 300 N, Rigby, ID 83442 <br>
-        Phone: 208-745-6693 <br>
-        Fax: 208-745-0848</p>
-</section>
+      <section class="middle-of-page">
+        <h2>Ask us a question</h2>
 
-<section class="middle-of-page">
-    <h2>Ask us a question</h2>
-    
-    <h3>Email Form</h3>
+        <h3>Email Form</h3>
 
         <form method="get" action="response_page.html">
-            <label class="info">Full Name: <br>
-            <input type="text" id="lname" name="lname" value="" required><br><br>
-            </label> <br>
-            <label class="info">Email: <br>
-            <input type="text" id="email" value="" required><br><br>
-            </label><br>
-            <label class="info">Phone: <br>
-            <input type="text" id="phone" value=""><br><br>
-            </label>
-            <label class="info">Comment:</label><br>
-            <textarea name="message" rows="10" cols="100"></textarea><br><br>
-            <button class="button" type="submit">Send</button>
-        </form> 
+          <label class="info"
+            >Full Name: <br />
+            <input
+              type="text"
+              id="lname"
+              name="lname"
+              value=""
+              required
+            /><br /><br />
+          </label>
+          <br />
+          <label class="info"
+            >Email: <br />
+            <input
+              type="text"
+              id="email"
+              value=""
+              required
+            /><br /><br /> </label
+          ><br />
+          <label class="info"
+            >Phone: <br />
+            <input type="text" id="phone" value="" /><br /><br />
+          </label>
+          <label class="info">Comment:</label><br />
+          <textarea name="message" rows="10" cols="100"></textarea><br /><br />
+          <button class="button" type="submit">Send</button>
+        </form>
 
-    <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11543.111248227337!2d-111.92393525923134!3d43.67359058600293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53546c26bac0d859%3A0xbf887dcc84af9018!2sRigby%2C%20ID%2083442!5e0!3m2!1sen!2sus!4v1626644235090!5m2!1sen!2sus" width="600" height="450" style="border:0; width:100%; height:50vw;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
-    
-</section>
-</main>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11543.111248227337!2d-111.92393525923134!3d43.67359058600293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53546c26bac0d859%3A0xbf887dcc84af9018!2sRigby%2C%20ID%2083442!5e0!3m2!1sen!2sus!4v1626644235090!5m2!1sen!2sus"
+            width="600"
+            height="450"
+            style="border: 0; width: 100%; height: 50vw"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </section>
+    </main>
 
-<footer>
-    <div class="footer-info">
-        Rigby Chamber &copy;<span id="copyright"></span> | <span id="dates"></span> | Zacharie Rochette | <a href="final_credit_page.html">Sources</a>
-        <p>Weather information provided and licenced by <a href="https://www.openweathermap.com" target="_blank">OpenWeatherMap</a></p>
-        <p>Last Update: <span id="last_update"></span> </p>
-        <p><a href="https://zach11111.github.io">WDD 230 Portal</a></p>
-    </div>
+    <footer>
+      <div class="footer-info">
+        Rigby Chamber &copy;<span id="copyright"></span> |
+        <span id="dates"></span> | Zacharie Rochette |
+        <a href="final_credit_page.html">Sources</a>
+        <p>
+          Weather information provided and licenced by
+          <a href="https://www.openweathermap.com" target="_blank"
+            >OpenWeatherMap</a
+          >
+        </p>
+        <p>Last Update: <span id="last_update"></span></p>
+        <p><a href="https://ZachRochette.github.io">WDD 230 Portal</a></p>
+      </div>
 
-    <div class="social-media">
+      <div class="social-media">
         <h3>Connect With Us</h3>
-        <a class="social-meida" target="_blank" href="https://www.facebook.com"> <img class="icon" src="images/facebook.png" alt="Facebook"> </a>
-        <a class="social-meida" target="_blank" href="https://www.instagram.com"> <img class="icon" src="images/instagram.png" alt="instagram"> </a>
-        <a class="social-meida" target="_blank" href="https://www.pinterest.com"> <img class="icon" src="images/pinterest.png" alt="pinterest"> </a>
-        <a class="social-meida" target="_blank" href="https://www.youtube.com"> <img class="icon" src="images/youtube.png" alt="youtube"> </a>
-    </div>
-</footer>
+        <a class="social-meida" target="_blank" href="https://www.facebook.com">
+          <img class="icon" src="images/facebook.png" alt="Facebook" />
+        </a>
+        <a
+          class="social-meida"
+          target="_blank"
+          href="https://www.instagram.com"
+        >
+          <img class="icon" src="images/instagram.png" alt="instagram" />
+        </a>
+        <a
+          class="social-meida"
+          target="_blank"
+          href="https://www.pinterest.com"
+        >
+          <img class="icon" src="images/pinterest.png" alt="pinterest" />
+        </a>
+        <a class="social-meida" target="_blank" href="https://www.youtube.com">
+          <img class="icon" src="images/youtube.png" alt="youtube" />
+        </a>
+      </div>
+    </footer>
 
     <script src="js/weather.js"></script>
     <script src="js/myscripts.js"></script>
-</body>
+  </body>
+</html>

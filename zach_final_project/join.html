@@ -1,127 +1,178 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
-<head>
-
+  <head>
     <title>Final Project: Chamber of Commerce</title>
-    <meta charset="utf-8">
-    <meta name="author" content="Zach Rochette">
-    <meta name="description" content="Practice website for WDD-230.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="author" content="Zach Rochette" />
+    <meta name="description" content="Practice website for WDD-230." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet"  href="css/small.css">
-    <link rel="stylesheet" href="css/medium.css">
-    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <header>
-        <img class="logo" src="images/logo.png" alt="logo for rigby commerce">
-        <img class="hero_image" src="images/union_pacific.jpg" alt="Train car near the Rigby Rodeo grounds">
+      <img class="logo" src="images/logo.png" alt="logo for rigby commerce" />
+      <img
+        class="hero_image"
+        src="images/union_pacific.jpg"
+        alt="Train car near the Rigby Rodeo grounds"
+      />
     </header>
 
     <nav>
-        <ul class="navigation">
-            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="rigby.html">Rigby</a></li>
-            <li><a class="current" href="join.html">Join</a></li>
-            <li><a href="directory.html">Directory</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+      <ul class="navigation">
+        <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rigby.html">Rigby</a></li>
+        <li><a class="current" href="join.html">Join</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
 
-<main>
+    <main>
+      <section class="top-of-page">
+        <h1>Become a member today</h1>
+        <hr />
 
-<section class="top-of-page">
-    <h1>Become a member today</h1>
-    <hr>
+        <h4>Non-Profit:</h4>
+        <p>
+          A Non-Profit membership is free for anyone. With a Non-Profit
+          membership you will have access to any media posts made from the Rigby
+          Chamber of Commerce and have a chance to win lunceon tickets every
+          month.
+        </p>
+        <h4>Bronze:</h4>
+        <p>
+          A Bronze membership costs an annual fee of $200. With this membership
+          you will have acces to any media posts made from the Rigby Chamber of
+          Commerce, recieve luncheon tickets, and your business will be
+          sponsered in the Jefferson Star newspaper.
+        </p>
+        <h4>Silver:</h4>
+        <p>
+          A Silver membership costs an annual fee of $400. With With this
+          membership you will have acces to any media posts made from the Rigby
+          Chamber of Commerce, recieve luncheon tickets, and your business will
+          be sponsered in the Jefferson Star newspaper, and on our facebook
+          page. Your business will also be added to our directory listings page.
+        </p>
+        <h4>Gold:</h4>
+        <p>
+          A Gold membership costs an annual fee of $1,000. With With this
+          membership you will have acces to any media posts made from the Rigby
+          Chamber of Commerce, recieve luncheon tickets, and your business will
+          be sponsered in the Jefferson Star newspaper, and on our facebook
+          page, and on our recommended business highlight page. Your business
+          will also be added to our directory listings page, and we will provide
+          business trainings.
+        </p>
 
-    <h4>Non-Profit:</h4>
-    <p>A Non-Profit membership is free for anyone. With a Non-Profit membership you will have access to any media posts made from the Rigby Chamber of Commerce
-    and have a chance to win lunceon tickets every month.</p>
-    <h4>Bronze:</h4>
-    <p>A Bronze membership costs an annual fee of $200. With this membership you will have acces to any media posts made from the Rigby Chamber of Commerce, recieve luncheon tickets, 
-    and your business will be sponsered in the Jefferson Star newspaper.</p>
-    <h4>Silver:</h4>
-    <p>A Silver membership costs an annual fee of $400. With With this membership you will have acces to any media posts made from the Rigby Chamber of Commerce, recieve luncheon tickets, 
-    and your business will be sponsered in the Jefferson Star newspaper, and on our facebook page. Your business will also be added to our directory listings page.</p>
-    <h4>Gold:</h4>
-    <p>A Gold membership costs an annual fee of $1,000. With With this membership you will have acces to any media posts made from the Rigby Chamber of Commerce, recieve luncheon tickets, 
-    and your business will be sponsered in the Jefferson Star newspaper, and on our facebook page, and on our recommended business highlight page.
-     Your business will also be added to our directory listings page, and we will provide business trainings.</p>
+        <form method="get" action="response_page.html">
+          <h3>Join The Chamber:</h3>
+          <label class="info"
+            >Full Name: <br />
+            <input type="text" name="lname" value="" required /><br /><br />
+          </label>
+          <br />
+          <label class="info"
+            >Title: <br />
+            <input type="text" required /><br /><br /> </label
+          ><br />
+          <label class="info"
+            >Email: <br />
+            <input type="text" value="" required /><br /><br /> </label
+          ><br />
+          <label class="info"
+            >Phone: <br />
+            <input type="text" value="" /><br /><br /> </label
+          ><br />
+          <label class="info"
+            >Business: <br />
+            <input type="text" value="" required /><br /><br /> </label
+          ><br />
+          <label class="info"
+            >Address: <br />
+            <input type="text" value="" /><br /><br /> </label
+          ><br />
+          <label class="info">Business Website:</label><br />
+          <input type="text" value="" /><br /><br />
 
-   
-    <form method="get" action="response_page.html">
-    <h3>Join The Chamber:</h3>
-        <label class="info">Full Name: <br>
-        <input type="text" name="lname" value="" required><br><br>
-        </label> <br>
-        <label class="info">Title: <br>
-        <input type="text" required><br><br>
-        </label><br>
-        <label class="info">Email: <br>
-        <input type="text" value="" required><br><br>
-        </label><br>
-        <label class="info">Phone: <br>
-        <input type="text" value=""><br><br>
-        </label><br>
-        <label class="info">Business: <br>
-        <input type="text" value=""  required><br><br>
-        </label><br>
-        <label class="info">Address: <br>
-        <input type="text" value=""><br><br>
-        </label><br>
-        <label class="info">Business Website:</label><br>
-        <input type="text" value=""><br><br>
-        
-        <label class="info">Business Description:</label><br>
-        <textarea name="message" rows="10" cols="100"></textarea><br><br>
-        <!--  Membership -->
-        <h4>Membership Level:</h4> <br>
-        <label class="mem-level">Non-profit ($100)
-        <input type="radio" name="level" value="Non-profit">
-        <span class="checkmark"></span>
-        </label><br>
-        <label  class="mem-level">Bronze ($200)
-        <input type="radio" name="level" value="Bronze">
-        <span class="checkmark"></span>
-        </label><br>
-        <label class="mem-level">Silver ($400)
-        <input type="radio" name="level" value="Silver">
-        <span class="checkmark"></span>
-        </label><br>
-        <label  class="mem-level">Gold ($1,000)
-        <input type="radio" name="level" value="Gold">
-        <span class="checkmark"></span>
-        </label><br>
-        <button class="button" type="submit">Send</button>
-    </form> 
+          <label class="info">Business Description:</label><br />
+          <textarea name="message" rows="10" cols="100"></textarea><br /><br />
+          <!--  Membership -->
+          <h4>Membership Level:</h4>
+          <br />
+          <label class="mem-level"
+            >Non-profit ($100)
+            <input type="radio" name="level" value="Non-profit" />
+            <span class="checkmark"></span> </label
+          ><br />
+          <label class="mem-level"
+            >Bronze ($200)
+            <input type="radio" name="level" value="Bronze" />
+            <span class="checkmark"></span> </label
+          ><br />
+          <label class="mem-level"
+            >Silver ($400)
+            <input type="radio" name="level" value="Silver" />
+            <span class="checkmark"></span> </label
+          ><br />
+          <label class="mem-level"
+            >Gold ($1,000)
+            <input type="radio" name="level" value="Gold" />
+            <span class="checkmark"></span> </label
+          ><br />
+          <button class="button" type="submit">Send</button>
+        </form>
+      </section>
+    </main>
 
-</section>
-</main>
+    <footer>
+      <div class="footer-info">
+        Rigby Chamber &copy;<span id="copyright"></span> |
+        <span id="dates"></span> | Zacharie Rochette |
+        <a href="final_credit_page.html">Sources</a>
+        <p>
+          Weather information provided and licenced by
+          <a href="https://www.openweathermap.com" target="_blank"
+            >OpenWeatherMap</a
+          >
+        </p>
+        <p>Last Update: <span id="last_update"></span></p>
+        <p><a href="https://ZachRochette.github.io">WDD 230 Portal</a></p>
+      </div>
 
-<footer>
-    <div class="footer-info">
-        Rigby Chamber &copy;<span id="copyright"></span> | <span id="dates"></span> | Zacharie Rochette | <a href="final_credit_page.html">Sources</a>
-        <p>Weather information provided and licenced by <a href="https://www.openweathermap.com" target="_blank">OpenWeatherMap</a></p>
-        <p>Last Update: <span id="last_update"></span> </p>
-        <p><a href="https://zach11111.github.io">WDD 230 Portal</a></p>
-    </div>
-
-    <div class="social-media">
+      <div class="social-media">
         <h3>Connect With Us</h3>
-        <a class="social-meida" target="_blank" href="https://www.facebook.com"> <img class="icon" src="images/facebook.png" alt="Facebook"> </a>
-        <a class="social-meida" target="_blank" href="https://www.instagram.com"> <img class="icon" src="images/instagram.png" alt="instagram"> </a>
-        <a class="social-meida" target="_blank" href="https://www.pinterest.com"> <img class="icon" src="images/pinterest.png" alt="pinterest"> </a>
-        <a class="social-meida" target="_blank" href="https://www.youtube.com"> <img class="icon" src="images/youtube.png" alt="youtube"> </a>
-    </div>
-</footer>
+        <a class="social-meida" target="_blank" href="https://www.facebook.com">
+          <img class="icon" src="images/facebook.png" alt="Facebook" />
+        </a>
+        <a
+          class="social-meida"
+          target="_blank"
+          href="https://www.instagram.com"
+        >
+          <img class="icon" src="images/instagram.png" alt="instagram" />
+        </a>
+        <a
+          class="social-meida"
+          target="_blank"
+          href="https://www.pinterest.com"
+        >
+          <img class="icon" src="images/pinterest.png" alt="pinterest" />
+        </a>
+        <a class="social-meida" target="_blank" href="https://www.youtube.com">
+          <img class="icon" src="images/youtube.png" alt="youtube" />
+        </a>
+      </div>
+    </footer>
 
     <script src="js/weather.js"></script>
     <script src="js/myscripts.js"></script>
-
-</body>
+  </body>
+</html>
