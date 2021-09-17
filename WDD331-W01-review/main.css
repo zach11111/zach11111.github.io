@@ -29,7 +29,8 @@ ul {
   text-decoration: none;
 }
 
-ul {
+ul,
+a {
   color: #deb887;
 }
 
