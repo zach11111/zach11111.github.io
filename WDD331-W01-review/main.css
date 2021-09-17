@@ -48,3 +48,6 @@ nav a:active {
 }
 
 /* Other Page Links */
+p a {
+  color: #6495ed;
+}
