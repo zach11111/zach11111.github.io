@@ -24,17 +24,17 @@ main {
 
 /*------- Links ------*/
 /*Nav Links*/
-li:link,
+nav ul:link,
 li:visited {
   color: #faebd7;
   text-decoration: none;
 }
 
-li:active {
+ul:active {
   color: #deb887;
 }
 
-li:hover {
+ul:hover {
   color: white;
   text-decoration: none;
 }
