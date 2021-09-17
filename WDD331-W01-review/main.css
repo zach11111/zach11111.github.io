@@ -22,8 +22,16 @@ main {
   background-color: #faebd7;
 }
 
+/*------- Links ------*/
+
 a {
   color: #faebd7;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #faebd7;
+  text-decoration: none;
 }
 
 a:hover {
