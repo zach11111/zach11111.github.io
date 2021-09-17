@@ -23,14 +23,26 @@ main {
 }
 
 /*------- Links ------*/
-
-a:link {
+/*Nav Links*/
+li:link,
+li:visited {
   color: #faebd7;
   text-decoration: none;
 }
 
+li:active {
+  color: #deb887;
+}
+
+li:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/* Other Links*/
+a:link,
 a:visited {
-  color: #faebd7;
+  color: #6495ed;
   text-decoration: none;
 }
 
@@ -40,6 +52,5 @@ a:active {
 }
 
 a:hover {
-  color: white;
   text-decoration: underline;
 }
