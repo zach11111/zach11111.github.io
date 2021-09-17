@@ -24,7 +24,11 @@ main {
 
 /*------- Links ------*/
 /*Nav Links*/
-a {
+nav li a {
   color: #faebd7;
   text-decoration: none;
+}
+
+a {
+  color: red;
 }
