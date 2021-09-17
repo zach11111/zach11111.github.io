@@ -24,16 +24,16 @@ main {
 
 /*------- Links ------*/
 /*Nav Links*/
-nav {
+ul {
   color: #faebd7;
   text-decoration: none;
 }
 
-ul:active {
+ul {
   color: #deb887;
 }
 
-nav:hover {
+ul {
   color: white;
   text-decoration: none;
 }
