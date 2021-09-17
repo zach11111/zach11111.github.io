@@ -31,9 +31,11 @@ main {
 
 /*------- Links ------*/
 /* Other Page Links */
-p a {
+p a:link,
+a:visited {
   color: #6495ed;
 }
+
 /*Nav Links*/
 nav a:link,
 a:visited {
