@@ -24,42 +24,7 @@ main {
 
 /*------- Links ------*/
 /*Nav Links*/
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
+nav {
+  color: #faebd7;
   text-decoration: none;
-}
-
-li a:hover {
-  background-color: #111;
-}
-
-/* Other Links*/
-a:link,
-a:visited {
-  color: #6495ed;
-  text-decoration: none;
-}
-
-a:active {
-  color: #deb887;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
 }
