@@ -30,6 +30,10 @@ main {
 }
 
 /*------- Links ------*/
+/* Other Page Links */
+p a {
+  color: #6495ed;
+}
 /*Nav Links*/
 nav a:link,
 a:visited {
@@ -45,9 +49,4 @@ nav a:hover {
 nav a:active {
   color: #deb887;
   text-decoration: none;
-}
-
-/* Other Page Links */
-p a {
-  color: #6495ed;
 }
