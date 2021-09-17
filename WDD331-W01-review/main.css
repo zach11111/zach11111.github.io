@@ -24,8 +24,7 @@ main {
 
 /*------- Links ------*/
 /*Nav Links*/
-nav ul:link,
-li:visited {
+nav {
   color: #faebd7;
   text-decoration: none;
 }
@@ -34,7 +33,7 @@ ul:active {
   color: #deb887;
 }
 
-ul:hover {
+nav:hover {
   color: white;
   text-decoration: none;
 }
