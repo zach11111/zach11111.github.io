@@ -46,6 +46,18 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
+/* Other Page Links */
+a:link,
+a:visited {
+  color: #6495ed;
+  text-decoration: none;
+}
+
 a:active {
-  color: red;
+  color: #deb887;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
