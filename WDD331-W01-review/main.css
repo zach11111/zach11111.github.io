@@ -37,8 +37,7 @@ a:visited {
 }
 
 /*Nav Links*/
-nav a:link,
-a:visited {
+nav a {
   color: #faebd7;
   text-decoration: none;
 }
