@@ -30,6 +30,10 @@ a:visited {
   text-decoration: none;
 }
 
+nav ul li a:active {
+  color: #deb887;
+}
+
 nav ul li a:hover {
   color: white;
   text-decoration: underline;
