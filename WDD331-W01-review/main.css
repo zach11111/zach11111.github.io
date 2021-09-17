@@ -6,6 +6,10 @@
    Other page links should behave thus: normal and visited: #6495ED and no underline , active: #DEB887, hover: underlined
    Article title links should behave thus: normal and visited: black and no underline , active: #DEB887, hover: #6495ED and underlined */
 
+header {
+  background-color: #6495ed;
+}
+
 h1 {
   font-family: "Lora", serif;
 }
