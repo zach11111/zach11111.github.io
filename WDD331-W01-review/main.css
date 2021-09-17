@@ -26,18 +26,15 @@ main {
 /*Nav Links*/
 nav ul li a:link,
 a:visited {
-  font-family: Helvetica, Arial, sans-serif;
   color: #faebd7;
   text-decoration: none;
 }
 
 nav ul li a:active {
-  font-family: Helvetica, Arial, sans-serif;
   color: #deb887;
 }
 
 nav ul li a:hover {
-  font-family: Helvetica, Arial, sans-serif;
   color: white;
   text-decoration: underline;
 }
