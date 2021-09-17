@@ -22,6 +22,10 @@ main {
   background-color: #faebd7;
 }
 
-nav {
+a {
   color: #faebd7;
+}
+
+a:hover {
+  color: #deb887;
 }
