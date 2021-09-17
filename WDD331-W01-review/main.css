@@ -25,7 +25,7 @@ main {
 /*------- Links ------*/
 /*Nav Links*/
 nav ul li a:link,
-a:active {
+a:visited {
   color: #faebd7;
   text-decoration: none;
 }
