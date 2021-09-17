@@ -24,7 +24,7 @@ main {
 
 /*------- Links ------*/
 
-a {
+a:link {
   color: #faebd7;
   text-decoration: none;
 }
@@ -34,6 +34,11 @@ a:visited {
   text-decoration: none;
 }
 
-a:hover {
+a:active {
   color: #deb887;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
 }
