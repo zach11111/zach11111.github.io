@@ -91,5 +91,6 @@ nav a:active {
   background-color: white;
   box-shadow: 10px 10px 0px 0px grey;
   width: auto;
-  padding: 10em;
+  margin: 2em;
+  padding: 1em;
 }
