@@ -52,6 +52,7 @@ h1 a {
 li {
   margin: 5px;
 }
+
 nav a:visited,
 a:link {
   font-family: Helvetica, Arial, sans-serif;
@@ -110,4 +111,18 @@ article {
   width: auto;
   margin: 1.5em;
   padding: 1em;
+}
+
+@media only screen and (min-width: 60em) {
+  h1 {
+    font-size: 3em;
+    margin: 0 0 10px 0;
+  }
+  header,
+  nav,
+  main,
+  footer {
+    max-width: 1500px;
+    margin: 0 auto;
+  }
 }
