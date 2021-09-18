@@ -16,8 +16,11 @@ body {
   padding: 1em;
   background-color: #faebd7;
 }
+h1 {
+  background-color: #6495ed;
+  font-family: "lora", serif;
+}
 
-h1,
 h2,
 h3,
 h4 {
