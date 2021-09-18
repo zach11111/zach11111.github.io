@@ -114,7 +114,8 @@ article {
 }
 
 @media screen and (min-width: 60em) {
-  nav {
+  nav,
+  header {
     height: 100%;
     width: 0;
     position: fixed;
@@ -127,7 +128,8 @@ article {
     padding-top: 60px;
   }
 
-  nav a {
+  nav a,
+  header {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
@@ -146,10 +148,5 @@ article {
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-  }
-
-  main {
-    transition: margin-left 0.5s;
-    padding: 16px;
   }
 }
