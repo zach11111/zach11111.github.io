@@ -10,6 +10,14 @@ header {
   background-color: #6495ed;
 }
 
+body {
+  width: auto;
+  margin: 1rem;
+  padding: 10px;
+  text-align: center;
+  background-color: #9e8262;
+}
+
 h1,
 h2,
 h3,
