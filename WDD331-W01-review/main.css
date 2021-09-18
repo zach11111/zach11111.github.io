@@ -66,16 +66,16 @@ h2 a:active {
 }
 
 /*  Other Links */
-p a:link {
+.post-content p a {
   color: #6495ed;
   text-decoration: none;
 }
 
-p a {
+.post-content p a {
   color: #deb887;
   text-decoration: none;
 }
 
-p a {
+.post-content p a {
   text-decoration: underline;
 }
