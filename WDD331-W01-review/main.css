@@ -63,7 +63,7 @@ h2 a:hover {
 
 h2 a:active {
   color: #deb887;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 p a {
