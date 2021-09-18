@@ -31,7 +31,8 @@ main {
 
 /*------- Links ------*/
 /*Nav Links*/
-li {
+li:link,
+li:visited {
   color: #faebd7;
 }
 /* Other Page Links */
