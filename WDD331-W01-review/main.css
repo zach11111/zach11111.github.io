@@ -113,15 +113,18 @@ article {
   padding: 1em;
 }
 
-@media only screen and (min-width: 60em) {
-  nav,
-  header {
+@media screen and (min-width: 60em) {
+  nav {
     height: 100%;
     width: 0;
     position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
-    background-color: #6495ed;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
   }
 
   nav a {
@@ -135,5 +138,18 @@ article {
 
   nav a:hover {
     color: #f1f1f1;
+  }
+
+  nav {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  main {
+    transition: margin-left 0.5s;
+    padding: 16px;
   }
 }
