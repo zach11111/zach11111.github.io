@@ -119,6 +119,7 @@ article {
     left: 0;
     width: 250px;
     position: absolute;
+    margin: 1.5em;
     height: 100%;
   }
 
