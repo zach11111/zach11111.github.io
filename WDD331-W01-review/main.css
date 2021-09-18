@@ -30,24 +30,8 @@ main {
 }
 
 /*------- Links ------*/
-/* Other Page Links */
-a:link,
-a:visited {
-  color: #6495ed;
-}
-
 /*Nav Links*/
-nav a {
+li {
   color: #faebd7;
-  text-decoration: none;
 }
-
-nav a:hover {
-  color: white;
-  text-decoration: underline;
-}
-
-nav a:active {
-  color: #deb887;
-  text-decoration: none;
-}
+/* Other Page Links */
