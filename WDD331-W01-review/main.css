@@ -26,7 +26,7 @@ main {
 }
 
 /*------- Links ------*/
-h1 {
+h1 a {
   color: #faebd7;
   text-decoration: none;
 }
@@ -66,8 +66,7 @@ h2 a {
 }
 
 /*  Other Links */
-p a,
-a {
+p a {
   color: #6495ed;
   text-decoration: none;
 }
