@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+
 /* ----- Colors Used -----*/
 /* Blue Color = #6495ED
    Background Color = #FAEBD7
@@ -15,7 +16,7 @@ header {
 
 h1 {
   background-color: #6495ed;
-  font-family: "lora", serif;
+  font-family: "Lora", serif;
   padding: 10px;
 }
 body {
