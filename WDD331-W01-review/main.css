@@ -26,8 +26,9 @@ main {
 }
 
 /*------- Links ------*/
-header h1 a:link,
-a:active {
+h1 a:link,
+a:active,
+a:hover {
   color: #faebd7;
   text-decoration: none;
 }
