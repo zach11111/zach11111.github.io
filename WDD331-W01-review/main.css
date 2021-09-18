@@ -78,3 +78,11 @@ nav a:active {
 .post-content p a:active {
   color: #deb887;
 }
+
+/* Cards "Articles"*/
+article {
+  background-color: #bfb096;
+  margin: 0.2rem;
+  padding: 0.5rem;
+  border: 2px solid #9e8262;
+}
