@@ -41,3 +41,8 @@ nav a {
   color: black;
   text-decoration: none;
 }
+
+p a {
+  color: #6495ed;
+  text-decoration: none;
+}
