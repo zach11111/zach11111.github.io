@@ -89,7 +89,8 @@ nav a:active {
 /* Cards "Articles"*/
 article {
   background-color: white;
-  margin: 0.2rem;
-  padding: 0.5rem;
   box-shadow: 0px 0px 3px 3px grey;
+  width: auto;
+  margin: 1em;
+  padding: 1em;
 }
