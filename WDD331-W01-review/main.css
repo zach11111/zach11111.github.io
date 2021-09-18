@@ -10,6 +10,12 @@ header {
   background-color: #6495ed;
 }
 
+body {
+  width: auto;
+  margin: 1em;
+  padding: 1em;
+  background-color: #6495ed;
+}
 h1 {
   background-color: #6495ed;
   font-family: "lora", serif;
