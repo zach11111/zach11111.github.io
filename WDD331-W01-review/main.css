@@ -73,3 +73,13 @@ a:visited {
   color: #6495ed;
   text-decoration: none;
 }
+
+p a:active {
+  color: #deb887;
+  text-decoration: none;
+}
+
+p a:hover {
+  color: #6495ed;
+  text-decoration: underline;
+}
