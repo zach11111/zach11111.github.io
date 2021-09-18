@@ -77,6 +77,6 @@ a:visited {
   text-decoration: none;
 }
 
-.post-content p a {
+.post-content p a:hover {
   text-decoration: underline;
 }
