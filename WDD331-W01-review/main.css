@@ -66,3 +66,7 @@ nav a:active {
 }
 
 /*  Other Links */
+.post-content p a {
+  color: #6495ed;
+  text-decoration: none;
+}
