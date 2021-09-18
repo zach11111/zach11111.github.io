@@ -10,7 +10,6 @@ header {
   background-color: #6495ed;
 }
 
-h1,
 h2,
 h3,
 h4 {
@@ -26,7 +25,7 @@ main {
 }
 
 /*------- Links ------*/
-h1 a {
+h1 {
   color: #faebd7;
   text-decoration: none;
 }
