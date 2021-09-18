@@ -15,7 +15,10 @@ h2,
 h3,
 h4 {
   font-family: "Lora", serif;
-  background-color: #6495ed;
+}
+
+h1 {
+  color: #faebd7;
 }
 
 nav {
