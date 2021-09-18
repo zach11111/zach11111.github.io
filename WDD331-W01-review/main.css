@@ -59,6 +59,10 @@ nav a:active {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+}
+
 /* Article Title Links */
 .post-content h2 a:visited {
   color: black;
