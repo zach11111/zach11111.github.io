@@ -26,9 +26,7 @@ main {
 }
 
 /*------- Links ------*/
-h1 a:link,
-a:active,
-a:hover {
+h1 a {
   color: #faebd7;
   text-decoration: none;
 }
@@ -74,11 +72,11 @@ a:visited {
   text-decoration: none;
 }
 
-.post-content p a:active {
+.post-content p a {
   color: #deb887;
   text-decoration: none;
 }
 
-.post-content p a:hover {
+.post-content p a {
   text-decoration: underline;
 }
