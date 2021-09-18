@@ -114,18 +114,6 @@ article {
 }
 
 @media only screen and (min-width: 60em) {
-  h1 {
-    font-size: 3em;
-    margin: 0 0 10px 0;
-  }
-  header,
-  nav,
-  main,
-  footer {
-    max-width: 1500px;
-    margin: 0 auto;
-  }
-
   nav {
     height: 100%;
     width: 0;
@@ -137,5 +125,18 @@ article {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+  }
+
+  nav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  nav a:hover {
+    color: #f1f1f1;
   }
 }
