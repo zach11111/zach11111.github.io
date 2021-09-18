@@ -8,18 +8,12 @@
 
 header {
   background-color: #6495ed;
-  text-align: left;
 }
 
-body {
-  width: auto;
-  margin: 1em;
-  padding: 1em;
-  background-color: #6495ed;
-}
 h1 {
   background-color: #6495ed;
   font-family: "lora", serif;
+  text-align: left;
 }
 
 h2,
@@ -40,6 +34,7 @@ main {
 h1 a {
   color: #faebd7;
   text-decoration: none;
+  text-align: left;
 }
 
 /* Nav Bar */
@@ -48,6 +43,7 @@ a:link {
   font-family: Helvetica, Arial, sans-serif;
   color: #faebd7;
   text-decoration: none;
+  text-align: left;
 }
 
 nav a:hover {
