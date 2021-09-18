@@ -66,8 +66,7 @@ h2 a:active {
 }
 
 /*  Other Links */
-p a:link,
-a:visited {
+p a:link {
   color: #6495ed;
   text-decoration: none;
 }
