@@ -58,7 +58,7 @@ a:visited {
 }
 
 /*  Other Links */
-p a:active,
+p a:link,
 a:visited {
   color: #6495ed;
   text-decoration: none;
