@@ -57,6 +57,16 @@ a:visited {
   text-decoration: none;
 }
 
+h2 a:hover {
+  color: #6495ed;
+  text-decoration: underline;
+}
+
+h2 a:active {
+  color: #deb887;
+  text-decoration: none;
+}
+
 /*  Other Links */
 p a:link,
 a:visited {
@@ -64,18 +74,9 @@ a:visited {
   text-decoration: none;
 }
 
-h2 a:active {
-  color: #deb887;
-  text-decoration: none;
-}
 p a:active {
   color: #deb887;
   text-decoration: none;
-}
-
-h2 a:hover {
-  color: #6495ed;
-  text-decoration: underline;
 }
 
 p a:hover {
