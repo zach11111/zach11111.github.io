@@ -26,7 +26,7 @@ main {
 }
 
 /*------- Links ------*/
-h1 a:link,
+header h1 a:link,
 a:active {
   color: #faebd7;
   text-decoration: none;
