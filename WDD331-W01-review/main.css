@@ -125,4 +125,11 @@ article {
   body {
     border-left: 250px solid #cccccc;
   }
+  article {
+    background-color: white;
+    box-shadow: 3px 3px 5px 0px rgba(200, 200, 200);
+    width: auto;
+    margin: 1.5em;
+    padding: 1em;
+  }
 }
