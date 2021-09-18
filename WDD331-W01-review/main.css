@@ -26,7 +26,7 @@ main {
 }
 
 /*------- Links ------*/
-h1 a {
+h1 a:link {
   color: #faebd7;
   text-decoration: none;
 }
