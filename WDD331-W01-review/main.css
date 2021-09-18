@@ -12,6 +12,14 @@ header {
   padding: 2em;
 }
 
+body {
+  width: auto;
+  margin: 1rem;
+  padding: 10px;
+  text-align: center;
+  background-color: #9e8262;
+}
+
 h1 {
   background-color: #6495ed;
   font-family: "lora", serif;
