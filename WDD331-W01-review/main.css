@@ -10,6 +10,7 @@ header {
   background-color: #6495ed;
 }
 
+h1,
 h2,
 h3,
 h4 {
@@ -25,7 +26,7 @@ main {
 }
 
 /*------- Links ------*/
-h1 {
+h1 a {
   color: #faebd7;
   text-decoration: none;
 }
@@ -66,17 +67,3 @@ a:visited {
 }
 
 /*  Other Links */
-.post-content p a:link,
-a:visited {
-  color: #6495ed;
-  text-decoration: none;
-}
-
-.post-content p a:active {
-  color: #deb887;
-  text-decoration: none;
-}
-
-.post-content p a:hover {
-  text-decoration: underline;
-}
