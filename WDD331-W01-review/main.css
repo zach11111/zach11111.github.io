@@ -66,17 +66,17 @@ h2 a {
 }
 
 /*  Other Links */
-p a:link,
-a:visited {
+p a,
+a {
   color: #6495ed;
   text-decoration: none;
 }
 
-p a:active {
+p a {
   color: #deb887;
   text-decoration: none;
 }
 
-p a:hover {
+p a {
   text-decoration: underline;
 }
