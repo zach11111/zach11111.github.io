@@ -17,6 +17,15 @@ h4 {
   font-family: "Lora", serif;
 }
 
+p {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+main {
+  background-color: #faebd7;
+}
+
+/*------- Links ------*/
 h1 a {
   color: #faebd7;
   text-decoration: none;
@@ -28,15 +37,6 @@ nav a {
   text-decoration: none;
 }
 
-p {
-  font-family: Helvetica, Arial, sans-serif;
+.post-content a {
+  color: black;
 }
-
-main {
-  background-color: #faebd7;
-}
-
-/*------- Links ------*/
-/*Nav Links*/
-
-/* Other Page Links */
