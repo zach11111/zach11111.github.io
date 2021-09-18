@@ -87,10 +87,10 @@ nav a:active {
 }
 
 /* Cards "Articles"*/
-.post-content {
+article {
   background-color: white;
   box-shadow: 10px 10px 0px 0px grey;
   width: auto;
-  margin: 2em;
+  margin: 1em;
   padding: 1em;
 }
