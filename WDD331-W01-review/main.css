@@ -11,6 +11,7 @@ header {
 }
 
 body {
+  font-family: "Lora", serif;
   width: auto;
   margin: 1em;
   padding: 1em;
@@ -36,7 +37,6 @@ main {
 h1 a {
   color: #faebd7;
   text-decoration: none;
-  font-family: "Lora", serif;
 }
 
 /* Nav Bar */
