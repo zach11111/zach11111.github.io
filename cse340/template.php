@@ -13,7 +13,7 @@
 
 <body>
     <header>
-
+        <img src="/phpmotors/images/site/logo.png" alt="PHP Motors logo">
     </header>
 
     <nav>
