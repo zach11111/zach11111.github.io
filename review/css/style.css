@@ -4,4 +4,5 @@ button {
   border-left: 25px solid transparent;
   border-right: 25px solid transparent;
   border-bottom: 50px solid #555;
+  color: white;
 }
