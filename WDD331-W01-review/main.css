@@ -10,11 +10,6 @@ header {
   text-align: right;
   padding: 2em;
   margin: -16px;
-  /*------- Links ------*/
-  /* Nav Bar */
-  /* Article Title Links */
-  /*  Other Links */
-  /* Cards "Articles"*/
 }
 @media screen and (min-width: 900px) {
   header header {
@@ -26,81 +21,104 @@ header {
     height: 100%;
   }
 }
-header h1 {
+
+h1 {
   background-color: #6495ed;
   font-family: "Lora", serif;
   padding: 10px;
 }
-header body {
+
+body {
   background-color: #faebd7;
 }
 @media screen and (min-width: 900px) {
-  header body body {
+  body body {
     border-left: 250px solid #cccccc;
   }
 }
-header h2,
-header h3,
-header h4 {
+
+h2,
+h3,
+h4 {
   font-family: "Lora", serif;
 }
-header p {
+
+p {
   font-family: Helvetica, Arial, sans-serif;
 }
-header main {
+
+main {
   background-color: #faebd7;
   width: auto;
   margin: 1rem;
   padding: 10px;
   background-color: #faebd7;
 }
-header h1 a {
+
+/*------- Links ------*/
+h1 a {
   color: #faebd7;
   text-decoration: none;
 }
-header li {
+
+/* Nav Bar */
+li {
   margin: 15px;
 }
-header nav a:visited,
-header a:link {
+
+nav a:visited,
+a:link {
   font-family: Helvetica, Arial, sans-serif;
   color: #faebd7;
   text-decoration: none;
 }
-header nav a:hover {
+
+nav a:hover {
   color: white;
   text-decoration: underline;
 }
-header nav a:active {
+
+nav a:active {
   color: #deb887;
   text-decoration: none;
 }
-header ul {
+
+ul {
   list-style: none;
 }
-header .post-content h2 a:visited {
+
+/* Article Title Links */
+.post-content h2 a:visited {
   color: black;
   text-decoration: none;
 }
-header .post-content h2 a:hover {
+
+.post-content h2 a:hover {
   color: #6495ed;
   text-decoration: underline;
 }
-header .post-content h2 a:active {
+
+.post-content h2 a:active {
   color: #deb887;
   text-decoration: none;
 }
-header .post-content p a {
+
+/*  Other Links */
+.post-content p a {
   color: #6495ed;
   text-decoration: none;
 }
-header .post-content p a:hover {
+
+.post-content p a:hover {
   text-decoration: underline;
 }
-header .post-content p a:active {
+
+.post-content p a:active {
   color: #deb887;
 }
-header article {
+
+/* Cards "Articles"*/
+article {
   background-color: white;
   box-shadow: 3px 3px 5px 0px #c8c8c8;
   width: auto;
