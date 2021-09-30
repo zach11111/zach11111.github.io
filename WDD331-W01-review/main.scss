@@ -18,7 +18,7 @@ header {
   text-align: right;
   padding: 2em;
   margin: -16px;
-  @media screen and (min-width: 900px) {
+  @media screen and (max-width: 900px) {
     & header {
       top: 0;
       left: 0;
