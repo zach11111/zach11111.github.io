@@ -5,6 +5,11 @@
    NAV link Color = normal and visited: #FAEBD7 and no underline , active: #DEB887, hover: white and underlined
    Other page links should behave thus: normal and visited: #6495ED and no underline , active: #DEB887, hover: underlined
    Article title links should behave thus: normal and visited: black and no underline , active: #DEB887, hover: #6495ED and underlined */
+.post-date {
+  color: #cccccc;
+  font-family: "lora", serif;
+}
+
 header {
   background-color: #6495ed;
   text-align: right;
@@ -52,17 +57,15 @@ li {
 }
 
 nav a:visited,
-a:link {
+nav a:link {
   font-family: Helvetica, Arial, sans-serif;
   color: #faebd7;
   text-decoration: none;
 }
-
 nav a:hover {
   color: white;
   text-decoration: underline;
 }
-
 nav a:active {
   color: #deb887;
   text-decoration: none;

@@ -13,6 +13,11 @@ $blue-color: #6495ed;
 $tan-color: #deb887;
 $grey-color: #cccccc;
 
+.post-date {
+  color: $grey-color;
+  font-family: "lora", serif;
+}
+
 header {
   background-color: $blue-color;
   text-align: right;
@@ -58,21 +63,21 @@ li {
   margin: 15px;
 }
 
-nav a:visited,
-a:link {
-  font-family: Helvetica, Arial, sans-serif;
-  color: $main-color;
-  text-decoration: none;
-}
-
-nav a:hover {
-  color: white;
-  text-decoration: underline;
-}
-
-nav a:active {
-  color: $tan-color;
-  text-decoration: none;
+nav {
+  a:visited,
+  a:link {
+    font-family: Helvetica, Arial, sans-serif;
+    color: $main-color;
+    text-decoration: none;
+  }
+  a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  a:active {
+    color: $tan-color;
+    text-decoration: none;
+  }
 }
 
 ul {
