@@ -102,18 +102,21 @@ ul {
     text-decoration: none;
   }
 }
+
 /*  Other Links */
-.post-content p a {
-  color: $blue-color;
-  text-decoration: none;
-}
+.post-content {
+  p a {
+    color: $blue-color;
+    text-decoration: none;
+  }
 
-.post-content p a:hover {
-  text-decoration: underline;
-}
+  p a:hover {
+    text-decoration: underline;
+  }
 
-.post-content p a:active {
-  color: $tan-color;
+  p a:active {
+    color: $tan-color;
+  }
 }
 
 /* Cards "Articles"*/
