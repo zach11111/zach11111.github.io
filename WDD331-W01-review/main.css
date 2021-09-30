@@ -11,16 +11,6 @@ header {
   padding: 2em;
   margin: -16px;
 }
-@media screen and (max-width: 900px) {
-  header header {
-    top: 0;
-    left: 0;
-    width: 250px;
-    position: absolute;
-    padding-right: 1em;
-    height: 100%;
-  }
-}
 
 h1 {
   background-color: #6495ed;
@@ -124,6 +114,17 @@ article {
   width: auto;
   margin: 1.5em;
   padding: 1em;
+}
+
+@media screen and (max-width: 900px) {
+  header {
+    top: 0;
+    left: 0;
+    width: 250px;
+    position: absolute;
+    padding-right: 1em;
+    height: 100%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
