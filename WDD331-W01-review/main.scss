@@ -10,6 +10,7 @@
 
 $main-color: #faebd7;
 $blue-color: #6495ed;
+$tan-color: #deb887;
 
 header {
   background-color: $blue-color;
@@ -69,7 +70,7 @@ nav a:hover {
 }
 
 nav a:active {
-  color: #deb887;
+  color: $tan-color;
   text-decoration: none;
 }
 
@@ -89,7 +90,7 @@ ul {
 }
 
 .post-content h2 a:active {
-  color: #deb887;
+  color: $tan-color;
   text-decoration: none;
 }
 
@@ -104,7 +105,7 @@ ul {
 }
 
 .post-content p a:active {
-  color: #deb887;
+  color: $tan-color;
 }
 
 /* Cards "Articles"*/
