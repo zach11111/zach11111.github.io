@@ -8,20 +8,23 @@
    Other page links should behave thus: normal and visited: #6495ED and no underline , active: #DEB887, hover: underlined
    Article title links should behave thus: normal and visited: black and no underline , active: #DEB887, hover: #6495ED and underlined */
 
+$main-color: #faebd7;
+$blue-color: #6495ed;
+
 header {
-  background-color: #6495ed;
+  background-color: $blue-color;
   text-align: right;
   padding: 2em;
   margin: -16px;
 }
 
 h1 {
-  background-color: #6495ed;
+  background-color: $blue-color;
   font-family: "Lora", serif;
   padding: 10px;
 }
 body {
-  background-color: #faebd7;
+  background-color: $main-color;
 }
 
 h2,
@@ -35,16 +38,16 @@ p {
 }
 
 main {
-  background-color: #faebd7;
+  background-color: $main-color;
   width: auto;
   margin: 1rem;
   padding: 10px;
-  background-color: #faebd7;
+  background-color: $main-color;
 }
 
 /*------- Links ------*/
 h1 a {
-  color: #faebd7;
+  color: $main-color;
   text-decoration: none;
 }
 
@@ -56,7 +59,7 @@ li {
 nav a:visited,
 a:link {
   font-family: Helvetica, Arial, sans-serif;
-  color: #faebd7;
+  color: $main-color;
   text-decoration: none;
 }
 
@@ -81,7 +84,7 @@ ul {
 }
 
 .post-content h2 a:hover {
-  color: #6495ed;
+  color: $blue-color;
   text-decoration: underline;
 }
 
@@ -92,7 +95,7 @@ ul {
 
 /*  Other Links */
 .post-content p a {
-  color: #6495ed;
+  color: $blue-color;
   text-decoration: none;
 }
 
