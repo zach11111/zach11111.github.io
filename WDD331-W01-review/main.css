@@ -21,11 +21,6 @@ h1 {
 body {
   background-color: #faebd7;
 }
-@media screen and (min-width: 900px) {
-  body body {
-    border-left: 250px solid #cccccc;
-  }
-}
 
 h2,
 h3,
@@ -116,7 +111,7 @@ article {
   padding: 1em;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (min-width: 900px) {
   header {
     top: 0;
     left: 0;
@@ -124,6 +119,10 @@ article {
     position: absolute;
     padding-right: 1em;
     height: 100%;
+  }
+
+  body {
+    border-left: 250px solid #cccccc;
   }
 }
 
