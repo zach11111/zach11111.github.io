@@ -95,11 +95,9 @@ ul {
   color: #6495ed;
   text-decoration: none;
 }
-
 .post-content p a:hover {
   text-decoration: underline;
 }
-
 .post-content p a:active {
   color: #deb887;
 }
