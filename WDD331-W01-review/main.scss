@@ -8,10 +8,26 @@
    Other page links should behave thus: normal and visited: #6495ED and no underline , active: #DEB887, hover: underlined
    Article title links should behave thus: normal and visited: black and no underline , active: #DEB887, hover: #6495ED and underlined */
 
+/* ------ Variables -------*/
 $main-color: #faebd7;
 $blue-color: #6495ed;
 $tan-color: #deb887;
 $grey-color: #cccccc;
+
+/*----- Mixins ----*/
+@mixin grid($flex) {
+  @if $flex {
+    @include flex;
+  } @else {
+    display: block;
+  }
+}
+
+@mixin padding($values...) {
+  @each $var in $values {
+    padding: #{$var};
+  }
+}
 
 .post-date {
   color: $grey-color;
@@ -21,7 +37,7 @@ $grey-color: #cccccc;
 header {
   background-color: $blue-color;
   text-align: right;
-  padding: 2em;
+  @include padding(2em);
   margin: -16px;
 }
 
@@ -63,6 +79,7 @@ li {
   margin: 15px;
 }
 
+/*----- Nesting ------*/
 nav {
   a:visited,
   a:link {
@@ -84,6 +101,7 @@ ul {
   list-style: none;
 }
 
+/*----- Nesting ------*/
 /* Article Title Links */
 .post-content {
   h2 a:visited,
@@ -103,6 +121,7 @@ ul {
   }
 }
 
+/*----- Nesting ------*/
 /*  Other Links */
 .post-content {
   p a {
