@@ -1,7 +1,6 @@
 @import "../partials/variables";
 @import "../partials/mixins";
 @import "../partials/classes";
-@import "../partials/loops";
 
 *,
 *:before,
@@ -11,6 +10,7 @@
   padding: 0;
 }
 
+@import "../partials/loops";
 // @mixin col($span-num) {
 // flex: 0 0 12.5% * $span-num;
 // }
