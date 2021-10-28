@@ -4,6 +4,14 @@ $card-height: $card-width * 1.4;
 $font-size-number: $card-width * 0.1;
 $icon-size: $card-width / 5;
 
+// @mixin col($span-num) {
+// flex: 0 0 12.5% * $span-num;
+// }
+
+// @mixin offset($offset-num) {
+// margin-left: 12.5% * $offset-num;
+// }
+
 //variables
 $num-columns: 8;
 $one-column: 100% / $num_columns;
@@ -26,6 +34,7 @@ $one-column: 12.5%;
   margin: 0;
   padding: 0;
 }
+
 //styles to draw a basic outline of a card
 .card {
   border: 1px solid grey;
@@ -74,6 +83,7 @@ $one-column: 12.5%;
   flex: 1;
   text-align: center;
 }
+
 //make column classes
 @for $index from $loop-start to $loop-end {
   .col-#{$index} {
@@ -87,30 +97,3 @@ $one-column: 12.5%;
     @include offset($index);
   }
 }
-
-// @mixin col($span-num) {
-// flex: 0 0 12.5% * $span-num;
-// }
-
-// @mixin offset($offset-num) {
-// margin-left: 12.5% * $offset-num;
-// }
-
-// .col-1 {
-// @include col(1);
-// }
-
-//   .col-2 {
-// @include col(2);
-//   }
-
-//   .col-8 {
-// @include col(8);
-//   }
-
-// .offset-1 {
-//   @include offset(1);
-// }
-// .offset-2 {
-//   @include offset(2);
-// }
