@@ -1,4 +1,3 @@
-$one-column: 12.5%;
 @mixin col($span-num) {
   flex: 0 0 $one-column * $span-num;
 }
