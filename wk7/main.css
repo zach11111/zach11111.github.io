@@ -50,68 +50,48 @@
   text-align: center;
 }
 
-.col-1 {
-  flex: 0 0 12.5%;
+.card {
+  border: 1px solid grey;
+  height: 56vw;
+  width: 40vw;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 2px 2px 4px grey;
 }
 
-.col-2 {
-  flex: 0 0 25%;
+.card-front {
+  padding: 0.5em;
 }
 
-.col-3 {
-  flex: 0 0 37.5%;
+.icon {
+  width: 8vw;
+  height: 8vw;
 }
 
-.col-4 {
-  flex: 0 0 50%;
+.number {
+  text-align: center;
+  font-size: 4vw;
+}
+.number > .icon {
+  width: 4vw;
+  height: 4vw;
 }
 
-.col-5 {
-  flex: 0 0 62.5%;
+.rotate {
+  transform: rotate(180deg);
 }
 
-.col-6 {
-  flex: 0 0 75%;
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  align-content: space-between;
+  height: 100%;
 }
 
-.col-7 {
-  flex: 0 0 87.5%;
-}
-
-.col-8 {
-  flex: 0 0 100%;
-}
-
-.offset-1 {
-  margin-left: 12.5%;
-}
-
-.offset-2 {
-  margin-left: 25%;
-}
-
-.offset-3 {
-  margin-left: 37.5%;
-}
-
-.offset-4 {
-  margin-left: 50%;
-}
-
-.offset-5 {
-  margin-left: 62.5%;
-}
-
-.offset-6 {
-  margin-left: 75%;
-}
-
-.offset-7 {
-  margin-left: 87.5%;
-}
-
-.offset-8 {
-  margin-left: 100%;
+.cell {
+  flex: 1;
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */

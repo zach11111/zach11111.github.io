@@ -1,3 +1,11 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .card {
   border: 1px solid grey;
   height: 56vw;
@@ -40,14 +48,6 @@
 .cell {
   flex: 1;
   text-align: center;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 .col-1 {
@@ -113,5 +113,3 @@
 .offset-8 {
   margin-left: 100%;
 }
-
-/*# sourceMappingURL=main.css.map */
