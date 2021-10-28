@@ -1,7 +1,7 @@
-@import "partials/mixins";
-@import "partials/variables";
-@import "partials/classes";
-@import "partials/loops";
+@import "../partials/mixins.scss";
+@import "../partials/variables";
+@import "../partials/classes";
+@import "../partials/loops";
 // @mixin col($span-num) {
 // flex: 0 0 12.5% * $span-num;
 // }
