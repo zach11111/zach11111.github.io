@@ -1,5 +1,5 @@
-@import 'typography';
-@import 'icons';
+@import "typography";
+@import "icons";
 
 $sm-break: 48em;
 // colors
@@ -30,4 +30,19 @@ img {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+}
+
+.icon-byui-logo {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+}
+
+.site-banner__left {
+  font-size: 30px;
+}
+
+.site-banner__right {
+  font-size: 30px;
 }
