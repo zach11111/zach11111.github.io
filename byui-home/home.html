@@ -1,114 +1,65 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Brigham Young University - Idaho</title>
+    <title>byui-home page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
 
   <body>
     <header>
-    <div class="site-banner">
-      <div class="site-banner white-text">
-        <div class="site-banner__left">
+      <div class="site-nav-background">
+        <div class="site-banner-left">
           <a href="#"
             ><span aria-hidden="true" class="icon-byui-logo">
               <span class="sr-only">BYU-Idaho </span>
             </span></a
           >
-          <h1>Home</h1>
         </div>
-        <div class="site-banner__right">
-          <a href="http://www.byui.edu/#">
-            <span class="icon-search text-white mobile-header-icon">
-              <span class="sr-only">Search BYU-I</span>
-            </span>
-          </a>
-          <a
-            href="https://secure.byui.edu/cas/login?service=https://web.byui.edu/Services/Login/?RedirectURL=https%3a%2f%2fmy.byui.edu%2f"
-          >
-            <span class="icon-audience text-white mobile-header-icon">
+        <div class="site-banner-right">
+
+            <span class="icon-search">
+
+            <span class="icon-audience">
               <span class="sr-only">Login</span>
             </span>
-          </a>
-          <a href="http://www.byui.edu/#">
-            <span class="icon-menu text-white mobile-header-icon">
+
+            <span class="icon-menu">
               <span class="sr-only">Expand Menu</span>
             </span>
-          </a>
         </div>
-        <form
-          aria-label="Search byui.edu"
-          method="get"
-          action="https://www.byui.edu/search/result?"
-          role="search"
-        >
-          <div>
-            <label for="searchDesktop" class="sr-only"
-              >Search BYU-I websites:
-            </label>
-            <input
-              id="searchDesktop"
-              name="q"
-              placeholder="Powered by Google"
-              alt="Search BYU-I websites (powered by Google.com)."
-              type="text"
-            />
-            <button type="submit">
-              <span aria-hidden="true" class="icon icon-magnifying-glass ">
-                <span class="sr-only">Submit</span>
-              </span>
-            </button>
-          </div>
-        </form>
       </div>
-      </div>
+              <div class="grey-title-box">
+          Brigham Young University - Idaho  
+    </div>
     </header>
     <main>
-      <div id="interest-box comp-pos">
-        <div>
-          <div>
-            <a href="http://video.byui.edu" target="">
-              <figure>
+    <div class="grid-container">
+    <div class="main-image">
+    <img src="https://www.byui.edu/images/homepage-main/President%20Eyring%20Message/President-message.jpg">
+    </div>
+          <div class="first-section-videos">
                 <img src="https://byui.edu/images/homepage-main/pagebuilder/CampusVideos.jpg" alt="">
-                <figcaption>
-                  Campus Videos
+                  <p>Campus Videos</p>
                   <span aria-hidden="true"></span>
-                </figcaption>
-              </figure>
-            </a>
           </div>
-        </div>
         <div>
-          <div>
-            <a href="http://photo.byui.edu" target="">
-              <figure>
+          <div class="first-section-videos">
                 <img src="https://byui.edu/images/homepage-main/pagebuilder/PhotoGallery%280%29.jpg" alt="">
-                <figcaption>
-                  Photo Gallery
+                  <p>Photo Gallery</p>
                   <span aria-hidden="true"></span>
-                </figcaption>
-              </figure>
-            </a>
           </div>
         </div>
         <div>
-          <div>
-            <a href="http://www.byui.edu/campus-tours" target="">
-              <figure>
+          <div class="first-section-videos">
                 <img src="https://byui.edu/images/homepage-main/pagebuilder/ExploreCampus.jpg" alt="">
-                <figcaption>
-                  Explore Campus
+                  <p>Explore Campus</p>
                   <span aria-hidden="true"></span>
-                </figcaption>
-              </figure>
-            </a>
           </div>
         </div>
-      </div>
       <div>
         <!--  LINK LIST -->
-        <div>
+        <div class="info-list">
           <buttontype="button" aria-haspopup="true" aira-expanded="false" aria-controls="audience-dropdown"
             data-toggle="dropdown" data-target="audience-dropdown" aria-expanded="false">
             GET INFORMATION FOR:
@@ -132,8 +83,6 @@
               </li>
             </ul>
         </div>
-        <!-- RESOURCE LINKS -->
-        <aside>
           <h3>Resources</h3>
           <div>
             <a href="admissions/apply" target="">Apply Now </a>
@@ -144,20 +93,15 @@
             <a href="financial-aid/cost-of-attendance" target="">Tuition and Fees</a>
             <a href="student-records/academic-deadlines" target="">Academic Deadlines</a>
           </div>
-        </aside>
-        <!-- DATES -->
-        <aside>
           <h3>Important Dates</h3>
           <div>
             <a href="https://ibelong.byui.edu/universitypublicaffairs/rsvp?id=753626">
               <div>Nov 16 - Devotional: President Dallin H. Oaks and Sister Kristen Oaks</div>
             </a>
           </div>
-        </aside>
       </div>
       <div>
         <div>
-          <!-- NEWS COMPONENT -->
           <section>
             <div>
               <div>
@@ -214,14 +158,12 @@
                 </article>
               </div>
               <div>
-                <a href="newsroom">
-                  Newsroom
-                </a>
               </div>
             </div>
           </section>
       </div>
       </div>
+     </div> 
     </main>
     <footer></footer>
   </body>
