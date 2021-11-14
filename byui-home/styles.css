@@ -1042,9 +1042,13 @@ p {
 
 .grid-container {
   display: grid;
-  grid-column-gap: 50px;
-  grid-row-gap: 50px;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto auto auto auto;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
 }
 
 .icon-byui-logo {
@@ -1073,15 +1077,6 @@ p {
   color: white;
 }
 
-.grey-title-box {
-  background: #b4b3b5;
-  width: 100%;
-  padding: 20px;
-  margin-bottom: 30px;
-  font-family: "BYUI Open Sans";
-  font-size: 30px;
-}
-
 .icon-audience {
   color: white;
 }
@@ -1094,20 +1089,33 @@ p {
   color: white;
 }
 
-.main-image img {
-  display: grid;
-  grid-column: 1/3;
+.grey-title-box {
+  background: #b4b3b5;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 30px;
+  font-family: "BYUI Open Sans";
+  font-size: 30px;
+  grid-column: 1/7;
+}
+
+.main-image {
+  grid-column: 2/5;
+}
+
+.video1 {
+  grid-column: 2;
 }
 
 .first-section-videos img {
   border: 2px solid black;
   margin: 10px;
-  display: grid;
-  grid-column: 1/2;
 }
 
 .info-list {
   font-family: "BYUI Open Sans";
+  grid-column: 5/7;
+  grid-row: 2;
 }
 
 /*# sourceMappingURL=styles.css.map */
