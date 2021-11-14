@@ -1,14 +1,8 @@
 @import "typography";
 @import "icons";
+@import "colors";
 
 $sm-break: 48em;
-// colors
-$dark-gray: #727272;
-$med-gray: #b4b3b5;
-$light-gray: #eaeaea;
-$body-font: #020202;
-$link-blue: #0076b6; //why do we have both of these blues?
-$byui-blue: #056cb6;
 
 // Utility classes
 *,
@@ -18,8 +12,13 @@ $byui-blue: #056cb6;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+body {
+  margin: 0;
+  $body-font: #020202;
+}
 img {
   max-width: 100%;
+  width: 100%;
 }
 .sr-only {
   position: absolute;
@@ -32,101 +31,314 @@ img {
   border: 0;
 }
 
-a {
-  text-decoration: none;
-  color: #0076b6;
-  font-family: "BYUI Open Sans";
+.dropdown {
+  button {
+    border: 1px solid $med-gray;
+  }
 }
 
+.links {
+  h3 {
+    border: 1px solid $dark-gray;
+    background-color: $dark-gray;
+    color: white;
+  }
+
+  div a {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid $med-gray;
+    border-left: 1px solid $med-gray;
+    border-right: 1px solid $med-gray;
+    color: $link-blue;
+  }
+  div a:hover {
+    background-color: $light-gray;
+  }
+}
+
+.mobile-header-icon,
+.icon-byui-logo {
+  color: white;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+// Text Styling
 p {
   font-family: "BYUI Open Sans";
+  text-decoration: none;
 }
 
-//grid
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
+a {
+  font-family: "BYUI Open Sans";
+  text-decoration: none;
 }
 
-.grid-container > div {
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
-}
-
-//Logo
-
-.icon-byui-logo {
+// Navigation
+.site-banner {
   display: flex;
-  height: 75px;
-  width: 95px;
-  background-color: #000;
-  color: white;
-  padding: 20px;
-  text-decoration: none !important;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $byui-blue;
+
+  form {
+    display: none;
+  }
 }
 
-// banner
-
-.site-nav-background {
-  background-color: #056cb6;
+.site-banner__right {
+  margin-right: 2%;
+  background-color: $byui-blue;
 }
 
-.site-banner-left {
+.byui-logo {
+  height: 82px;
+  width: 82px;
   font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $body-font;
 }
 
-.site-banner-right {
-  font-size: 50px;
-  float: right;
-  margin-top: -62px;
-  padding-right: 30px;
-  color: white;
+.site-title {
+  text-align: center;
+  background-color: $light-gray;
+  border: 1px solid #727272;
+
+  h1 {
+    margin: 0;
+    padding: 15px 10px;
+  }
+
+  h1 a {
+    color: $dark-gray;
+    margin: 2%;
+  }
 }
 
-// icons
+@media screen and (min-width: $sm-break) {
+  .site-title {
+    //display: block;
+    text-align: left;
+    border-bottom: none;
 
-.icon-audience {
-  color: white;
+    h1 {
+      padding: 30px 0 15px 0;
+      max-width: 94%;
+      margin: auto;
+      font-size: 30px;
+    }
+  }
 }
 
-.icon-search {
-  color: white;
+// Button
+.btn {
+  font-weight: 700;
+  text-align: center;
+  border: 1px solid transparent;
+  padding: 6px 24px;
+  font-size: 15px;
+  border-radius: 4px;
 }
 
-.icon-menu {
-  color: white;
+.btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 3px rgba(0, 118, 182, 0.25);
 }
 
-.grey-title-box {
-  background: #b4b3b5;
-  width: 100%;
-  padding: 20px;
-  margin-bottom: 30px;
-  font-family: "BYUI Open Sans";
-  font-size: 30px;
-  grid-column: 1 / 7;
-}
-
-// main image
 .main-image {
-  grid-column: 2 / 5;
+  margin: 0 2%;
 }
 
-// video section
-
-.video1 {
-  grid-column: 2;
+.main-image {
+  margin: 36px 0;
 }
 
-.first-section-videos img {
-  border: 2px solid black;
-  margin: 10px;
+.large-img {
+  display: none;
 }
 
-// info list section
-.info-list {
-  font-family: "BYUI Open Sans";
-  grid-column: 5 / 7;
-  grid-row: 2;
+.video-container {
+  display: grid;
+  grid-row-gap: 36px;
+  margin-bottom: 36px;
+
+  .video-box figure {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.video-box {
+  .video-box a,
+  .video-box a:hover {
+    color: $link-blue;
+  }
+
+  .video-box figure {
+    border: 1px solid $med-gray;
+  }
+}
+
+.dropdown {
+  button {
+    padding: 10px 18px;
+    width: 100%;
+    margin-bottom: 36px;
+  }
+}
+
+.links {
+  margin-bottom: 36px;
+
+  h3 {
+    margin: 0;
+    padding: 10px 20px;
+  }
+
+  div a {
+    padding: 8px 20px;
+    display: block;
+  }
+}
+
+.dates {
+  h3 {
+    margin: 0;
+    padding: 10px 20px;
+  }
+
+  .date-links a {
+    display: grid;
+    grid-template-columns: 0.5fr 0.25fr 2fr;
+    padding: 8px 20px;
+  }
+}
+
+.newsroom {
+  margin-bottom: 36px;
+
+  img {
+    display: none;
+  }
+
+  article {
+    padding: 25px 0;
+  }
+
+  article h4 {
+    margin: 18px 0 12px 0;
+  }
+
+  .article-description {
+    margin: 0 0 12px 0;
+  }
+}
+
+.university-message {
+  h5 {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    margin: 0;
+    padding: 12px 16px;
+  }
+
+  .msg-univ {
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    padding: 7px;
+  }
+}
+
+/*Footer*/
+footer {
+  .footer-graphic::before {
+    background: url(https://www.byui.edu/prebuilt/stylenew/images/foot/taylor_graphic.gif)
+      bottom no-repeat;
+    content: "";
+    display: block;
+    height: 146px;
+    padding: 0;
+  }
+  .footer-graphic::after {
+    content: "";
+    display: block;
+    padding: 30px;
+  }
+}
+
+@media screen and (min-width: $sm-break) {
+  .sm-img {
+    display: none;
+  }
+
+  .large-img {
+    display: block;
+  }
+
+  .newsroom img {
+    display: block;
+  }
+
+  main {
+    max-width: 94%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 69% 29%;
+    grid-column-gap: 2%;
+    grid-template-rows: auto auto auto auto;
+  }
+
+  .main-image {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+  }
+
+  .video-container {
+    grid-column: 1;
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+  }
+
+  .newsroom {
+    grid-column: 1;
+    grid-row: 4;
+
+    article:first-child {
+      border-top: 1px solid #b4b3b5;
+    }
+
+    article {
+      display: grid;
+      grid-template-columns: 23% 73%;
+      grid-column-gap: 2%;
+    }
+  }
+
+  .dropdown {
+    margin-top: 36px;
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .links {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .dates {
+    grid-column: 2;
+    grid-row: 3 / 4;
+  }
+
+  .university-message {
+    grid-column: 2;
+    grid-row: 4;
+  }
 }

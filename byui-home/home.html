@@ -1,171 +1,276 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>byui-home page</title>
+    <title>Brigham Young University - Idaho</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
 
   <body>
     <header>
-      <div class="site-nav-background">
-        <div class="site-banner-left">
-          <a href="#"
-            ><span aria-hidden="true" class="icon-byui-logo">
-              <span class="sr-only">BYU-Idaho </span>
-            </span></a
-          >
+      <div class="site-banner">
+        <div class="site-banner__left">
+          <div class="byui-logo">
+            <a href="#"
+              ><span aria-hidden="true" class="icon-byui-logo">
+                <span class="sr-only">Link to BYU-Idaho home page</span>
+              </span></a
+            >
+          </div>
         </div>
-        <div class="site-banner-right">
-
-            <span class="icon-search">
-
-            <span class="icon-audience">
+        <div class="site-banner__right">
+          <a href="http://www.byui.edu/#">
+            <span class="icon-search mobile-header-icon">
+              <span class="sr-only">Search BYU-I</span>
+            </span>
+          </a>
+          <a
+            href="https://secure.byui.edu/cas/login?service=https://web.byui.edu/Services/Login/?RedirectURL=https%3a%2f%2fmy.byui.edu%2f"
+          >
+            <span class="icon-audience mobile-header-icon">
               <span class="sr-only">Login</span>
             </span>
-
-            <span class="icon-menu">
+          </a>
+          <a href="http://www.byui.edu/#">
+            <span class="icon-menu mobile-header-icon">
               <span class="sr-only">Expand Menu</span>
             </span>
+          </a>
         </div>
+        <form
+          aria-label="Search byui.edu"
+          method="get"
+          action="https://www.byui.edu/search/result?"
+          role="search"
+        >
+          <div>
+            <label for="searchDesktop" class="sr-only"
+              >Search BYU-I websites:
+            </label>
+            <input
+              id="searchDesktop"
+              name="q"
+              placeholder="Powered by Google"
+              alt="Search BYU-I websites (powered by Google.com)."
+              type="text"
+            />
+
+            <button type="submit">
+              <span aria-hidden="true" class="icon icon-magnifying-glass">
+                <span class="sr-only">Submit</span>
+              </span>
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="site-title">
+        <h1>
+          <a href="https://www.byui.edu/">Brigham Young University - Idaho</a>
+        </h1>
+      </div>
     </header>
     <main>
-    <!-- Start of grid -->
-    <div class="grid-container">
-      <div class="grey-title-box">
-          Brigham Young University - Idaho  
-      </div>
       <div class="main-image">
-      <img src="https://www.byui.edu/images/homepage-main/President%20Eyring%20Message/President-message.jpg">
+        <a
+          href="https://www.byui.edu/images/homepage-main/President%20Eyring%20Message/President-message.jpg"
+        >
+          <img
+            src="images/main-image.jpg"
+            alt="On Patience and optimism"
+            class="large-img"
+          />
+          <img
+            src="images/Potential-Gardens-mobile.jpg"
+            alt="Ready to realize my potential"
+            class="sm-img"
+            aria-hidden="true"
+          />
+        </a>
       </div>
-          <div class="first-section-videos video1">
-                <img src="https://byui.edu/images/homepage-main/pagebuilder/CampusVideos.jpg" alt="">
-                  <p>Campus Videos</p>
-                  <span aria-hidden="true"></span>
-          </div>
-        <div>
-          <div class="first-section-videos video2">
-                <img src="https://byui.edu/images/homepage-main/pagebuilder/PhotoGallery%280%29.jpg" alt="">
-                  <p>Photo Gallery</p>
-                  <span aria-hidden="true"></span>
-          </div>
+      <div class="video-container">
+        <div class="video-box">
+          <a href="http://video.byui.edu">
+            <figure>
+              <img src="images/CampusVideos.jpg" />
+              <figcaption class="clearfix">
+                Campus Videos<span
+                  class="icon-angle-right float-right"
+                  aria-hidden="true"
+                ></span>
+              </figcaption>
+            </figure>
+          </a>
         </div>
-        <div>
-          <div class="first-section-videos video3">
-                <img src="https://byui.edu/images/homepage-main/pagebuilder/ExploreCampus.jpg" alt="">
-                  <p>Explore Campus</p>
-                  <span aria-hidden="true"></span>
-          </div>
+        <div class="video-box">
+          <a href="http://photo.byui.edu">
+            <figure>
+              <img src="images/PhotoGallery(0).jpg" />
+              <figcaption class="clearfix">
+                Photo Gallery<span
+                  class="icon-angle-right float-right"
+                  aria-hidden="true"
+                ></span>
+              </figcaption>
+            </figure>
+          </a>
         </div>
-      <div>
-        <!--  LINK LIST -->
-        <div class="info-list">
-          <buttontype="button" aria-haspopup="true" aira-expanded="false" aria-controls="audience-dropdown"
-            data-toggle="dropdown" data-target="audience-dropdown" aria-expanded="false">
-            GET INFORMATION FOR:
-            <span aria-hidden="true"></span>
-            </button>
-            <ul>
-              <li>
-                <a href="http://www.besmart.com">Future Students</a>
-              </li>
-              <li>
-                <a href="audience/students">Current Students</a>
-              </li>
-              <li>
-                <a href="audience/employees">employees</a>
-              </li>
-              <li>
-                <a href="audience/parents">Parents and Family</a>
-              </li>
-              <li>
-                <a href="campus-tours">Visitors</a>
-              </li>
-            </ul>
+        <div class="video-box">
+          <a href="http://byui.edu/campus-tours">
+            <figure>
+              <img src="images/ExploreCampus.jpg" />
+              <figcaption class="clearfix">
+                Explore Campus<span
+                  class="icon-angle-right float-right"
+                  aria-hidden="true"
+                ></span>
+              </figcaption>
+            </figure>
+          </a>
         </div>
-          <h3>Resources</h3>
-          <div>
-            <a href="admissions/apply" target="">Apply Now </a>
-            <a href="financial-aid" target="">Financial Aid </a>
-            <a href="http://www.byui.edu/catalog/#/programs" target="">Degrees and
-              Programs</a>
-            <a href="housing" target="">Student Housing </a>
-            <a href="financial-aid/cost-of-attendance" target="">Tuition and Fees</a>
-            <a href="student-records/academic-deadlines" target="">Academic Deadlines</a>
-          </div>
-          <h3>Important Dates</h3>
-          <div>
-            <a href="https://ibelong.byui.edu/universitypublicaffairs/rsvp?id=753626">
-              <div>Nov 16 - Devotional: President Dallin H. Oaks and Sister Kristen Oaks</div>
-            </a>
-          </div>
       </div>
-      <div>
+      <div class="dropdown">
+        <button type="button" class="btn">
+          GET INFORMATION FOR:
+          <span
+            class="icon-triangle-down float-right"
+            aria-hidden="true"
+          ></span>
+        </button>
+      </div>
+      <aside class="links">
+        <h3>Resources</h3>
         <div>
-          <section>
+          <a
+            href="https://www.byui.edu/admissions/apply"
+            class="highlights-link clearfix"
+            target="_self"
+            >Apply Now <span class="icon-angle-right float-right"></span>
+          </a>
+          <a
+            href="https://www.byui.edu/financial-aid"
+            class="highlights-link clearfix"
+            target="_self"
+            >Financial Aid <span class="icon-angle-right float-right"></span>
+          </a>
+          <a
+            href="http://www.byui.edu/catalog/#/programs"
+            class="highlights-link clearfix"
+            target="_self"
+            >Degrees and Programs
+            <span class="icon-angle-right float-right"></span>
+          </a>
+          <a
+            href="https://www.byui.edu/housing"
+            class="highlights-link"
+            target="_self"
+            >Student Housing <span class="icon-angle-right float-right"></span>
+          </a>
+          <a
+            href="https://www.byui.edu/financial-aid/cost-of-attendance"
+            class="highlights-link clearfix"
+            target="_self"
+            >Tuition and Fees <span class="icon-angle-right float-right"></span>
+          </a>
+          <a
+            href="https://www.byui.edu/student-records/academic-deadlines"
+            class="highlights-link clearfix"
+            target="_self"
+            >Academic Deadlines
+            <span class="icon-angle-right float-right"></span>
+          </a>
+        </div>
+      </aside>
+      <aside class="dates">
+        <h3>Important Dates</h3>
+        <div class="date-links">
+          <a
+            href="https://ibelong.byui.edu/universitypublicaffairs/rsvp_boot?id=753626"
+            class="highlights-link"
+          >
+            <div>Nov 16</div>
+            <span> - </span>
             <div>
-              <div>
-                <article data-page="1" data-month="" data-category="">
-                  <div>
-                    <div>
-                      <img src="https://byui.edu/images/News%20and%20Notes/HYMN.jpg"
-                        alt="news thumbnail for BYU-Idaho Department of Music announces a call for hymn texts">
-                    </div>
-                    <div>
-                      <div>October 21, 2021</div>
-                      <h4>
-                        <a href="newsroom/10-21-21-hymn-text-announcement" target="">BYU-Idaho Department of Music
-                          announces a call for hymn texts</a>
-                      </h4>
-                      <p>Requests have been made to submit original hymn texts for use in the
-                        seventeenth annual BYU-Idaho Hymn Festival to be held in the spring of 2022.</p>
-                    </div>
-                  </div>
-                </article>
-                <article data-page="1" data-month="" data-category="">
-                  <div>
-                    <div>
-                      <img src="https://byui.edu/images/newsroom/Radio%20interview%20Eyrings%202021.png"
-                        alt="news thumbnail for BYU-Idaho Radio Interview With the Eyrings" class="img-responsive">
-                    </div>
-                    <div>
-                      <div>September 13, 2021</div>
-                      <h4>
-                        <a href="newsroom/9-13-21-radio-interview" target="">BYU-Idaho Radio Interview With the
-                          Eyrings</a>
-                      </h4>
-                      <p>President and Sister Eyring discuss their Fall 2021 devotional message
-                        to students.</p>
-                    </div>
-                  </div>
-                </article>
-                <article data-page="1" data-month="" data-category="">
-                  <div>
-                    <div>
-                      <img src="https://byui.edu/images/newsroom/Study.jpg"
-                        alt="news thumbnail for Students Take Advantage of Summer Term Offerings">
-                    </div>
-                    <div>
-                      <div>August 30, 2021</div>
-                      <h4>
-                        <a href="newsroom/08-30-21-summer-enrollment" target="">Students Take Advantage of Summer Term
-                          Offerings</a>
-                      </h4>
-                      <p>BYU-Idaho continues to support students during the 2021 Summer Session
-                        through on-campus and online classes.</p>
-                    </div>
-                  </div>
-                </article>
-              </div>
-              <div>
-              </div>
+              Devotional: President Dallin H. Oaks and Sister Kristen Oaks
             </div>
-          </section>
+          </a>
+        </div>
+      </aside>
+      <div class="newsroom clearfix">
+        <article class="clearfix">
+          <img src="images/HYMN.jpg" alt="Piano" />
+          <div>
+            <div class="article-date">October 21, 2021</div>
+            <h4>
+              <a
+                href="https://www.byui.edu/newsroom/10-21-21-hymn-text-announcement"
+                target="_self"
+                >BYU-Idaho Department of Music announces a call for hymn
+                texts</a
+              >
+            </h4>
+            <p class="article-description">
+              Requests have been made to submit original hymn texts for use in
+              the seventeenth annual BYU-Idaho Hymn Festival to be held in the
+              spring of 2022.
+            </p>
+          </div>
+        </article>
+        <article class="clearfix">
+          <img
+            src="images/Radio interview Eyrings 2021.png"
+            alt="People talking with masks on"
+          />
+          <div>
+            <div class="article-date">September 13, 2021</div>
+            <h4>
+              <a
+                href="https://www.byui.edu/newsroom/9-13-21-radio-interview"
+                target="_self"
+                >BYU-Idaho Radio Interview With the Eyrings</a
+              >
+            </h4>
+            <p class="article-description">
+              President and Sister Eyring discuss their Fall 2021 devotional
+              message to students.
+            </p>
+          </div>
+        </article>
+        <article class="clearfix">
+          <img src="images\Study.jpg" alt="Girl studying at a table" />
+          <div>
+            <div class="article-date">August 30, 2021</div>
+            <h4>
+              <a
+                href="https://www.byui.edu/newsroom/08-30-21-summer-enrollment"
+                target="_self"
+                >Students Take Advantage of Summer Term Offerings</a
+              >
+            </h4>
+            <p class="article-description">
+              BYU-Idaho continues to support students during the 2021 Summer
+              Session through on-campus and online classes.
+            </p>
+          </div>
+        </article>
+        <a href="newsroom" class="btn">Newsroom</a>
       </div>
-      </div>
-     </div> 
-    </div> 
+      <aside class="university-message">
+        <div class="msg-univ">
+          <a
+            href="https://www.byui.edu/devotionals?utm_source=byui_web_ad&amp;utm_medium=University_Relations&amp;utm_campaign=Devo_mybyui&amp;utm_term=Fall_2019&amp;utm_content=Institutional"
+          >
+            <img
+              src="images/Devo_ElderSisterOaks.jpg"
+              alt="Devotional with Elder Dalling H. Oaks"
+            />
+          </a>
+        </div>
+      </aside>
     </main>
-    <footer></footer>
+    <footer>
+      <h2 class="sr-only">Footer</h2>
+      <div class="footer-graphic"></div>
+    </footer>
   </body>
 </html>
