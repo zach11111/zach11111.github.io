@@ -112,6 +112,7 @@ a {
   background-color: $body-font;
 }
 
+// titles and headers
 .site-title {
   text-align: center;
   background-color: $light-gray;
@@ -308,8 +309,9 @@ footer {
   }
 }
 
+//
 @media screen and (min-width: $sm-break) {
-  .sm-img {
+  .small-img {
     display: none;
   }
 
