@@ -1056,7 +1056,7 @@ img {
   color: white;
 }
 
-.clearfix::after {
+.article-shaping::after {
   content: "";
   clear: both;
   display: table;
@@ -1245,6 +1245,7 @@ a {
 .umsg .umsg2 {
   padding: 7px;
   border: 1px solid black;
+  border-radius: 10px;
 }
 
 footer .footer-image::before {
