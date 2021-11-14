@@ -1035,10 +1035,6 @@ img {
   border: 0;
 }
 
-.dropdown button {
-  border: 1px solid #b4b3b5;
-}
-
 .links h3 {
   border: 1px solid #727272;
   background-color: #727272;
@@ -1114,6 +1110,10 @@ a {
 .site-title h1 a {
   color: #727272;
   margin: 2%;
+}
+
+.dropdown button {
+  border: 1px solid #b4b3b5;
 }
 
 @media screen and (min-width: 48em) {
