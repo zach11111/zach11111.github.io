@@ -1269,7 +1269,7 @@ footer .footer-image::after {
 }
 
 @media screen and (min-width: 48em) {
-  .sm-img {
+  .small-img {
     display: none;
   }
 
