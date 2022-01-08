@@ -1,7 +1,7 @@
 const links = [
     { 
         label: "Week1 notes", 
-        url: "/wdd330-portfolio/week1/index.html" 
+        url: "../wdd330-portfolio/week1/index.html" 
     }
 ];
 let list = document.getElementById("links");
