@@ -2,6 +2,10 @@ const links = [
     { 
         label: "Week1 notes", 
         url: "../wdd330-portfolio/week1/index.html" 
+    },
+    {
+        label: "Week 2 notes",
+        url: "/wdd330-portfolio/week2/index.html"
     }
 ];
 let list = document.getElementById("links");
