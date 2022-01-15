@@ -5,7 +5,7 @@ const links = [
     },
     {
         label: "Week 2 notes",
-        url: "/wdd330-portfolio/week2/index.html"
+        url: "../wdd330-portfolio/week2/index.html"
     }
 ];
 let list = document.getElementById("links");
