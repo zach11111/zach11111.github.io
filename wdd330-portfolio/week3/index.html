@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Week 3 Notes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Week 3 Notes</h1>
+      <h2>Zach Rochette</h2>
+    </header>
+    <main>
+      <p>Notes for week 3:</p>
+      <p>
+        Something that I thought was interesting was the
+        <strong>This</strong> keyword. <br />
+        The <strong>This</strong> keyword allows us to acces an object. <br />
+        Here is an example of the <strong>This</strong> keyword in action.
+        <br />
+        let user = { <br />
+        name: "John",<br />
+        age: 30,<br />
+        <br />
+        sayHi() {<br />
+        <!-- "this" is the "current object"<br /> -->
+        alert(this.name);<br />
+        }<br />
+        <br />
+        };<br />
+        <br />
+        user.sayHi(); // John<br />
+        In this example the value of <strong>This</strong> will be "user".<br />
+        The value of <strong>This</strong> is evaluated during the run-time,
+        depending on the context.
+      </p>
+    </main>
+  </body>
+</html>
