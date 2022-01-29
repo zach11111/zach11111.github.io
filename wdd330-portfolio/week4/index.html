@@ -9,14 +9,89 @@
 
   <body>
     <header>
-      <h1>Week 3 Notes</h1>
+      <h1>Week 4 Notes</h1>
       <h2>Zach Rochette</h2>
     </header>
     <main>
-      <p>Notes for week 3:</p>
-      <p></p>
-
-      <li><a href="../week4/team_assignment.html">Team Excercise</a></li>
+      <p>Notes for week 4:</p>
+      <p>
+        I Decided to look at the Code Sandbox this week and check out some
+        excercises. <br />
+        There are a lot of interesting ones. I checked out chapter 6 and 10 like
+        the reading suggested. <br />
+        From what I was looking at everything was reminding me heavily of
+        Python, which is where I have most of my coding knowledge. <br />
+        There were a lot of excercises that helped me look at how a class works.
+        I got used to using class's in Python but it is good to see the
+        differences between the two. <br />
+        Similarly to python you define a class by using a class declaration. You
+        use the "class" keyword, that was no surprise.<br />
+        Followed by the class keyword you then simply type the pnjame of the
+        class. Ex: class Myclass {}<br />
+        Something to Note with classes, unlike function declarations where you
+        can call it in the code, a class must be put before the code otherwise
+        you get a "ReferenceError"<br />
+        <br />
+        you can also use "class expressions" to call a class.<br />
+        classes can be names or unnamed, and the given names are local. But they
+        can be accessed through the <strong>name</strong> property.<br />
+        Here is an example from developer.mozilla.org where I spent some extra
+        time studying the topic.<br />
+        <p style="color:red;">// unnamed</p><br />
+        let Rectangle = class {<br />
+        constructor(height, width) {<br />
+        this.height = height;<br />
+        this.width = width;<br />
+        }<br />
+        };<br />
+        console.log(Rectangle.name);<br />
+        // output: "Rectangle"<br />
+        <br />
+        <p style="color:red;">// named</p><br />
+        let Rectangle = class Rectangle2 {<br />
+        constructor(height, width) {<br />
+        this.height = height;<br />
+        this.width = width;<br />
+        }<br />
+        };<br />
+        console.log(Rectangle.name);<br />
+        // output: "Rectangle2"<br />
+      </p>
+      <br />
+      Here are some definitions I found useful:<br />
+      These are all from developer.mozilla.org<br>
+      "The body of a class is the part that is in curly brackets {}. This is
+      where you define class members, such as methods or constructor."<br />
+      <br />
+      <strong>Strict mode</strong><br />
+      The body of a class is executed in strict mode, i.e., code written here is
+      subject to stricter syntax for increased performance, some otherwise
+      silent errors will be thrown, and certain keywords are reserved for future
+      versions of ECMAScript.<br />
+      <br />
+      <strong>Constructor</strong><br />
+      The constructor method is a special method for creating and initializing
+      an object created with a class. There can only be one special method with
+      the name "constructor" in a class. A SyntaxError will be thrown if the
+      class contains more than one occurrence of a constructor method.<br />
+      <br />
+      A constructor can use the super keyword to call the constructor of the
+      super class.<br />
+      <br />
+      <strong>Static initialization blocks</strong><br />
+      Class static initialization blocks allow flexible initialization of class
+      static properties including the evaluation of statements during
+      initialization, and granting access to private scope.<br />
+      <br />
+      Multiple static blocks can be declared, and these can be interleaved with
+      the declaration of static properties and methods (all static items are
+      evaluated in declaration order).<br />
+      <br>
+      <li>
+        <a href="../week4/team_assignment.html"
+          ><strong>Team Excercise</strong></a
+        >
+      </li>
     </main>
   </body>
 </html>
