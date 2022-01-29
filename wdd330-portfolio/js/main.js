@@ -10,6 +10,10 @@ const links = [
     {
         label: "Week 3 notes",
         url: "../wdd330-portfolio/week3/index.html"
+    },
+    {
+        label: "Week 4 notes",
+        url: "../wdd330-portfolio/week3/index.html"
     }
 ];
 let list = document.getElementById("links");
