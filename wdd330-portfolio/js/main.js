@@ -18,6 +18,14 @@ const links = [
     {
         label: "Week 5 notes",
         url: "../wdd330-portfolio/week5/index.html"
+    },
+    {
+        label: "Week 6 notes",
+        url: "../wdd330-portfolio/week6/index.html"
+    },
+    {
+        label: "Todo app",
+        url: "../wdd330-portfolio/todo_app/todo.html"
     }
 ];
 let list = document.getElementById("links");
