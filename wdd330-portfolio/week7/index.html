@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Week 7 Notes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Week 7 Notes</h1>
+      <h2>Zach Rochette</h2>
+    </header>
+    <main>
+      <p>Notes for week 7:</p>
+      <p>
+        I mainly focused on AJAX this week because it is very new to me. What is AJAX? <br>
+        Apparently according to W3Schools, it is the ""Developr's dream", sounds promosing. <br>
+        Things you can do with AJAX:<br>
+        <ul>
+            <li>Read data from a web server - after a web page has loaded</li>
+            <li>Update a web page without reloading the page</li>
+            <li>Send data to a web server - in the background</li>
+        </ul>
+
+        Example of AJAX in action: <br>
+
+    !DOCTYPE html<br>
+    html<br>
+    body<br>
+    <br>
+    div id="demo"<br>
+    h2>The XMLHttpRequest Object h2<br>
+    button type="button" onclick="loadDoc()" Change Content button<br>
+    div<br>
+    <br>
+    script<br>
+    function loadDoc() {<br>
+      var xhttp = new XMLHttpRequest();<br>
+      xhttp.onreadystatechange = function() {<br>
+        if (this.readyState == 4 && this.status == 200) {<br>
+          document.getElementById("demo").innerHTML =<br>
+          this.responseText;<br>
+        }<br>
+      };<br>
+      xhttp.open("GET", "ajax_info.txt", true);<br>
+      xhttp.send();<br>
+    }<br>
+    script<br>
+    <br>
+    body<br>
+    html<br>
+
+    "AJAX = Asynchronous JavaScript And XML.<br>
+    <br>
+    AJAX is not a programming language.<br>
+    <br>
+    AJAX just uses a combination of:<br>
+    <br>
+    A browser built-in XMLHttpRequest object (to request data from a web server)<br>
+    JavaScript and HTML DOM (to display or use the data)"<br>
+    -W3Schools<br>
+    </p>
+      <a href="../greatHikes.html">Todo app</a>
+        ><strong></strong></a
+      >
+    </main>
+  </body>
+</html>

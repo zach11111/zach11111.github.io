@@ -26,6 +26,10 @@ const links = [
     {
         label: "Todo app",
         url: "../wdd330-portfolio/todo_app/todo.html"
+    },
+    {
+        label: "Week 7 notes",
+        url: "../wdd330-portfolio/week7/index.html"
     }
 ];
 let list = document.getElementById("links");
