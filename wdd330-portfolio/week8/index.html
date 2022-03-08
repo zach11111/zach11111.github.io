@@ -14,7 +14,65 @@
     </header>
     <main>
         <p>
-            SVG or Scalable Vector Graphics were fun to read about. Mostly everything was review for me, but I did learn a lot during the team assignment. Check it out below. 
+            CSS Transforms or Transitions are ways to control animation speed when changing CSS properties. <br>
+            The time it takes to make the change can be whatever you want. <br>
+            Here are a couple of properties you can use within your css <br>
+            All transitions are from developer.mozilla.org
+            transition-property<br>
+Specifies the name or names of the CSS properties to which transitions should be applied. Only properties listed here are animated during transitions; changes to all other properties occur instantaneously as usual.<br>
+<br>
+transition-duration<br>
+Specifies the duration over which transitions should occur. You can specify a single duration that applies to all properties during the transition, or multiple values to allow each property to transition over a different period of time.<br>
+<br>
+transition-timing-function<br>
+Specifies a function to define how intermediate values for properties are computed. Timing functions determine how intermediate values of the transition are calculated. Most timing functions can be specified by providing the graph of the corresponding function, as defined by four points defining a cubic bezier. You can also choose easing from Easing Functions Cheat Sheet.
+<br>
+transition-delay<br>
+Defines how long to wait between the time a property is changed and the transition actually begins.<br>
+<br>
+The shorthand CSS syntax is written as follows:<br>
+<br>
+div {<br>
+    transition: < property> < duration> < timing-function> < delay>;<br>
+}<br>
+<br>
+Here is an example that usees a four-second font transition that has a two-second delay between the time the user mouses over the element and the beginning of the animation:<br>
+# delay {<br>
+  font - size: 14px;<br>
+  transition-property: font-size;<br>
+  transition-duration: 4s;<br>
+  transition-delay: 2s;<br>
+}<br>
+<br>
+# delay: hover {<br>
+  font-size: 36px;<br>
+}<br>
+
+You can also use JavaScript to make this function smoother. <br>
+Here is some cool code that utilizes JavaScript to make a ball move around on the screen. <br>
+<p>Click anywhere to move the ball</p><br>
+< div id="foo" class="ball"></div><br>
+Copy to Clipboard<br>
+Using JavaScript you can make the effect of moving the ball to a certain position happen:<br>
+<br>
+var f = document.getElementById('foo');<br>
+document.addEventListener('click', function(ev){<br>
+    f.style.transform = 'translateY('+(ev.clientY-25)+'px)';<br>
+    f.style.transform += 'translateX('+(ev.clientX-25)+'px)';<br>
+},false);<br>
+Copy to Clipboard<br>
+With CSS you can make it smooth without any extra effort. Add a transition to the element and any change will happen smoothly:<br>
+<br>
+.ball {<br>
+  border-radius: 25px;<br>
+  width: 50px;<br>
+  height: 50px;<br>
+  background: #c00;<br>
+  position: absolute;<br>
+  top: 0;<br>
+  left: 0;<br>
+  transition: transform 1s;<br>
+}
         </p>
       <a href="../week8/team_assignment/index.html">Team Assignment</a>
     </main>
