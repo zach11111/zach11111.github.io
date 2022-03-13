@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Week 10 Notes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Week 10 Notes</h1>
+      <h2>Zach Rochette</h2>
+    </header>
+    <main>
+        <p>
+            JavaScript Form Validation<br>
+            Validating a form is exaclty what it sounds like, it is making sure that a user puts in the correct information otherwise your code will prevent the form from being submitted. <br>
+            Here is an example:<br>
+            function validateForm() {<br>
+                let x = document.forms["myForm"]["fname"].value;<br>
+                if (x == "") {<br>
+                  alert("Name must be filled out");<br>
+                  return false;<br>
+                }<br>
+              }<br>
+              In this example we check that the "fname" is entered correctly, if it isn't then the form will instead give the user the message "Name must be filled out" <br>
+              This example is straight JavaScript, but you can do the same thing in HTML <br>
+              < form name="myForm" action="/action_page.php" onsubmit="  validateForm()" method="post"><br>
+                Name: < input type="text" name="fname"><br>
+                < input type="submit" value="Submit"><br>
+                < /form><br>
+                <br>
+            There is a lot you can do with form validation, including checking numeric input. <br>
+            Here is a good example of this from W3Schools.com <br>
+            <br>
+            < !DOCTYPE html><br>
+            < html><br>
+            < body><br>
+            <br>
+            < h2>JavaScript Validation</ h2><br>
+            <br>
+            < p>Please input a number between 1 and 10:< /p><br>
+            <br>
+            < input id="numb"><br>
+            <br>
+            < button type="button" onclick="myFunction()">Submit< /button><br>
+            <br>
+            < p id="demo"></ p><br>
+            <br>
+            function myFunction() {<br>
+                  // Get the value of the input field with id="numb"<br>
+                  let x = document.getElementById("numb").value;<br>
+                  // If x is Not a Number or less than one or greater than 10<br>
+                  let text;<br>
+                  if (isNaN(x) || x < 1 || x > 10) {<br>
+                    text = "Input not valid";<br>
+                  } else {<br>
+                    text = "Input OK";<br>
+                  }<br>
+                  document.getElementById("demo").innerHTML = text;<br>
+                }<br>
+                <br>
+                The next thing we studied were API's, here is a short explanation of them from W3Schools <br>
+                What is Web API?<br>
+                API stands for Application Programming Interface.<br>
+                <br>
+                A Web API is an application programming interface for the Web.<br>
+                <br>
+                A Browser API can extend the functionality of a web browser.<br>
+                <br>
+                A Server API can extend the functionality of a web server.<br>
+                <br>
+                Browser APIs<br>
+                All browsers have a set of built-in Web APIs to support complex operations, and to help accessing data.<br>
+                <br>
+                For example, the Geolocation API can return the coordinates of where the browser is located.<br>
+                <br>
+                Example<br>
+                Get the latitude and longitude of the user's position:<br>
+                <br>
+                const myElement = document.getElementById("demo");<br>
+                <br>
+                function getLocation() {<br>
+                  if (navigator.geolocation) {<br>
+                    navigator.geolocation.getCurrentPosition(showPosition);<br>
+                  } else {<br>
+                    myElement.innerHTML = "Geolocation is not supported by this browser.";<br>
+                  }<br>
+                }<br>
+
+                function showPosition(position) {<br>
+                  myElement.innerHTML = "Latitude: " + position.coords.latitude +<br>
+                  "<br>Longitude: " + position.coords.longitude;<br>
+                }<br>
+        </p>
+      <a href="../week9/team/index-START.html">Team Assignment</a>
+    </main>
+  </body>
+</html>
