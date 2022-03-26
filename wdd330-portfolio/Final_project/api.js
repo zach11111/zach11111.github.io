@@ -45,11 +45,6 @@ function showMovies(data) {
     })
 }
 
-/* Close when someone clicks on the "x" symbol inside the overlay */
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-}
-
 function getColor(vote) {
     if(vote>= 7){
         return 'green'
