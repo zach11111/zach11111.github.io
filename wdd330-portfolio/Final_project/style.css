@@ -109,3 +109,7 @@ main {
 .movie:hover .overview {
   transform: translateY(0);
 }
+
+#banner {
+  margin-bottom: 30px;
+}
