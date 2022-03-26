@@ -44,7 +44,7 @@ function showMovies(data) {
 }
 
 function getColor(vote) {
-    if(vote>= 7){
+    if(vote >= 7){
         return 'green'
     }else if(vote >= 5){
         return "orange"
