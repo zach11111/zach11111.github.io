@@ -38,7 +38,6 @@ function showMovies(data) {
                 <h3>Overview</h3>
                 ${overview}
             </div>
-        
         `
 
         main.appendChild(movieEl);
