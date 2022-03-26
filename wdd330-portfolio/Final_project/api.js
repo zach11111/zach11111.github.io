@@ -25,9 +25,9 @@ function showMovies(data) {
 
     data.forEach(movie => {
         const {title, poster_path, vote_average, overview} = movie;
-        const movieEl = document.createElement('div');
-        movieEl.classList.add('movie');
-        movieEl.innerHTML = `
+        const movieElement = document.createElement('div');
+        movieElement.classList.add('movie');
+        movieElement.innerHTML = `
              <img src="${poster_path? IMG_URL + poster_path: "http://via.placeholder.com/1080x1580" }" alt="${title}">
             <div class="movie-info">
                 <h3>${title}</h3>
@@ -39,7 +39,7 @@ function showMovies(data) {
             </div>
         `
 
-        main.appendChild(movieEl);
+        main.appendChild(movieElement);
     })
 }
 
