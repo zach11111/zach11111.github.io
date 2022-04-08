@@ -66,6 +66,13 @@ main {
   background-color: #3d3d3d;
   position: relative;
   overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.movie:hover {
+  width: 315px;
+  transition: 0.3s ease;
+  box-shadow: 0.4px 8px 10px rgba(0, 0, 0, 0.9);
 }
 
 .movie img {
@@ -124,4 +131,33 @@ main {
 #banner {
   margin-bottom: 30px;
   box-shadow: 0.2px 4px 5px rgba(0, 0, 0, 0.9);
+}
+
+/* Genre Button */
+#tags{
+  width:20vw;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+}
+
+.tag{
+  color:white;
+  padding:10px 20px;
+  background-color: #1e2f97;
+  border-radius: 50px;
+  margin:6px;
+  display:inline-block;
+  cursor: pointer;
+}
+
+.tag:hover{
+  background-position: 100% 0;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+  box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
 }
