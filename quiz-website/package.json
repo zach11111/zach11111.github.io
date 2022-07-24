@@ -1,0 +1,11 @@
+{
+  "name": "quiz-website",
+  "version": "1.0.0",
+  "description": "A website just for fun",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Zach Rochette",
+  "license": "ISC"
+}
